@@ -1,0 +1,9 @@
+# dat files
+drone*/*.dat
+
+#Others
+build
+CMakeLists.txt.user
+
+# Temp
+*~
