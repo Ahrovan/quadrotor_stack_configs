@@ -4,10 +4,10 @@
 
 	<config>
 		<precission>
-			<x>0.4</x>
-			<y>0.4</y>
-			<z>0.4</z>
-			<yaw>20.0</yaw> <!--deg-->
+			<x>0.3</x>
+			<y>0.3</y>
+			<z>0.3</z>
+			<yaw>15.0</yaw> <!--deg-->
 		</precission>
 	</config>
 
@@ -61,7 +61,7 @@
 			<point>
 				<x>3.0</x>
 				<y>0.0</y>
-				<z>1</z>
+				<z>1.5</z>
 			</point>
 			<pointToLook>
 				<x>0.0</x>
@@ -86,7 +86,7 @@
 			<point>
 				<x>5.0</x>
 				<y>0.0</y>
-				<z>1</z>
+				<z>1.5</z>
 			</point>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
@@ -118,7 +118,7 @@
 			<point>
 				<x>7.0</x>
 				<y>0.0</y>
-				<z>1</z>
+				<z>1.5</z>
 			</point>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
@@ -150,7 +150,7 @@
 			<point>
 				<x>9.0</x>
 				<y>0.0</y>
-				<z>1</z>
+				<z>1.5</z>
 			</point>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
@@ -182,7 +182,7 @@
 			<point>
 				<x>8.0</x>
 				<y>0.0</y>
-				<z>1</z>
+				<z>1.5</z>
 			</point>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
@@ -232,7 +232,7 @@
 			<point>
 				<x>10.0</x>
 				<y>0.0</y>
-				<z>1</z>
+				<z>1.5</z>
 			</point>
 		</task>
 
