@@ -24,8 +24,11 @@
 			<modules>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
 				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
 			</modules>
 		</task>
 	</submission>
@@ -40,9 +43,16 @@
 		<task description="Hover 2 secs">
 			<config>
 				<id>01</id>
-				<time>2</time>
+				<time>5</time>
 			</config>
 			<command>hover</command>
+			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+			</modules>
 		</task>
 		
 		<task description="Move to point 1">
@@ -51,21 +61,22 @@
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
-				<e>droneTrajectoryPlanner</e>
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
-				<h>droneSimulator</h>
+				<h>droneSpeechROSModule</h>
 			</modules>
 			<point>
-				<x>3.0</x>
-				<y>0.0</y>
+				<x>8.0</x>
+				<y>3.0</y>
 				<z>1.5</z>
 			</point>
 			<pointToLook>
-				<x>0.0</x>
-				<y>2.0</y>
+				<x>9.0</x>
+				<y>8.0</y>
 			</pointToLook>
 		</task>
 		
@@ -73,9 +84,16 @@
 		<task description="Hover 2 secs">
 			<config>
 				<id>03</id>
-				<time>2</time>
+				<time>5</time>
 			</config>
 			<command>hover</command>
+			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+			</modules>
 		</task>
 
 		<task description="Move to point 2">
@@ -84,30 +102,38 @@
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<point>
-				<x>5.0</x>
-				<y>0.0</y>
+				<x>3.0</x>
+				<y>5.0</y>
 				<z>1.5</z>
 			</point>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
-				<e>droneTrajectoryPlanner</e>
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
-				<h>droneSimulator</h>
+				<h>droneSpeechROSModule</h>
 			</modules>
 			<pointToLook>
-				<x>0.0</x>
-				<y>4.0</y>
+				<x>3.0</x>
+				<y>5.0</y>
 			</pointToLook>
 		</task>
 
 		<task description="Hover 2 secs">
 			<config>
 				<id>05</id>
-				<time>2</time>
+				<time>5</time>
 			</config>
 			<command>hover</command>
+			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+			</modules>
 		</task>
 		
 		<task description="Move to point 3">
@@ -116,24 +142,25 @@
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<point>
-				<x>7.0</x>
-				<y>0.0</y>
+				<x>1.0</x>
+				<y>7.0</y>
 				<z>1.5</z>
 			</point>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
-				<e>droneTrajectoryPlanner</e>
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
-				<h>droneSimulator</h>
+				<h>droneSpeechROSModule</h>
 			</modules>
 			<pointToLook>
-				<x>0.0</x>
-				<y>6.0</y>
+				<x>1.0</x>
+				<y>13.0</y>
 			</pointToLook>
 		</task>
-		
+	<!--		
 		<task description="Hover 2 secs">
 			<config>
 				<id>07</id>
@@ -141,15 +168,15 @@
 			</config>
 			<command>hover</command>
 		</task>
-		
+	
 		<task description="Move to point 4">
 			<config>
 				<id>08</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<point>
-				<x>9.0</x>
-				<y>0.0</y>
+				<x>0.0</x>
+				<y>9.0</y>
 				<z>1.5</z>
 			</point>
 			<modules>
@@ -180,8 +207,8 @@
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<point>
-				<x>8.0</x>
-				<y>0.0</y>
+				<x>0.0</x>
+				<y>8.0</y>
 				<z>1.5</z>
 			</point>
 			<modules>
@@ -197,6 +224,7 @@
 				<y>8.0</y>
 			</pointToLook>
 		</task>
+-->
 
 	</submission>
 
@@ -214,6 +242,7 @@
 				<c>droneOdometryStateEstimator</c>
 				<d>trackerEye</d>
 				<e>openTLDTranslator</e>
+				<h>droneSpeechROSModule</h>
 			</modules>
 			<command>hover</command>
 		</task>
@@ -234,8 +263,40 @@
 				<y>0.0</y>
 				<z>1.5</z>
 			</point>
+			<modules>
+				<c>droneOdometryStateEstimator</c>
+				<d>trackerEye</d>
+				<e>openTLDTranslator</e>
+				<h>droneSpeechROSModule</h>
+			</modules>
 		</task>
 
+	
+
+		<task description="Move to Initial Point">
+			<config>
+				<id>02</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<point>
+				<x>8.0</x>
+				<y>1.0</y>
+				<z>1.5</z>
+			</point>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+			</modules>
+			<pointToLook>
+				<x>8.0</x>
+				<y>3.0</y>
+			</pointToLook>
+		</task>
 	</submission>
 
 	<submission description="Land">
@@ -247,6 +308,52 @@
 				<id>01</id>
 			</config>
 			<command>land</command>
+			<modules>
+				<h>droneSpeechROSModule</h>
+			</modules>
+		</task>	
+	</submission>
+
+
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>06</id>
+		</config>
+		<task description="Flip Quadrotor Clockwise">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveFlip</command>
+			<modules>
+				<h>droneSpeechROSModule</h>
+			</modules>
+		</task>	
+	</submission>
+
+<!--
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>09</id>
+		</config>
+		<task description="Flip Quadrotor CounterClockwise">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveFlip</command>
+		</task>	
+	</submission>
+
+
+
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>10</id>
+		</config>
+		<task description="Front Flip Quadrotor">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveFlip</command>
 		</task>	
 	</submission>
 
@@ -257,7 +364,7 @@
 
 
 
-<!--
+
 
 
 	<submission description="XXXXX SEARCH XXXXX">
@@ -314,6 +421,17 @@
 		</task>	
 	</submission>
 
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>08</id>
+		</config>
+		<task description="Flip Quadrotor">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveFlip</command>
+		</task>	
+	</submission>
 -->
 
 </mission>

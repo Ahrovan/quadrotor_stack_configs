@@ -4,9 +4,9 @@
     
     	<!-- Localization -->
     	  <!-- Init pose -->
-        <x_0>  0.0</x_0>
-        <y_0> -2.0</y_0>
-        <z_0>  0.70</z_0>
+        <x_0>  8.0</x_0>
+        <y_0>  1.0</y_0>
+        <z_0>  0.0</z_0>
         <roll_0>0.0</roll_0> <!-- Angles are given in degrees!! -->
         <pitch_0>0.0</pitch_0>
         <yaw_0>90.0</yaw_0>
@@ -28,39 +28,76 @@
         <sigma_obs_yaw>10</sigma_obs_yaw>
         
         
-        <!-- Known Arucos -->
-        <!-- <num_known_Arucos>16</num_known_Arucos> -->
+        <!-- Visual Markers -->
+        <VisualMarkerList description="List of visual markers that are going to be added to the visual markers SLAM">
+   <!--   <VisualMarker id="1" />
+          <VisualMarker id="2" />   -->
+          <VisualMarkersRange fromId="9" toId="100"/>
+        </VisualMarkerList>
         
-        <Arucos>
+        <!-- Visual Markers Landmarks -->
+        <Arucos description="List of visual markers considered as landmarks (previously known pose)">
         <!-- Angles are given in degrees!! -->
 
         		<!-- Pole 1 -->
-        		<Aruco id="9"   x="0.0" y="1.8"   z="1.5" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="10"  x="-0.2" y="2" z="1.5" roll="0" pitch="0" yaw="180"/>
-			<Aruco id="11"  x="0.0" y="2.2" z="1.5" roll="0" pitch="0" yaw="90"/>
-			<Aruco id="12"  x="0.2"   y="2.0" z="1.5" roll="0" pitch="0" yaw="0"/>
+        		<Aruco id="41"   x="8.0" y="2.8"   z="1.5" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="42"  x="7.8" y="3.0" z="1.5" roll="0" pitch="0" yaw="180"/>
+			<Aruco id="43"  x="8.0" y="3.2" z="1.5" roll="0" pitch="0" yaw="90"/>
+			<Aruco id="44"  x="8.2"   y="3.0" z="1.5" roll="0" pitch="0" yaw="0"/>
 
         		
         		<!-- Pole 2 -->
 
-        		<Aruco id="13"  x="0.0" y="3.8"    z="1.5" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="14"  x="-0.2" y="4.0"    z="1.5" roll="0" pitch="0" yaw="180"/>
-        		<Aruco id="15"  x="0.0" y="4.2"    z="1.5" roll="0" pitch="0" yaw="90"/>
-        		<Aruco id="16"  x="0.2" y="4.0"    z="1.5" roll="0" pitch="0" yaw="0"/>
+        		<Aruco id="45"  x="3.0" y="4.8"    z="1.5" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="46"  x="2.8" y="5.0"    z="1.5" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="47"  x="3.0" y="5.2"    z="1.5" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="48"  x="3.2" y="5.0"    z="1.5" roll="0" pitch="0" yaw="0"/>
 
-			<!-- Pole 3 -->
 
-        		<Aruco id="17"  x="0.0" y="5.8"    z="1.5" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="18"  x="-0.2" y="6.0"    z="1.5" roll="0" pitch="0" yaw="180"/>
-        		<Aruco id="19"  x="0.0" y="6.2"    z="1.5" roll="0" pitch="0" yaw="90"/>
-        		<Aruco id="20"  x="0.2" y="6.0"    z="1.5" roll="0" pitch="0" yaw="0"/>
 
-        		<!-- Pole 4 -->
+			<!-- Landmarks -->
 
-        		<Aruco id="21"  x="0.0" y="7.8"    z="1.5" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="22"  x="-0.2" y="8.0"    z="1.5" roll="0" pitch="0" yaw="180"/>
-        		<Aruco id="23"  x="0.0" y="8.2"    z="1.5" roll="0" pitch="0" yaw="90"/>
-        		<Aruco id="24"  x="0.2" y="8.0"    z="1.5" roll="0" pitch="0" yaw="0"/>
+
+			<!-- Landmark 1 -->
+
+        		<Aruco id="61"  x="0.0" y="7.89"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="62"  x="0.0" y="8.11"    z="1.5" roll="0" pitch="0" yaw="45"/>
+
+			<!-- Landmark 2 -->
+
+        		<Aruco id="63"  x="0.0" y="10.89"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="64"  x="0.0" y="11.11"    z="1.5" roll="0" pitch="0" yaw="45"/>
+
+			<!-- Landmark 3 -->
+
+        		<Aruco id="65"  x="0.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="66"  x="1.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 4 -->
+
+        		<Aruco id="67"  x="2.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="68"  x="3.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 5 -->
+
+        		<Aruco id="69"  x="5.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="70"  x="6.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 6 -->
+	
+        		<Aruco id="71"  x="7.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="72"  x="8.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+
+			<!-- Landmark 7 -->
+
+        		<Aruco id="73"  x="9.0" y="11.11"    z="1.5" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="74"  x="9.0" y="10.89"    z="1.5" roll="0" pitch="0" yaw="225"/>
+
+			<!-- Landmark 8 -->
+
+        		<Aruco id="75"  x="9.0" y="8.11"    z="1.5" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="76"  x="9.2" y="7.89"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		
 
 			
 	
@@ -70,16 +107,12 @@
     </params>
 </main>
 
-
-
-
-
-        
+       
 <map>
 	<!--    Obstacles processor -->
-        <!-- Dimensions windows and others not used JL? 
+        <!-- Dimensions windows and others not used JL? -->
         <wall_width>0.25</wall_width>
-        <wall_length>8</wall_length> -->
+        <wall_length>8</wall_length>
         <known_pole_rad>0.3</known_pole_rad> <!-- JL: not used ?? -->
         <unknown_pole_rad>0.3</unknown_pole_rad> <!-- JL: not used ?? -->
         <large_window_length>1.5</large_window_length> <!-- JL: only used with windows_distribution_option=1 ?? -->
@@ -87,7 +120,7 @@
 	<aruco_width>0.15</aruco_width>
         <!-- Arucos windows distribution -->
         <num_landmarks_wind>8</num_landmarks_wind> <!-- JL: not used ?? -->
-        <windows_distribution_option>2</windows_distribution_option>
+        <windows_distribution_option>0</windows_distribution_option>
         
         <obstaclesInMap>
 
@@ -95,10 +128,10 @@
         		<id>40000</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
-				<id aruco_id = "9"/>
-				<id aruco_id = "10"/>
-				<id aruco_id = "11"/>
-				<id aruco_id = "12"/>
+				<id aruco_id = "41"/>
+				<id aruco_id = "42"/>
+				<id aruco_id = "43"/>
+				<id aruco_id = "44"/>
         		</aruco>
 		</pole>
 		
@@ -106,21 +139,22 @@
 			<id>40001</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
-				<id aruco_id = "13"/>
-				<id aruco_id = "14"/>
-				<id aruco_id = "15"/>
-				<id aruco_id = "16"/>
+				<id aruco_id = "45"/>
+				<id aruco_id = "46"/>
+				<id aruco_id = "47"/>
+				<id aruco_id = "48"/>
         		</aruco>
 		</pole>
+
+
 		
 		<pole>
         		<id>40002</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
-				<id aruco_id = "17"/>
-				<id aruco_id = "18"/>
-				<id aruco_id = "19"/>
-				<id aruco_id = "20"/>
+				<id aruco_id = "61"/>
+				<id aruco_id = "62"/>
+
         		</aruco>
 		</pole>
 		
@@ -128,12 +162,68 @@
 			<id>40003</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
-				<id aruco_id = "21"/>
-				<id aruco_id = "22"/>
-				<id aruco_id = "23"/>
-				<id aruco_id = "24"/>
+				<id aruco_id = "63"/>
+				<id aruco_id = "64"/>
 
+        		</aruco>
+		</pole>
 
+		<pole>
+        		<id>40004</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "65"/>
+				<id aruco_id = "66"/>
+
+        		</aruco>
+		</pole>
+		
+		<pole>
+			<id>40005</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "67"/>
+				<id aruco_id = "68"/>
+
+        		</aruco>
+		</pole>
+
+		<pole>
+        		<id>40006</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "69"/>
+				<id aruco_id = "70"/>
+
+        		</aruco>
+		</pole>
+		
+		<pole>
+			<id>40007</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "71"/>
+				<id aruco_id = "72"/>
+
+        		</aruco>
+		</pole>
+
+		<pole>
+        		<id>40008</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "73"/>
+				<id aruco_id = "74"/>
+
+        		</aruco>
+		</pole>
+		
+		<pole>
+			<id>40009</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "75"/>
+				<id aruco_id = "76"/>
 
         		</aruco>
 		</pole>

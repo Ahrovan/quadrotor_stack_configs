@@ -250,6 +250,17 @@
 		</task>	
 	</submission>
 
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>08</id>
+		</config>
+		<task description="Flip Quadrotor">
+			<config>
+				<id>01</id>
+			</config>
+			<command>moveFlip</command>
+		</task>	
+	</submission>
 
 
 
