@@ -146,10 +146,119 @@
         		</aruco>
 		</pole>
 
+		<pole>
+			<id>40002</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "49"/>
+				<id aruco_id = "50"/>
+				<id aruco_id = "51"/>
+				<id aruco_id = "52"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>40003</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "53"/>
+				<id aruco_id = "54"/>
+				<id aruco_id = "55"/>
+				<id aruco_id = "56"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>40004</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "57"/>
+				<id aruco_id = "58"/>
+				<id aruco_id = "59"/>
+				<id aruco_id = "60"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>40005</id>
+        		<radius>0.2 0.2</radius>
+        		<aruco>
+				<id aruco_id = "61"/>
+				<id aruco_id = "62"/>
+				<id aruco_id = "63"/>
+				<id aruco_id = "64"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>50000</id>
+        		<radius>0.15 0.15</radius>
+        		<aruco>
+				<id aruco_id = "9"/>
+				<id aruco_id = "10"/>
+				<id aruco_id = "11"/>
+				<id aruco_id = "12"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>50001</id>
+        		<radius>0.15 0.15</radius>
+        		<aruco>
+				<id aruco_id = "13"/>
+				<id aruco_id = "14"/>
+				<id aruco_id = "15"/>
+				<id aruco_id = "16"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>50002</id>
+        		<radius>0.15 0.15</radius>
+        		<aruco>
+				<id aruco_id = "17"/>
+				<id aruco_id = "18"/>
+				<id aruco_id = "19"/>
+				<id aruco_id = "20"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>50003</id>
+        		<radius>0.15 0.15</radius>
+        		<aruco>
+				<id aruco_id = "21"/>
+				<id aruco_id = "22"/>
+				<id aruco_id = "23"/>
+				<id aruco_id = "24"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>50004</id>
+        		<radius>0.15 0.15</radius>
+        		<aruco>
+				<id aruco_id = "25"/>
+				<id aruco_id = "26"/>
+				<id aruco_id = "27"/>
+				<id aruco_id = "28"/>
+        		</aruco>
+		</pole>
+
+		<pole>
+			<id>50005</id>
+        		<radius>0.15 0.15</radius>
+        		<aruco>
+				<id aruco_id = "29"/>
+				<id aruco_id = "30"/>
+				<id aruco_id = "31"/>
+				<id aruco_id = "32"/>
+        		</aruco>
+		</pole>
 
 		
 		<pole>
-        		<id>40002</id>
+        		<id>60002</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "61"/>
@@ -159,7 +268,7 @@
 		</pole>
 		
 		<pole>
-			<id>40003</id>
+			<id>60003</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "63"/>
@@ -169,7 +278,7 @@
 		</pole>
 
 		<pole>
-        		<id>40004</id>
+        		<id>60004</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "65"/>
@@ -179,7 +288,7 @@
 		</pole>
 		
 		<pole>
-			<id>40005</id>
+			<id>60005</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "67"/>
@@ -189,7 +298,7 @@
 		</pole>
 
 		<pole>
-        		<id>40006</id>
+        		<id>60006</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "69"/>
@@ -199,7 +308,7 @@
 		</pole>
 		
 		<pole>
-			<id>40007</id>
+			<id>60007</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "71"/>
@@ -209,7 +318,7 @@
 		</pole>
 
 		<pole>
-        		<id>40008</id>
+        		<id>60008</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "73"/>
@@ -219,7 +328,7 @@
 		</pole>
 		
 		<pole>
-			<id>40009</id>
+			<id>60009</id>
         		<radius>0.2 0.2</radius>
         		<aruco>
 				<id aruco_id = "75"/>
