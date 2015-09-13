@@ -94,39 +94,17 @@
 
 	<submission description="XXXXX FLIP XXXXX">
 		<config>
-			<id>06</id>
+			<id>05</id>
 		</config>
-<!--
-		<task description="Move Height Before Visual Servoing">
-			<config>
-				<id>02</id>
-			</config>
-			<command>moveTrajObsAvoid</command>
-			<modules>
-				<a>droneTrajectoryPlanner</a>
-				<c>droneArucoEyeROSModule</c>
-				<e>droneOdometryStateEstimator</e>
-				<d>droneObstacleProcessor</d>
-				<f>droneYawPlanner</f>
-				<g>droneLocalizer</g>
-				<h>droneSpeechROSModule</h>
-			</modules>
-			<point>
-				<z>3.0</z>
-			</point>
-			<pointToLook>
-				<x>9.0</x>
-				<y>8.0</y>
-			</pointToLook>
-		</task>
--->
 
 		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>2</time>
+				<time>3</time>
 			</config>
 			<modules>
+				<e>open_tld_translator</e>
+				<f>trackerEye</f>
 				<c>droneOdometryStateEstimator</c>
 				<h>droneSpeechROSModule</h>
 			</modules>
@@ -135,10 +113,12 @@
 
 		<task description="Flip Quadrotor Clockwise">
 			<config>
-				<id>01</id>
+				<id>02</id>
 			</config>
 			<command>moveFlip</command>
 			<modules>
+				<e>open_tld_translator</e>
+				<f>trackerEye</f>
 				<c>droneOdometryStateEstimator</c>
 				<g>droneLocalizer</g>
 				<a>droneTrajectoryPlanner</a>
