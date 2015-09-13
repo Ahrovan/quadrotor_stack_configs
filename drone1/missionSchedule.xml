@@ -43,10 +43,11 @@
 		<task description="Hover 2 secs">
 			<config>
 				<id>01</id>
-				<time>5</time>
+				<time>2</time>
 			</config>
 			<command>hover</command>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
@@ -71,7 +72,7 @@
 			</modules>
 			<point>
 				<x>8.0</x>
-				<y>3.0</y>
+				<y>7.0</y>
 				<z>1.5</z>
 			</point>
 			<pointToLook>
@@ -84,10 +85,11 @@
 		<task description="Hover 2 secs">
 			<config>
 				<id>03</id>
-				<time>5</time>
+				<time>2</time>
 			</config>
 			<command>hover</command>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
@@ -102,8 +104,8 @@
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<point>
-				<x>3.0</x>
-				<y>5.0</y>
+				<x>5.0</x>
+				<y>3.0</y>
 				<z>1.5</z>
 			</point>
 			<modules>
@@ -124,10 +126,11 @@
 		<task description="Hover 2 secs">
 			<config>
 				<id>05</id>
-				<time>5</time>
+				<time>2</time>
 			</config>
 			<command>hover</command>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
@@ -229,7 +232,7 @@
 	</submission>
 
 	
-	<submission description="Hover">
+	<submission description="Hover before Visual Servoing">
 		<config>
 			<id>03</id>
 		</config>
@@ -240,8 +243,8 @@
 			</config>
 			<modules>
 				<c>droneOdometryStateEstimator</c>
+				<e>open_tld_translator</e>				
 				<d>trackerEye</d>
-				<e>openTLDTranslator</e>
 				<h>droneSpeechROSModule</h>
 			</modules>
 			<command>hover</command>
@@ -258,16 +261,14 @@
 				<id>01</id>
 			</config>
 			<command>moveVSObsAvoid</command>
-			<point>
-				<x>10.0</x>
-				<y>0.0</y>
-				<z>1.5</z>
-			</point>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
+				<d>droneObstacleProcessor</d>
 				<c>droneOdometryStateEstimator</c>
-				<d>trackerEye</d>
-				<e>openTLDTranslator</e>
+				<e>open_tld_translator</e>
+				<f>trackerEye</f>
 				<h>droneSpeechROSModule</h>
+				<g>droneLocalizer</g>
 			</modules>
 		</task>
 
