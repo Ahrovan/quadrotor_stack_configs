@@ -29,28 +29,28 @@
        
      <fx2r>
         <FX2R_DELTA_KP>   1.0    </FX2R_DELTA_KP>
-        <FX2R_KP>        -0.5    </FX2R_KP>
+        <FX2R_KP>        -0.2    </FX2R_KP>
         <FX2R_KI>         0.0    </FX2R_KI>
         <FX2R_KD>         0.486  </FX2R_KD> 
      </fx2r>
       
      <fd2p>
         <FD2P_DELTA_KP>  1.0     </FD2P_DELTA_KP>
-        <FD2P_KP>        0.5     </FD2P_KP>
+        <FD2P_KP>        0.2     </FD2P_KP>
         <FD2P_KI>        0.0     </FD2P_KI>
         <FD2P_KD>        0.486   </FD2P_KD>     
      </fd2p>
 
      <fx2dy>
         <FX2DY_DELTA_KP>  0.9     </FX2DY_DELTA_KP>
-        <FX2DY_KP>       -0.9     </FX2DY_KP>
+        <FX2DY_KP>       -0.2     </FX2DY_KP>
         <FX2DY_KI>        0.0     </FX2DY_KI>
         <FX2DY_KD>        0.12    </FX2DY_KD>
      </fx2dy>
 
      <fy2dz>
          <FY2DZ_DELTA_KP> 1.0     </FY2DZ_DELTA_KP>
-         <FY2DZ_KP>       0.7     </FY2DZ_KP>
+         <FY2DZ_KP>       0.2     </FY2DZ_KP>
          <FY2DZ_KI>       0.0     </FY2DZ_KI>
          <FY2DZ_KD>       0.26    </FY2DZ_KD>
     </fy2dz>
