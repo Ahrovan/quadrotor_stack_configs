@@ -20,15 +20,16 @@
 			<config>
 				<id>01</id>
 			</config>
+			<speech>Despegando</speech>
 			<command>takeOff</command>
 			<modules>
+				<h>droneSpeechROSModule</h>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
-				<h>droneSpeechROSModule</h>
 			</modules>
 		</task>
 	</submission>
@@ -61,6 +62,7 @@
 				<id>02</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
 			<modules>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
@@ -103,6 +105,7 @@
 				<id>04</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
 			<point>
 				<x>5.0</x>
 				<y>3.0</y>
@@ -144,6 +147,7 @@
 				<id>06</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
 			<point>
 				<x>1.0</x>
 				<y>7.0</y>
@@ -177,9 +181,12 @@
 				<time>2</time>
 			</config>
 			<modules>
-				<c>droneOdometryStateEstimator</c>
-				<e>open_tld_translator</e>				
-				<d>trackerEye</d>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
 			</modules>
 			<command>hover</command>
@@ -196,6 +203,7 @@
 				<id>01</id>
 			</config>
 			<command>moveVSObsAvoid</command>
+			<speech>Seguimiento de Personas</speech>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
 				<d>droneObstacleProcessor</d>
@@ -214,6 +222,7 @@
 				<id>02</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
+			<speech>Retorno al punto inicial</speech>
 			<point>
 				<x>8.0</x>
 				<y>1.0</y>
@@ -244,6 +253,7 @@
 				<id>01</id>
 			</config>
 			<command>land</command>
+			<speech>Aterrizar</speech>
 			<modules>
 				<e>droneOdometryStateEstimator</e>
 				<h>droneSpeechROSModule</h>
@@ -270,6 +280,7 @@
 				<h>droneSpeechROSModule</h>
 			</modules>
 			<command>hover</command>
+			<speech>Flip</speech>
 		</task>
 
 		<task description="Flip Quadrotor Clockwise">
@@ -307,6 +318,7 @@
 				<h>droneSpeechROSModule</h>
 			</modules>
 			<command>hover</command>
+			<speech>Flip</speech>
 		</task>
 
 		<task description="Flip Quadrotor Clockwise">
@@ -344,6 +356,7 @@
 				<h>droneSpeechROSModule</h>
 			</modules>
 			<command>hover</command>
+			<speech>Flip</speech>
 		</task>
 
 		<task description="Flip Quadrotor Clockwise">
