@@ -95,6 +95,7 @@
 	<submission description="XXXXX FLIP XXXXX">
 		<config>
 			<id>05</id>
+			<arucoId>07</arucoId>
 		</config>
 
 		<task description="Hover 5 secs">
@@ -115,7 +116,44 @@
 			<config>
 				<id>02</id>
 			</config>
-			<command>moveFlip</command>
+			<command>moveFlipRight</command>
+			<modules>
+				<e>open_tld_translator</e>
+				<f>trackerEye</f>
+				<c>droneOdometryStateEstimator</c>
+				<g>droneLocalizer</g>
+				<a>droneTrajectoryPlanner</a>
+				<e>droneOdometryStateEstimator</e>
+				<h>droneSpeechROSModule</h>
+			</modules>
+		</task>	
+	</submission>
+
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>06</id>
+			<arucoId>08</arucoId>
+		</config>
+
+		<task description="Hover 5 secs">
+			<config>
+				<id>01</id>
+				<time>3</time>
+			</config>
+			<modules>
+				<e>open_tld_translator</e>
+				<f>trackerEye</f>
+				<c>droneOdometryStateEstimator</c>
+				<h>droneSpeechROSModule</h>
+			</modules>
+			<command>hover</command>
+		</task>
+
+		<task description="Flip Quadrotor Clockwise">
+			<config>
+				<id>02</id>
+			</config>
+			<command>moveFlipRight</command>
 			<modules>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
