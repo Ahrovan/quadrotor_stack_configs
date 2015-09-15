@@ -30,6 +30,7 @@
 				<d>droneObstacleProcessor</d>
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>
 	</submission>
@@ -54,6 +55,7 @@
 				<d>droneObstacleProcessor</d>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>
 		
@@ -71,6 +73,7 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 			<point>
 				<x>8.0</x>
@@ -97,6 +100,7 @@
 				<d>droneObstacleProcessor</d>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>
 
@@ -119,6 +123,7 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 			<pointToLook>
 				<x>3.0</x>
@@ -139,6 +144,7 @@
 				<d>droneObstacleProcessor</d>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>
 		
@@ -161,6 +167,7 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 			<pointToLook>
 				<x>1.0</x>
@@ -188,6 +195,7 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 			<command>hover</command>
 		</task>
@@ -212,6 +220,7 @@
 				<f>trackerEye</f>
 				<h>droneSpeechROSModule</h>
 				<g>droneLocalizer</g>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>
 
@@ -236,6 +245,7 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 			<pointToLook>
 				<x>8.0</x>
@@ -257,6 +267,7 @@
 			<modules>
 				<e>droneOdometryStateEstimator</e>
 				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>	
 	</submission>
