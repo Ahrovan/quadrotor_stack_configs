@@ -62,6 +62,7 @@
 
 
     <!-- virtual poles: 30000-39999 -->
+    <!--
   	<pole description="">
   		<id>30000</id>
       <centerPoint>0.0 0.0</centerPoint>
@@ -69,6 +70,7 @@
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</pole>
+    -->
 
 
     <!-- Fixed Known Real poles: 40000-49999 -->
