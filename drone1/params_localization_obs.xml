@@ -42,8 +42,8 @@
         		<!-- Pole 1 -->
         		<Aruco id="41"   x="8.0" y="2.8" z="1.5" roll="0" pitch="0" yaw="-90"/>
         		<Aruco id="42"   x="7.8" y="3.0" z="1.5" roll="0" pitch="0" yaw="180"/>
-			<Aruco id="43"   x="8.0" y="3.2" z="1.5" roll="0" pitch="0" yaw="90"/>
-			<Aruco id="44"   x="8.2" y="3.0" z="1.5" roll="0" pitch="0" yaw="0"/>
+			      <Aruco id="43"   x="8.0" y="3.2" z="1.5" roll="0" pitch="0" yaw="90"/>
+			      <Aruco id="44"   x="8.2" y="3.0" z="1.5" roll="0" pitch="0" yaw="0"/>
 
         		
         		<!-- Pole 2 -->

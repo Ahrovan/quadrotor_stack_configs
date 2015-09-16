@@ -206,7 +206,8 @@
 		<config>
 			<id>04</id>
 		</config>
-		<task description="Start IBVS Control">
+		
+    <task description="Start IBVS Control">
 			<config>
 				<id>01</id>
 			</config>
@@ -223,8 +224,6 @@
         <i>droneObstacleDistanceCalculator</i>
 			</modules>
 		</task>
-
-	
 
 		<task description="Move to Initial Point">
 			<config>
@@ -386,34 +385,57 @@
 			</modules>
 		</task>	
 	</submission>
-<!--
-	<submission description="XXXXX SEARCH XXXXX">
+
+	<submission description="XXXXX GO SAFE POINT XXXXX">
 		<config>
-			<id>06</id>
+			<id>09</id>
 		</config>
-		<task description="Search for Object">
+
+		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
+				<time>3</time>
 			</config>
-			<command>moveTrajObsAvoid</command>
+			<modules>
+				<e>open_tld_translator</e>
+				<f>trackerEye</f>
+				<c>droneOdometryStateEstimator</c>
+				<h>droneSpeechROSModule</h>
+			</modules>
+			<command>hover</command>
+		</task>
+
+		<task description="Move to Safety Point">
+			<config>
+				<id>02</id>
+			</config>
+			<command>moveTrajObsAvoidEmergency</command>
+			<speech>Movimiento al punto de seguridad</speech>
 			<point>
-				<x>3.0</x>
+				<x>4.5</x>
 				<y>10.0</y>
 				<z>1.5</z>
 			</point>
 			<modules>
+				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
 				<d>droneObstacleProcessor</d>
-				<e>droneTrajectoryPlanner</e>
 				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
 			</modules>
 			<pointToLook>
-				<x>1.2</x>
-				<y>8.8</y>
+				<x>4.5</x>
+				<y>13.0</y>
 			</pointToLook>
-		</task>	
+		</task>
 	</submission>
 
+
+</mission>
+<!--
 	<submission description="XXXXX GO HOME XXXXX">
 		<config>
 			<id>07</id>
@@ -442,4 +464,4 @@
 	</submission>
 -->
 
-</mission>
+
