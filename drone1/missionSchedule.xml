@@ -31,6 +31,7 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>
 	</submission>
@@ -56,6 +57,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>
 		
@@ -74,6 +76,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<point>
 				<x>8.0</x>
@@ -101,6 +104,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>
 
@@ -124,6 +128,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<pointToLook>
 				<x>3.0</x>
@@ -145,6 +150,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>
 		
@@ -168,6 +174,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<pointToLook>
 				<x>1.0</x>
@@ -196,6 +203,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
 		</task>
@@ -222,6 +230,7 @@
 				<h>droneSpeechROSModule</h>
 				<g>droneLocalizer</g>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>
 
@@ -245,6 +254,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<pointToLook>
 				<x>8.0</x>
@@ -267,6 +277,7 @@
 				<e>droneOdometryStateEstimator</e>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>	
 	</submission>
@@ -284,10 +295,13 @@
 				<time>3</time>
 			</config>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
+				<g>droneLocalizer</g>
 				<c>droneOdometryStateEstimator</c>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
 			<speech>Flip</speech>
@@ -299,6 +313,7 @@
 			</config>
 			<command>moveFlipRight</command>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
 				<c>droneOdometryStateEstimator</c>
@@ -306,6 +321,7 @@
 				<a>droneTrajectoryPlanner</a>
 				<e>droneOdometryStateEstimator</e>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>	
 	</submission>
@@ -322,10 +338,13 @@
 				<time>3</time>
 			</config>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
+				<g>droneLocalizer</g>
 				<c>droneOdometryStateEstimator</c>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
 			<speech>Flip</speech>
@@ -337,6 +356,7 @@
 			</config>
 			<command>moveFlipLeft</command>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
 				<c>droneOdometryStateEstimator</c>
@@ -344,6 +364,7 @@
 				<a>droneTrajectoryPlanner</a>
 				<e>droneOdometryStateEstimator</e>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>	
 	</submission>
@@ -360,10 +381,13 @@
 				<time>3</time>
 			</config>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
+				<g>droneLocalizer</g>
 				<c>droneOdometryStateEstimator</c>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
 			<speech>Flip</speech>
@@ -375,6 +399,7 @@
 			</config>
 			<command>moveFlipFront</command>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
 				<c>droneOdometryStateEstimator</c>
@@ -382,6 +407,7 @@
 				<a>droneTrajectoryPlanner</a>
 				<e>droneOdometryStateEstimator</e>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 		</task>	
 	</submission>
@@ -397,10 +423,12 @@
 				<time>3</time>
 			</config>
 			<modules>
+				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
 				<c>droneOdometryStateEstimator</c>
 				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
 		</task>
@@ -425,6 +453,7 @@
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
         <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
 			</modules>
 			<pointToLook>
 				<x>4.5</x>
