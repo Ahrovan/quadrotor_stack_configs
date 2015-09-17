@@ -18,7 +18,63 @@
         
   <obstaclesInMap>
 
-  	<pole>
+    <!-- other robots: RESERVED: 0-9999 -->
+
+
+
+
+    <!-- borders (Virtual Obstacles): 10000-19999 -->
+    <rectangle description="bottom side">
+			<id>10000</id>
+			<centerPoint>2.5 -0.5</centerPoint>
+			<size>6.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+		
+		
+		<rectangle description="right side"> 
+			<id>10001</id>
+			<centerPoint>5.5 4.5</centerPoint>
+			<size>0.3 10.0</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+		
+		<rectangle description="up side"> 
+			<id>10002</id>
+			<centerPoint>2.5 9.5</centerPoint>
+			<size>6.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+		
+		<rectangle description="left side"> 
+			<id>10003</id>
+			<centerPoint>-0.5 4.5</centerPoint>
+			<size>0.3 10.0</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
+
+
+    <!-- virtual walls: 20000-29999 -->
+
+
+    <!-- virtual poles: 30000-39999 -->
+    <!--
+  	<pole description="">
+  		<id>30000</id>
+      <centerPoint>0.0 0.0</centerPoint>
+  		<radius>0.2 0.2</radius>	
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</pole>
+    -->
+
+
+    <!-- Fixed Known Real poles: 40000-49999 -->
+  	<pole description="">
   		<id>40000</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -29,7 +85,7 @@
   		</aruco>
 		</pole>
 		
-		<pole>
+		<pole description="">
 			<id>40001</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -40,7 +96,7 @@
   		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>40002</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -51,7 +107,7 @@
   		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>40003</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -62,7 +118,7 @@
   		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>40004</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -75,7 +131,7 @@
 
 <!-- ESTAN REPETIDAS EN LAS COLUMNAS DEL BORDE!!!
 
-		<pole>
+		<pole description="">
 			<id>40005</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -86,7 +142,10 @@
   		</aruco>
 		</pole>
 -->
-		<pole>
+
+
+    <!-- Fixed UnKnown Real poles: 50000-59999 -->
+		<pole description="">
 			<id>50000</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -97,7 +156,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>50001</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -108,7 +167,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>50002</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -119,7 +178,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>50003</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -130,7 +189,7 @@
   		  </aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>50004</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -141,7 +200,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
 			<id>50005</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -153,7 +212,8 @@
 		</pole>
 
 		
-		<pole>
+    <!-- Fixed Known Real landmarks: 60000-69999 -->
+		<pole description="">
     		<id>60000</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -162,7 +222,7 @@
     		</aruco>
 		</pole>
 		
-		<pole>
+		<pole description="">
 			<id>60001</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -171,7 +231,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
     		<id>60002</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -180,7 +240,7 @@
     		</aruco>
 		</pole>
 		
-		<pole>
+		<pole description="">
 			<id>60003</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -189,7 +249,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
     		<id>60004</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -198,7 +258,7 @@
     		</aruco>
 		</pole>
 		
-		<pole>
+		<pole description="">
 			<id>60005</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -207,7 +267,7 @@
     		</aruco>
 		</pole>
 
-		<pole>
+		<pole description="">
     		<id>60006</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
@@ -216,7 +276,7 @@
     		</aruco>
 		</pole>
 		
-		<pole>
+		<pole description="">
 			<id>60007</id>
     		<radius>0.15 0.15</radius>
     		<aruco>
