@@ -7,8 +7,8 @@
 
 <map>
 	<config>
-		<dimensions>9.0 13.0</dimensions>
-		<initPoint>0.0 0.0</initPoint> <!-- punto minimo del mapa -->
+		<dimensions>9.0 14.0</dimensions>
+		<initPoint>0.0 -1.0</initPoint> <!-- punto minimo del mapa -->
 	</config>
 </map>
 
