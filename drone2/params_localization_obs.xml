@@ -40,7 +40,7 @@
         <!-- Angles are given in degrees!! -->
 
         		<!-- Pole 1 -->
-        		<Aruco id="29"   x="2.0"  y="1.85" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="29"   x="2.0"  y="0.85" z="1.3" roll="0" pitch="0" yaw="-90"/>
         		<Aruco id="30"   x="2.85" y="1.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
 			      <Aruco id="31"   x="2.0"  y="1.15" z="1.3" roll="0" pitch="0" yaw="90"/>
 			      <Aruco id="32"   x="2.15" y="1.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
