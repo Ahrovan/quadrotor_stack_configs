@@ -20,37 +20,37 @@
          <MULTIROTOR_FRONTCAM_RESOLUTION_HEIGHT>        480.0   </MULTIROTOR_FRONTCAM_RESOLUTION_HEIGHT>
          <MULTIROTOR_FRONTCAM_HORIZONTAL_ANGLE_OF_VIEW> 98.0    </MULTIROTOR_FRONTCAM_HORIZONTAL_ANGLE_OF_VIEW>
          <MULTIROTOR_FRONTCAM_VERTICAL_ANGLE_OF_VIEW>   73.0    </MULTIROTOR_FRONTCAM_VERTICAL_ANGLE_OF_VIEW>
-         <MULTIROTOR_FRONTCAM_ALPHAX>                   467.53637   </MULTIROTOR_FRONTCAM_ALPHAX>
-         <MULTIROTOR_FRONTCAM_ALPHAY>                   466.40388   </MULTIROTOR_FRONTCAM_ALPHAY>
+         <MULTIROTOR_FRONTCAM_ALPHAX>                   464.0   </MULTIROTOR_FRONTCAM_ALPHAX>
+         <MULTIROTOR_FRONTCAM_ALPHAY>                   463.0   </MULTIROTOR_FRONTCAM_ALPHAY>
          <MULTIROTOR_IBVSCONTROLLER_INIT_DEPTH>         3.0     </MULTIROTOR_IBVSCONTROLLER_INIT_DEPTH>
          <MULTIROTOR_IBVSCONTROLLER_TARGET_INIT_SIZE>   0.12    </MULTIROTOR_IBVSCONTROLLER_TARGET_INIT_SIZE>
-         <MULTIROTOR_FAERO_DCGAIN_SPEED2TILT>           0.142857143 </MULTIROTOR_FAERO_DCGAIN_SPEED2TILT>
+         <MULTIROTOR_FAERO_DCGAIN_SPEED2TILT>           0.14    </MULTIROTOR_FAERO_DCGAIN_SPEED2TILT>
      </camera_constants>
        
      <fx2r>
-        <FX2R_DELTA_KP>   1.0    </FX2R_DELTA_KP>
-        <FX2R_KP>        -0.2    </FX2R_KP>
+        <FX2R_DELTA_KP>   0.1    </FX2R_DELTA_KP>
+        <FX2R_KP>        -0.5    </FX2R_KP>
         <FX2R_KI>         0.0    </FX2R_KI>
         <FX2R_KD>         0.486  </FX2R_KD> 
      </fx2r>
       
      <fd2p>
-        <FD2P_DELTA_KP>  1.0     </FD2P_DELTA_KP>
-        <FD2P_KP>        0.2     </FD2P_KP>
+        <FD2P_DELTA_KP>  0.1     </FD2P_DELTA_KP>
+        <FD2P_KP>        0.5     </FD2P_KP>
         <FD2P_KI>        0.0     </FD2P_KI>
         <FD2P_KD>        0.486   </FD2P_KD>     
      </fd2p>
 
      <fx2dy>
-        <FX2DY_DELTA_KP>  0.9     </FX2DY_DELTA_KP>
-        <FX2DY_KP>       -0.2     </FX2DY_KP>
+        <FX2DY_DELTA_KP>  0.1     </FX2DY_DELTA_KP>
+        <FX2DY_KP>       -0.9     </FX2DY_KP>
         <FX2DY_KI>        0.0     </FX2DY_KI>
         <FX2DY_KD>        0.12    </FX2DY_KD>
      </fx2dy>
 
      <fy2dz>
-         <FY2DZ_DELTA_KP> 1.0     </FY2DZ_DELTA_KP>
-         <FY2DZ_KP>       0.2     </FY2DZ_KP>
+         <FY2DZ_DELTA_KP> 0.1     </FY2DZ_DELTA_KP>
+         <FY2DZ_KP>       0.7     </FY2DZ_KP>
          <FY2DZ_KI>       0.0     </FY2DZ_KI>
          <FY2DZ_KD>       0.26    </FY2DZ_KD>
     </fy2dz>
