@@ -2,7 +2,7 @@
         <position> <!-- units: m -->
                 <x>  7.0 </x>
                 <y>  1.0 </y>
-                <z>  0.70 </z>
+                <z>  0.00 </z>
         </position>
         <attitude> <!-- units: deg, wYvPuR -->
                 <yaw> 	  90.00	</yaw>
