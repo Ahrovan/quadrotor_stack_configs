@@ -54,7 +54,7 @@
 	//               experimental feedforward constant = 2650 counts
 	-->
 	
-	<FEEDFORWARD_M>    1.80      </FEEDFORWARD_M>     <!-- kg  -->
+	<FEEDFORWARD_M>    2.10      </FEEDFORWARD_M>     <!-- kg  -->
 	<THRUSTER_GAIN>    0.3065625 </THRUSTER_GAIN>   <!-- 1p1/kg, pelican: 1/(32/9.81)-->
 	<GAIN_P>           0.10      </GAIN_P> <!-- Pelican: 0.1             , 1p1/(m/s)-->
 	<GAIN_I>           0.08      </GAIN_I> <!-- Pelican: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
