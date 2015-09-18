@@ -6,7 +6,7 @@
     <vxy_max>    3.0 </vxy_max>     	<!-- float, m/s -->
     
     <!-- h, height -->
-    <tr_h>     -1.0 </tr_h>     	<!-- float, s -->
+    <tr_h>     0.10 </tr_h>     	<!-- float, s -->
     <h_max>    4.50 </h_max>     	<!-- float, m -->
 
 </px4flow_interface_config>
