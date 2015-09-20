@@ -61,10 +61,10 @@
 
             <!-- Pole 4 -->
 
-        		<Aruco id="45"   x="4.0"  y="3.85" z="1.3" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="46"   x="3.85" y="4.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
-        		<Aruco id="47"   x="4.0"  y="4.15" z="1.3" roll="0" pitch="0" yaw="90"/>
-        		<Aruco id="48"   x="4.15" y="4.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+        		<Aruco id="13"   x="4.0"  y="3.85" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="14"   x="3.85" y="4.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="15"   x="4.0"  y="4.15" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="16"   x="4.15" y="4.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
 
 
 
