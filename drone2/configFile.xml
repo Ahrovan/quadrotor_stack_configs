@@ -20,13 +20,13 @@
 	<config> 
 		<numNodes>3500</numNodes>
 		<neigbourhood>5</neigbourhood>
-		<!--
+		
 		<subzone>
 			<numNodes>500</numNodes>
-			<initPoint>1.0 -1.0</initPoint> 
-			<size>1.5 2.0</size>
+			<initPoint>1.0 1.0</initPoint> 
+			<size>2.0 2.0</size>
 		</subzone>
-		-->
+		
 		
 	</config>
 	
