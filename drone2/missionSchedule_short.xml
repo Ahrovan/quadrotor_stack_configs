@@ -62,9 +62,28 @@
 		<config>
 			<id>03</id>
 		</config>
-		<task description="Start IBVS Control">
+
+    <task description="Hover 5 secs">
 			<config>
 				<id>01</id>
+				<time>2</time>
+			</config>
+			<modules>
+        <a>droneArucoEyeROSModule</a>
+        <g>droneLocalizer</g>
+        <d>droneObstacleProcessor</d>
+				<c>droneOdometryStateEstimator</c>
+				<e>open_tld_translator</e>				
+				<p>trackerEye</p>
+				<h>droneSpeechROSModule</h>
+        <j>droneSoundROSModule</j>
+			</modules>
+			<command>hover</command>
+		</task>
+
+		<task description="Start IBVS Control">
+			<config>
+				<id>02</id>
 			</config>
 			<command>moveVSObsAvoid</command>
 			<modules>
