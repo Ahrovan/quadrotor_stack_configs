@@ -377,7 +377,7 @@
 		</task>
 	</submission>
 
-	<submission description="Land">
+	<submission description="FINAL LAND">
 		<config>
 			<id>05</id>
 		</config>
@@ -420,7 +420,6 @@
         <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
-			<speech>Flip</speech>
 		</task>
 
 		<task description="Flip Quadrotor Clockwise">
@@ -466,7 +465,6 @@
         <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
-			<speech>Flip</speech>
 		</task>
 
 		<task description="Flip Quadrotor Clockwise">
@@ -512,7 +510,6 @@
         <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
-			<speech>Flip</speech>
 		</task>
 
 		<task description="Flip Quadrotor Clockwise">
