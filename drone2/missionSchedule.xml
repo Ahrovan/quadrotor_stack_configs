@@ -471,7 +471,7 @@
 			<config>
 				<id>02</id>
 			</config>
-			<command>moveFlipLeft</command>
+			<command>moveFlipRight</command>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
@@ -516,7 +516,7 @@
 			<config>
 				<id>02</id>
 			</config>
-			<command>moveFlipFront</command>
+			<command>moveFlipRight</command>
 			<modules>
 				<c>droneArucoEyeROSModule</c>
 				<e>open_tld_translator</e>
