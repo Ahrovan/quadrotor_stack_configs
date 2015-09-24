@@ -20,7 +20,7 @@
 
   <!-- DYaw -->
   <dyaw>
-    <enabled>1</enabled>
+    <enabled>0</enabled>
 
     <configuration description="in degrees">
       <eq_point>0.0</eq_point>
@@ -38,7 +38,7 @@
 
   <!-- DAltitude -->
   <daltitude>
-    <enabled>1</enabled>
+    <enabled>0</enabled>
 
     <configuration description="in milimeters">
       <eq_point>200.0</eq_point>
