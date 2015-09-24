@@ -4,7 +4,7 @@
     
     	<!-- Localization -->
     	  <!-- Init pose -->
-        <x_0>  7.0</x_0>
+        <x_0>  8.0</x_0>
         <y_0>  1.0</y_0>
         <z_0>  0.0</z_0>
         <roll_0>0.0</roll_0> <!-- Angles are given in degrees!! -->
@@ -40,18 +40,18 @@
         <!-- Angles are given in degrees!! -->
 
         		<!-- Pole 1 -->
-        		<Aruco id="41"   x="8.0" y="2.8" z="1.5" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="42"   x="7.8" y="3.0" z="1.5" roll="0" pitch="0" yaw="180"/>
-			      <Aruco id="43"   x="8.0" y="3.2" z="1.5" roll="0" pitch="0" yaw="90"/>
-			      <Aruco id="44"   x="8.2" y="3.0" z="1.5" roll="0" pitch="0" yaw="0"/>
+        		<Aruco id="41"   x="8.0" y="2.8" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="42"   x="7.8" y="3.0" z="1.3" roll="0" pitch="0" yaw="180"/>
+			      <Aruco id="43"   x="8.0" y="3.2" z="1.3" roll="0" pitch="0" yaw="90"/>
+			      <Aruco id="44"   x="8.2" y="3.0" z="1.3" roll="0" pitch="0" yaw="0"/>
 
         		
         		<!-- Pole 2 -->
 
-        		<Aruco id="45"   x="3.0" y="4.8" z="1.5" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="46"   x="2.8" y="5.0" z="1.5" roll="0" pitch="0" yaw="180"/>
-        		<Aruco id="47"   x="3.0" y="5.2" z="1.5" roll="0" pitch="0" yaw="90"/>
-        		<Aruco id="48"   x="3.2" y="5.0" z="1.5" roll="0" pitch="0" yaw="0"/>
+        		<Aruco id="45"   x="3.0" y="4.8" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="46"   x="2.8" y="5.0" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="47"   x="3.0" y="5.2" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="48"   x="3.2" y="5.0" z="1.3" roll="0" pitch="0" yaw="0"/>
 
 
 
@@ -60,43 +60,43 @@
 
 			<!-- Landmark 1 -->
 
-        		<Aruco id="61"  x="0.0" y="7.89"    z="1.5" roll="0" pitch="0" yaw="-45"/>
-        		<Aruco id="62"  x="0.0" y="8.11"    z="1.5" roll="0" pitch="0" yaw="45"/>
+        		<Aruco id="61"  x="0.0" y="7.89"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="62"  x="0.0" y="8.11"    z="1.3" roll="0" pitch="0" yaw="45"/>
 
 			<!-- Landmark 2 -->
 
-        		<Aruco id="63"  x="0.0" y="10.89"    z="1.5" roll="0" pitch="0" yaw="-45"/>
-        		<Aruco id="64"  x="0.0" y="11.11"    z="1.5" roll="0" pitch="0" yaw="45"/>
+        		<Aruco id="63"  x="0.0" y="10.89"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="64"  x="0.0" y="11.11"    z="1.3" roll="0" pitch="0" yaw="45"/>
 
 			<!-- Landmark 3 -->
 
-        		<Aruco id="65"  x="0.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="66"  x="1.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="65"  x="0.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="66"  x="1.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 4 -->
 
-        		<Aruco id="67"  x="2.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="68"  x="3.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="67"  x="2.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="68"  x="3.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 5 -->
 
-        		<Aruco id="69"  x="5.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="70"  x="6.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="69"  x="5.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="70"  x="6.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 6 -->
 	
-        		<Aruco id="71"  x="7.89" y="13.0"    z="1.5" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="72"  x="8.11" y="13.0"    z="1.5" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="71"  x="7.89" y="13.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="72"  x="8.11" y="13.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 7 -->
 
-        		<Aruco id="73"  x="9.0" y="11.11"    z="1.5" roll="0" pitch="0" yaw="135"/>
-        		<Aruco id="74"  x="9.0" y="10.89"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="73"  x="9.0" y="11.11"    z="1.3" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="74"  x="9.0" y="10.89"    z="1.3" roll="0" pitch="0" yaw="225"/>
 
 			<!-- Landmark 8 -->
 
-        		<Aruco id="75"  x="9.0" y="8.11"    z="1.5" roll="0" pitch="0" yaw="135"/>
-        		<Aruco id="76"  x="9.2" y="7.89"    z="1.5" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="75"  x="9.0" y="8.11"    z="1.3" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="76"  x="9.2" y="7.89"    z="1.3" roll="0" pitch="0" yaw="225"/>
         		
 
 			
