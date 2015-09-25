@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <robot>
-	<dimensions>0.9 0.9</dimensions> <!-- ARDrone 0.6 x 0.6 -->
+	<dimensions>1.0 1.0</dimensions> <!-- ARDrone 0.6 x 0.6 -->
 </robot>
 
 
@@ -20,13 +20,13 @@
 	<config> 
 		<numNodes>3500</numNodes>
 		<neigbourhood>5</neigbourhood>
-		<!--
+	
 		<subzone>
-			<numNodes>500</numNodes>
-			<initPoint>1.0 -1.0</initPoint> 
-			<size>1.5 2.0</size>
+			<numNodes>1500</numNodes>
+			<initPoint>3 6</initPoint> 
+			<size>3 2</size>
 		</subzone>
-		-->
+	
 		
 	</config>
 	

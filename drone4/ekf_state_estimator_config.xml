@@ -1,8 +1,8 @@
 <take_off_site> <!-- Frame_{drone_GMR_t=0} with respect to Frame_{GFF} -->
         <position> <!-- units: m -->
-                <x>  6.80 </x>
-                <y> -3.50 </y>
-                <z>  0.70 </z>
+                <x>  5.0 </x>
+                <y>  3.0 </y>
+                <z>  0.0 </z>
         </position>
         <attitude> <!-- units: deg, wYvPuR -->
                 <yaw> 	  90.00	</yaw>
@@ -22,7 +22,7 @@
         <integration_time> 0.033 </integration_time> <!-- s  -->
 
         <standard_deviation>
-            <yaw> 0.333 </yaw>  <!-- deg -->
+            <yaw> 1.000 </yaw>  <!-- deg -->
             <z> 0.01666 </z>  <!-- m -->
             <x> 0.01666 </x>  <!-- m -->
             <y> 0.01666 </y>  <!-- m -->
@@ -63,7 +63,7 @@
         <standard_deviation>
             <pitch> 0.3333 </pitch>                 <!-- deg -->
             <roll>  0.3333 </roll>                  <!-- deg -->
-            <yaw_odometry>  6.6666 </yaw_odometry>  <!-- deg -->
+            <yaw_odometry>  0.3333 </yaw_odometry>  <!-- deg -->
             <yaw_position>  0.1666 </yaw_position>  <!-- deg -->
             <z> 0.0666 </z>                         <!-- m -->
             <vx_odometry> 0.0666 </vx_odometry>     <!-- m/s -->
