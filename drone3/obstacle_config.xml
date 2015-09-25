@@ -74,7 +74,7 @@
 
 
     <!-- Fixed Known Real poles: 40000-49999 -->
-  	<pole description="Naranja 1">
+  	<pole description="">
   		<id>40000</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -85,7 +85,7 @@
   		</aruco>
 		</pole>
 		
-		<pole description="Naranja 2">
+		<pole description="">
 			<id>40001</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -96,7 +96,7 @@
   		</aruco>
 		</pole>
 
-		<pole description="Naranja 3">
+		<pole description="">
 			<id>40002</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -107,7 +107,7 @@
   		</aruco>
 		</pole>
 
-		<pole description="Naranja 4">
+		<pole description="">
 			<id>40003</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -118,7 +118,7 @@
   		</aruco>
 		</pole>
 
-		<pole description="Naranja 5">
+		<pole description="">
 			<id>40004</id>
   		<radius>0.2 0.2</radius>
   		<aruco>

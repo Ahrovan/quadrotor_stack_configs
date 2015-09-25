@@ -41,7 +41,7 @@
 		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>1</time>
+				<time>5</time>
 			</config>
 			<modules>
         <a>droneArucoEyeROSModule</a>
@@ -62,28 +62,9 @@
 		<config>
 			<id>03</id>
 		</config>
-
-    <task description="Hover 5 secs">
-			<config>
-				<id>01</id>
-				<time>2</time>
-			</config>
-			<modules>
-        <a>droneArucoEyeROSModule</a>
-        <g>droneLocalizer</g>
-        <d>droneObstacleProcessor</d>
-				<c>droneOdometryStateEstimator</c>
-				<e>open_tld_translator</e>				
-				<p>trackerEye</p>
-				<h>droneSpeechROSModule</h>
-        <j>droneSoundROSModule</j>
-			</modules>
-			<command>hover</command>
-	  </task>
-
 		<task description="Start IBVS Control">
 			<config>
-				<id>02</id>
+				<id>01</id>
 			</config>
 			<command>moveVSObsAvoid</command>
 			<modules>
@@ -126,7 +107,7 @@
 		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>1.5</time>
+				<time>3</time>
 			</config>
 			<modules>
         <a>droneArucoEyeROSModule</a>
@@ -169,7 +150,7 @@
 		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>1.5</time>
+				<time>3</time>
 			</config>
 			<modules>
 				<e>open_tld_translator</e>
@@ -184,7 +165,7 @@
 			<config>
 				<id>02</id>
 			</config>
-			<command>moveFlipRight</command>
+			<command>moveFlipLeft</command>
 			<modules>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>

@@ -8,7 +8,7 @@
         <drone_commands>
             <pitch_max> 0.50  </pitch_max>              <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
             <roll_max>  0.50  </roll_max>               <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
-            <dyaw_max>  0.75  </dyaw_max>               <!-- [0,1] -->
+            <dyaw_max>  0.38  </dyaw_max>               <!-- [0,1] -->
             <dz_max>    1.00  </dz_max>                 <!-- [0,1] -->
             <!-- dyaw_max_comments: IMAV13 0.75; JINT13_130821 0.25; 0.50 before ASU -->
             <low_pass_filters>
@@ -18,7 +18,7 @@
             </low_pass_filters>
         </drone_commands>
         <speed_control_loop>
-            <vxy_max>       0.75    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
+            <vxy_max>       0.50    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
             <!-- vxy_max_comments: IMAV13 0.70; JINT13_130821 2.75; 2.00 before ASU -->
             <vxy_at_ratio>  0.75    </vxy_at_ratio>     <!-- [0,1] -->
                 <!-- vxy_at_max =    vxy_at_ratio  * vxy_max -->
@@ -99,7 +99,7 @@
             of the aerodynamic friction, so MULTIROTOR_SPEEDCONTROLLER_VXVY_DELTA_KP_CORRECTION (0.15) is
             their slope in the origin. -->
             <vxy>
-                <nlf_is_activated>0</nlf_is_activated> <DeltaKp>0.045</DeltaKp>     <!-- 1/1, 0.3*0.15 -->
+                <nlf_is_activated>0</nlf_is_activated> <DeltaKp>0.015</DeltaKp>     <!-- 1/1, 0.3*0.15 -->
            <!-- <nlf_is_activated>1</nlf_is_activated> <DeltaKp>0.300</DeltaKp> -->
                 <!-- vx, vy PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp>7.1521</Kp>   <!-- [-1,1]/( m/s ) -->
@@ -109,7 +109,7 @@
             <yaw>
                 <DeltaKp>0.30</DeltaKp>     <!-- 1/1 -->
                 <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp> 5.60</Kp>   <!-- [-1,1]/rad     -->
+                <Kp> 1.60</Kp>   <!-- [-1,1]/rad     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
                 <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
             </yaw>
