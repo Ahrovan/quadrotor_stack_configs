@@ -61,7 +61,6 @@
 				<id>02</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
-			<speech>Movimiento En trayectoria</speech>
 			<modules>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
@@ -155,7 +154,6 @@
 				<id>06</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
-			<speech>Movimiento En trayectoria</speech>
 			<modules>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
@@ -311,7 +309,6 @@
 				<id>04</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
-			<speech>Retorno al punto inicial</speech>
 			<modules>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
@@ -353,7 +350,7 @@
 				<id>06</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
-			<speech>Retorno al punto inicial</speech>
+			<speech>Retorno al punto final</speech>
 			<modules>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>

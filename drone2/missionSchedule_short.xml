@@ -38,10 +38,10 @@
 		<config>
 			<id>02</id>
 		</config>
-		<task description="Hover 5 secs">
+		<task description="Hover 3 secs">
 			<config>
 				<id>01</id>
-				<time>5</time>
+				<time>3</time>
 			</config>
 			<modules>
         <a>droneArucoEyeROSModule</a>
@@ -55,7 +55,6 @@
 			</modules>
 			<command>hover</command>
 		</task>
-
 	</submission>
 
 	<submission description="Image Based Visual Servoing">
@@ -63,7 +62,7 @@
 			<id>03</id>
 		</config>
 
-    <task description="Hover 5 secs">
+    <task description="Hover 2 secs">
 			<config>
 				<id>01</id>
 				<time>2</time>
@@ -184,7 +183,7 @@
 			<config>
 				<id>02</id>
 			</config>
-			<command>moveFlipLeft</command>
+			<command>moveFlipRight</command>
 			<modules>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
