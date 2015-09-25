@@ -59,7 +59,21 @@
 
 
     <!-- virtual walls: 20000-29999 -->
+		<rectangle description="left virtual wall"> 
+			<id>20000</id>
+			<centerPoint>1.5 7.0</centerPoint>
+			<size>4.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
 
+		<rectangle description="right virtual wall"> 
+			<id>20001</id>
+			<centerPoint>7.5 7.0</centerPoint>
+			<size>4.0 0.3</size>
+			<yawAngle>0.0</yawAngle>
+      <virtual description="define a virtual object">1</virtual>
+		</rectangle>
 
     <!-- virtual poles: 30000-39999 -->
     <!--
