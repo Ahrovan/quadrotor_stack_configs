@@ -59,7 +59,8 @@
 
 
     <!-- virtual walls: 20000-29999 -->
-		<rectangle description="left virtual wall"> 
+
+    <rectangle description="left"> 
 			<id>20000</id>
 			<centerPoint>1.5 7.0</centerPoint>
 			<size>4.0 0.3</size>
@@ -67,7 +68,7 @@
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
 
-		<rectangle description="right virtual wall"> 
+    <rectangle description="rigth"> 
 			<id>20001</id>
 			<centerPoint>7.5 7.0</centerPoint>
 			<size>4.0 0.3</size>
@@ -85,6 +86,8 @@
       <virtual description="define a virtual object">1</virtual>
 		</pole>
     -->
+
+
 
 
     <!-- Fixed Known Real poles: 40000-49999 -->
