@@ -1,5 +1,5 @@
    drone0	Asctec Pelican		----------------
-   drone1	AR_Drone_2.0		Noche De Los Investigadores
+   drone1	AR_Drone_2.0		  Noche De Los Investigadores
    drone2	Oktokopter        ----------------
    drone3 Pixhawk           ----------------
    drone4 Bebop             ----------------
