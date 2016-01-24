@@ -54,17 +54,32 @@
   
 
             <!-- Pole 3 -->
+         	<Aruco id="17"   x="5.50" y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="18"   x="5.30" y="6.00" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="19"   x="5.50" y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="20"   x="5.70" y="6.00" z="1.3" roll="0" pitch="0" yaw="0"/>
+
+<!--
          	<Aruco id="17"   x="5.50" y="4.30" z="1.3" roll="0" pitch="0" yaw="-90"/>
         		<Aruco id="18"   x="5.30" y="4.50" z="1.3" roll="0" pitch="0" yaw="180"/>
         		<Aruco id="19"   x="5.50" y="4.70" z="1.3" roll="0" pitch="0" yaw="90"/>
         		<Aruco id="20"   x="5.70" y="4.50" z="1.3" roll="0" pitch="0" yaw="0"/>
+-->
 
         		
          	<!-- Pole 4 -->
+        		<Aruco id="21"   x="3.50" y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="22"   x="3.30" y="6.00" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="23"   x="3.50" y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="24"   x="3.70" y="6.00" z="1.3" roll="0" pitch="0" yaw="0"/>
+
+
+<!--
         		<Aruco id="21"   x="3.50" y="4.30" z="1.3" roll="0" pitch="0" yaw="-90"/>
         		<Aruco id="22"   x="3.30" y="4.50" z="1.3" roll="0" pitch="0" yaw="180"/>
         		<Aruco id="23"   x="3.50" y="4.70" z="1.3" roll="0" pitch="0" yaw="90"/>
         		<Aruco id="24"   x="3.70" y="4.50" z="1.3" roll="0" pitch="0" yaw="0"/>
+-->
 
 
            <!-- Pole 5 -->

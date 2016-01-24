@@ -62,7 +62,8 @@
 
     		<rectangle description="left virtual wall"> 
 			<id>20000</id>
-			<centerPoint>1.5 4.5</centerPoint>
+<!--	<centerPoint>1.5 4.5</centerPoint>  -->
+      <centerPoint> 1.5 6.0</centerPoint>
 			<size>4.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
@@ -70,7 +71,8 @@
 
   		<rectangle description="right virtual wall"> 
 			<id>20001</id>
-			<centerPoint>7.5 4.5</centerPoint>
+<!--  <centerPoint>7.5 4.5</centerPoint> -->
+      <centerPoint> 7.5 6.0</centerPoint>
 			<size>4.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
