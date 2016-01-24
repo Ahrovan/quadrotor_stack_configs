@@ -6,9 +6,9 @@
 
     <general_saturations>
         <drone_commands>
-            <pitch_max> 0.50  </pitch_max>              <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
-            <roll_max>  0.50  </roll_max>               <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
-            <dyaw_max>  0.75  </dyaw_max>               <!-- [0,1] -->
+            <pitch_max> 0.35  </pitch_max>              <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
+            <roll_max>  0.35  </roll_max>               <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
+            <dyaw_max>  0.6   </dyaw_max>               <!-- [0,1] -->
             <dz_max>    1.00  </dz_max>                 <!-- [0,1] -->
             <!-- dyaw_max_comments: IMAV13 0.75; JINT13_130821 0.25; 0.50 before ASU -->
             <low_pass_filters>
@@ -18,7 +18,7 @@
             </low_pass_filters>
         </drone_commands>
         <speed_control_loop>
-            <vxy_max>       0.75    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
+            <vxy_max>       0.60    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
             <!-- vxy_max_comments: IMAV13 0.70; JINT13_130821 2.75; 2.00 before ASU -->
             <vxy_at_ratio>  0.75    </vxy_at_ratio>     <!-- [0,1] -->
                 <!-- vxy_at_max =    vxy_at_ratio  * vxy_max -->
@@ -59,7 +59,7 @@
             </turn_mode>
         </trajectory_mode_safety_zones_thresholds>
         <trajectory_planning_params>
-            <checkpoint_radius>0.35</checkpoint_radius> <!-- m -->
+            <checkpoint_radius>0.20</checkpoint_radius> <!-- m -->
         <!-- SM_TRAJPLAN_RTMIN 0.20 // corresponde a ALPHAMIN  75.0deg y SM_TRAJPLAN_CHECKPOINT_RADIUS 0.25m -->
         <!-- SM_TRAJPLAN_RTMAX 40.0 // corresponde a ALPHAMIN 171.0deg y SM_TRAJPLAN_CHECKPOINT_RADIUS 0.25m -->
             <turn_alpha_min>75.0</turn_alpha_min>         <!-- deg -->
@@ -89,7 +89,7 @@
                 <!-- DeltaKp_comments: IMAV13 0.125; JINT13 0.25; CEA12 0.5-->
                 <!-- x, y PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp>2.04</Kp>   <!-- (m/s)/m     -->
-                <Ki>0.00</Ki>   <!-- (m/s)/(m*s) -->
+                <Ki>0.10</Ki>   <!-- (m/s)/(m*s) -->
                 <Kd>0.99</Kd>   <!-- (m/s)/(m/s) -->
             </xy>
         </position_controller>
@@ -109,7 +109,7 @@
             <yaw>
                 <DeltaKp>0.30</DeltaKp>     <!-- 1/1 -->
                 <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp> 5.60</Kp>   <!-- [-1,1]/rad     -->
+                <Kp> 4.60</Kp>   <!-- [-1,1]/rad     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
                 <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
             </yaw>
