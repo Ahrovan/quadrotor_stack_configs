@@ -79,7 +79,7 @@
   <task description="Sleep">
 			<config>
 				<id>20</id>
-        <time>7.0</time>
+        <time>20.0</time>
 			</config>
 			<command>sleep</command>
 			<modules>
