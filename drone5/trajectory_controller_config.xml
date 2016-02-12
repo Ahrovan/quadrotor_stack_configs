@@ -88,9 +88,9 @@
                 <DeltaKp>0.125</DeltaKp>     <!-- 1/1 -->
                 <!-- DeltaKp_comments: IMAV13 0.125; JINT13 0.25; CEA12 0.5-->
                 <!-- x, y PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp>1.04</Kp>   <!-- (m/s)/m     -->
+                <Kp>2.04</Kp>   <!-- (m/s)/m     -->
                 <Ki>0.00</Ki>   <!-- (m/s)/(m*s) -->
-                <Kd>0.99</Kd>   <!-- (m/s)/(m/s) -->
+                <Kd>1.99</Kd>   <!-- (m/s)/(m/s) -->
             </xy>
         </position_controller>
         <speed_controller>
@@ -116,9 +116,9 @@
             <altitude>
                 <DeltaKp>0.50</DeltaKp>     <!-- 1/1 -->
                 <!-- z PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp>-1.33</Kp>   <!-- [-1,1]/m     -->
+                <Kp>-0.30</Kp>   <!-- [-1,1]/m     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(m*s) -->
-                <Kd>-0.35</Kd>   <!-- [-1,1]/(m/s) -->
+                <Kd>-0.035</Kd>   <!-- [-1,1]/(m/s) -->
             </altitude>
         </speed_controller>
     </middle_level_controller>

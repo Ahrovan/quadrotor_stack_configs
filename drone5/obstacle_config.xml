@@ -60,21 +60,23 @@
 
     <!-- virtual walls: 20000-29999 -->
 
-    		<rectangle description="left virtual wall"> 
+    <rectangle description="left"> 
 			<id>20000</id>
-			<centerPoint>1.5 7.0</centerPoint>
+			<centerPoint>1.5 6.0</centerPoint>
+			<!-- <centerPoint>1.5 4.5</centerPoint> -->
 			<size>4.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
+      	<virtual description="define a virtual object">1</virtual>
 		</rectangle>
 
-  		<rectangle description="right virtual wall"> 
+    <rectangle description="rigth"> 
 			<id>20001</id>
-			<centerPoint>7.5 7.0</centerPoint>
+			<centerPoint>7.5 6.0</centerPoint>
+			<!-- <centerPoint>7.5 4.5</centerPoint> -->
 			<size>4.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>    
+      	<virtual description="define a virtual object">1</virtual>
+		</rectangle>
 
     <!-- virtual poles: 30000-39999 -->
     <!--
@@ -86,6 +88,8 @@
       <virtual description="define a virtual object">1</virtual>
 		</pole>
     -->
+
+
 
 
     <!-- Fixed Known Real poles: 40000-49999 -->
