@@ -26,7 +26,7 @@
     <!-- borders (Virtual Obstacles): 10000-19999 -->
     <rectangle description="bottom side">
 			<id>10000</id>
-			<centerPoint>4.5 -1.5</centerPoint>
+			<centerPoint>4.5 -0.5</centerPoint>
 			<size>10.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
