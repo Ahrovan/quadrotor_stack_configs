@@ -39,6 +39,8 @@
 			</config>
 			<command>hover</command>
 			<modules>
+        <d>droneObstacleProcessor</d>
+<i>droneObstacleDistanceCalculator</i>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
@@ -52,6 +54,8 @@
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<modules>
+<d>droneObstacleProcessor</d>
+<i>droneObstacleDistanceCalculator</i>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
@@ -71,6 +75,8 @@
 			</config>
 			<command>sleep</command>
 			<modules>
+<d>droneObstacleProcessor</d>
+<i>droneObstacleDistanceCalculator</i>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
@@ -87,6 +93,8 @@
 			<command>moveTrajObsAvoid</command>
 			<speech>Movimiento En trayectoria</speech>
 			<modules>
+<d>droneObstacleProcessor</d>
+<i>droneObstacleDistanceCalculator</i>
 				<a>droneTrajectoryPlanner</a>
 				<c>droneArucoEyeROSModule</c>
 				<e>droneOdometryStateEstimator</e>
