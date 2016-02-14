@@ -7,7 +7,7 @@
 
 <map>
 	<config>
-		<dimensions>9.0 14.0</dimensions>
+		<dimensions>9.0 11.0</dimensions>
 		<initPoint>0.0 -1.0</initPoint> <!-- punto minimo del mapa -->
 	</config>
 </map>
@@ -23,8 +23,8 @@
 	
 		<subzone>
 			<numNodes>1500</numNodes>
-			<initPoint>3 3</initPoint> 
-			<size>3 4</size>
+			<initPoint>2 3</initPoint> 
+			<size>5 5</size>
 		</subzone>
 	
 		
