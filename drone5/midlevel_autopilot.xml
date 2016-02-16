@@ -1,3 +1,4 @@
+
 <midlevel_autopilot_config>
     <description>Configuration file for the droneMidLevelAutopilotROSModule package (Pixhawk), Aerostack, by Vision4UAV.</description>
  
@@ -62,11 +63,13 @@
     </altitude_speed_controller>
  
     <hover_controller> 
+
 	<GAIN_P>                  11 </GAIN_P>                 <!-- [deg / (m/s)]  -->
 	<GAIN_I>                  4  </GAIN_I>                 <!-- Ti = 5s, (GAIN_P / 5.0)  -->
 	<GAIN_D>                  0.01  </GAIN_D>                 <!-- -->
 	<MAX_OUTPUT>             12.00  </MAX_OUTPUT>             <!-- [deg] -->
 	<ALTITUDE_FOR_NOMINAL_D>  1.20  </ALTITUDE_FOR_NOMINAL_D> <!-- [m]   -->
+
     </hover_controller>
 
     <yaw_controller> 
