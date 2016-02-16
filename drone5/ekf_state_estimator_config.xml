@@ -5,7 +5,7 @@
                 <z>  0.0 </z>
         </position>
         <attitude> <!-- units: deg, wYvPuR -->
-                <yaw> 	  90.00	</yaw>
+                <yaw> 	   0.00	</yaw>
                 <pitch>	   0.00	</pitch>
                 <roll>	   0.00	</roll>
         </attitude>
