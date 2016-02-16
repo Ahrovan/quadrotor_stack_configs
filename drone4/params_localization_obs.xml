@@ -54,17 +54,17 @@
   
 
             <!-- Pole 3 -->
+<!--
          	  <Aruco id="17"   x="7.00" y="6.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
         		<Aruco id="18"   x="6.80" y="7.00" z="1.3" roll="0" pitch="0" yaw="180"/>
         		<Aruco id="19"   x="7.00" y="7.20" z="1.3" roll="0" pitch="0" yaw="90"/>
         		<Aruco id="20"   x="7.20" y="7.00" z="1.3" roll="0" pitch="0" yaw="0"/>
-
-<!--
-         	<Aruco id="17"   x="5.50" y="4.30" z="1.3" roll="0" pitch="0" yaw="-90"/>
-        		<Aruco id="18"   x="5.30" y="4.50" z="1.3" roll="0" pitch="0" yaw="180"/>
-        		<Aruco id="19"   x="5.50" y="4.70" z="1.3" roll="0" pitch="0" yaw="90"/>
-        		<Aruco id="20"   x="5.70" y="4.50" z="1.3" roll="0" pitch="0" yaw="0"/>
 -->
+
+         	 <Aruco id="17"   x="6.00" y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="18"   x="5.80" y="6.00" z="1.3" roll="0" pitch="0" yaw="180"/>
+        		<Aruco id="19"   x="6.00" y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="20"   x="6.20" y="6.00" z="1.3" roll="0" pitch="0" yaw="0"/>
 
         		
          	<!-- Pole 4 -->
@@ -83,10 +83,17 @@
 
 
            <!-- Pole 5 -->
+        		<Aruco id="25"   x="3.0"  y="5.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="26"   x="2.80" y="6.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
+			   <Aruco id="27"   x="3.0"  y="6.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+			   <Aruco id="28"   x="3.20" y="6.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+
+<!--
         		<Aruco id="25"   x="2.0"  y="6.80" z="1.3" roll="0" pitch="0" yaw="-90"/>
         		<Aruco id="26"   x="1.80" y="7.0"  z="1.3" roll="0" pitch="0" yaw="180"/>
-			      <Aruco id="27"   x="2.0"  y="7.20" z="1.3" roll="0" pitch="0" yaw="90"/>
-			      <Aruco id="28"   x="2.20" y="7.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+			   <Aruco id="27"   x="2.0"  y="7.20" z="1.3" roll="0" pitch="0" yaw="90"/>
+			   <Aruco id="28"   x="2.20" y="7.0"  z="1.3" roll="0" pitch="0" yaw="0"/>
+-->
 
         		
         		<!-- Pole 6 -->
@@ -106,8 +113,8 @@
 
 			<!-- Landmark 2 -->
 
-        		<Aruco id="63"  x="0.0" y="8.89"    z="1.3" roll="0" pitch="0" yaw="-45"/>
-        		<Aruco id="64"  x="0.0" y="9.11"    z="1.3" roll="0" pitch="0" yaw="45"/>
+        		<Aruco id="63"  x="0.0" y="7.89"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="64"  x="0.0" y="8.11"    z="1.3" roll="0" pitch="0" yaw="45"/>
 
 			<!-- Landmark 3 -->
 
@@ -131,8 +138,8 @@
 
 			<!-- Landmark 7 -->
 
-        		<Aruco id="73"  x="9.0" y="9.11"    z="1.3" roll="0" pitch="0" yaw="135"/>
-        		<Aruco id="74"  x="9.0" y="8.89"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="73"  x="9.0" y="8.11"    z="1.3" roll="0" pitch="0" yaw="135"/>
+        		<Aruco id="74"  x="9.0" y="7.89"    z="1.3" roll="0" pitch="0" yaw="225"/>
 
 			<!-- Landmark 8 -->
 
