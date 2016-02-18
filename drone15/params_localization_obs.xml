@@ -4,7 +4,7 @@
     
     	<!-- Localization -->
     	  <!-- Init pose -->
-        <x_0>  10.0</x_0>
+        <x_0>  17.0</x_0>
         <y_0>  29.0</y_0>
         <z_0>  0.7</z_0>
         <roll_0>0.0</roll_0> <!-- Angles are given in degrees!! -->

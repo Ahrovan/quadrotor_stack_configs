@@ -35,15 +35,15 @@
 		
 		<rectangle description="right side"> 
 			<id>10001</id>
-			<centerPoint>20.5 10.0</centerPoint>
-			<size>0.3 21.0</size>
+			<centerPoint>20.5 15.0</centerPoint>
+			<size>0.3 31.0</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
 		
 		<rectangle description="up side"> 
 			<id>10002</id>
-			<centerPoint>10.0 20.5</centerPoint>
+			<centerPoint>10.0 30.5</centerPoint>
 			<size>21.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
@@ -51,8 +51,8 @@
 		
 		<rectangle description="left side"> 
 			<id>10003</id>
-			<centerPoint>-0.5 10.0</centerPoint>
-			<size>0.3 21.0</size>
+			<centerPoint>-0.5 15.0</centerPoint>
+			<size>0.3 31.0</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
@@ -331,6 +331,43 @@
     		</aruco>
 		</pole>
     
+
+     <pole description="">
+			<id>60012</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "85"/>
+				  <id aruco_id = "86"/>
+    		</aruco>
+		</pole>
+  
+      <pole description="">
+			<id>60013</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "87"/>
+				  <id aruco_id = "88"/>
+    		</aruco>
+		</pole>
+
+     <pole description="">
+			<id>60014</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "89"/>
+				  <id aruco_id = "90"/>
+    		</aruco>
+		</pole>
+
+      <pole description="">
+			<id>60015</id>
+    		<radius>0.15 0.15</radius>
+    		<aruco>
+				  <id aruco_id = "91"/>
+				  <id aruco_id = "92"/>
+    		</aruco>
+		</pole>
+     
      
   </obstaclesInMap>
         
