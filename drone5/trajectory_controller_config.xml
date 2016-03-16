@@ -85,7 +85,7 @@
         </trajectory_controller>
         <position_controller>
             <xy>
-                <DeltaKp>0.01</DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>0.35</DeltaKp>     <!-- 1/1 -->
                 <!-- DeltaKp_comments: IMAV13 0.125; JINT13 0.25; CEA12 0.5-->
                 <!-- x, y PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
 
@@ -108,14 +108,14 @@
                 <Kd>1.5534</Kd>   <!-- [-1,1]/(m/s^2)  -->
             </vxy>
             <yaw>
-                <DeltaKp>0.30</DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>0.03 </DeltaKp>     <!-- 1/1 -->
                 <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp> 1.60</Kp>   <!-- [-1,1]/rad     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
                 <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
             </yaw>
             <altitude>
-                <DeltaKp>0.50</DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>0.08</DeltaKp>     <!-- 1/1 -->
                 <!-- z PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp>-1.33</Kp>   <!-- [-1,1]/m     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(m*s) -->
