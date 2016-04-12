@@ -103,7 +103,7 @@
                 <nlf_is_activated>0</nlf_is_activated> <DeltaKp>0.045</DeltaKp>     <!-- 1/1, 0.3*0.15 -->
            <!-- <nlf_is_activated>1</nlf_is_activated> <DeltaKp>0.300</DeltaKp> -->
                 <!-- vx, vy PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-        	<Kp>7.1521</Kp>   <!-- [-1,1]/( m/s ) -->
+        	      <Kp>7.1521</Kp>   <!-- [-1,1]/( m/s ) -->
                 <Ki>7.1521</Ki>   <!-- [-1,1]/(  m  )  -->
                 <Kd>1.5534</Kd>   <!-- [-1,1]/(m/s^2)  -->
             </vxy>
@@ -115,7 +115,7 @@
                 <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
             </yaw>
             <altitude>
-                <DeltaKp>0.08</DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>0.01</DeltaKp>     <!-- 1/1 -->
                 <!-- z PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp>-1.33</Kp>   <!-- [-1,1]/m     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(m*s) -->
