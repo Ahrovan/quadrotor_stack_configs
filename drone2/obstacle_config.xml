@@ -26,8 +26,8 @@
     <!-- borders (Virtual Obstacles): 10000-19999 -->
     <rectangle description="bottom side">
 			<id>10000</id>
-			<centerPoint>2.5 -0.5</centerPoint>
-			<size>6.0 0.3</size>
+			<centerPoint>2.0 -0.5</centerPoint>
+			<size>5.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
@@ -35,7 +35,7 @@
 		
 		<rectangle description="right side"> 
 			<id>10001</id>
-			<centerPoint>5.5 4.5</centerPoint>
+			<centerPoint>4.5 4.5</centerPoint>
 			<size>0.3 10.0</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
@@ -43,8 +43,8 @@
 		
 		<rectangle description="up side"> 
 			<id>10002</id>
-			<centerPoint>2.5 9.5</centerPoint>
-			<size>6.0 0.3</size>
+			<centerPoint>2.0 9.5</centerPoint>
+			<size>5.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
@@ -74,7 +74,7 @@
 
 
     <!-- Fixed Known Real poles: 40000-49999 -->
-  	<pole description="">
+  	<pole description="Naranja 1">
   		<id>40000</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -85,7 +85,7 @@
   		</aruco>
 		</pole>
 		
-		<pole description="">
+		<pole description="Naranja 2">
 			<id>40001</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -96,7 +96,7 @@
   		</aruco>
 		</pole>
 
-		<pole description="">
+		<pole description="Naranja 3">
 			<id>40002</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -107,7 +107,7 @@
   		</aruco>
 		</pole>
 
-		<pole description="">
+		<pole description="Naranja 4">
 			<id>40003</id>
   		<radius>0.2 0.2</radius>
   		<aruco>
@@ -118,7 +118,7 @@
   		</aruco>
 		</pole>
 
-		<pole description="">
+		<pole description="Naranja 5">
 			<id>40004</id>
   		<radius>0.2 0.2</radius>
   		<aruco>

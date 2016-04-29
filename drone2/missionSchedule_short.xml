@@ -38,10 +38,10 @@
 		<config>
 			<id>02</id>
 		</config>
-		<task description="Hover 3 secs">
+		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>3</time>
+				<time>1</time>
 			</config>
 			<modules>
         <a>droneArucoEyeROSModule</a>
@@ -55,6 +55,7 @@
 			</modules>
 			<command>hover</command>
 		</task>
+
 	</submission>
 
 	<submission description="Image Based Visual Servoing">
@@ -62,7 +63,7 @@
 			<id>03</id>
 		</config>
 
-    <task description="Hover 2 secs">
+    <task description="Hover 5 secs">
 			<config>
 				<id>01</id>
 				<time>2</time>
@@ -78,7 +79,7 @@
         <j>droneSoundROSModule</j>
 			</modules>
 			<command>hover</command>
-		</task>
+	  </task>
 
 		<task description="Start IBVS Control">
 			<config>
@@ -125,7 +126,7 @@
 		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>3</time>
+				<time>1.5</time>
 			</config>
 			<modules>
         <a>droneArucoEyeROSModule</a>
@@ -168,7 +169,7 @@
 		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>3</time>
+				<time>1.5</time>
 			</config>
 			<modules>
 				<e>open_tld_translator</e>
