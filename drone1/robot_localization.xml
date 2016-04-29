@@ -14,8 +14,8 @@
 <covariances> 
 <!--> Altitude data measured from the laser altimeter <-->  
   <altitude>
-    <z> 0.009</z>
-    <dz>0.009</dz>
+    <z> 0.09</z>
+    <dz>0.09</dz>
   </altitude>
 
 <!--> optical flow data measured from the optical flow sensor <-->    
