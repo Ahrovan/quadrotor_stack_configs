@@ -35,15 +35,15 @@
 		
 		<rectangle description="right side"> 
 			<id>10001</id>
-			<centerPoint>4.5 4.5</centerPoint>
-			<size>0.3 10.0</size>
+			<centerPoint>4.5 5.0</centerPoint>
+			<size>0.3 11.0</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
 		
 		<rectangle description="up side"> 
 			<id>10002</id>
-			<centerPoint>2.0 9.5</centerPoint>
+			<centerPoint>2.0 10.5</centerPoint>
 			<size>5.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
@@ -51,8 +51,8 @@
 		
 		<rectangle description="left side"> 
 			<id>10003</id>
-			<centerPoint>-0.5 4.5</centerPoint>
-			<size>0.3 10.0</size>
+			<centerPoint>-0.5 5.0</centerPoint>
+			<size>0.3 11.0</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>

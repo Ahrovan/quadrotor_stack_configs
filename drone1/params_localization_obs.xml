@@ -94,18 +94,18 @@
 
 			<!-- Landmark 3 -->
 
-        		<Aruco id="65"  x="0.39" y="9.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="66"  x="1.61" y="9.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="65"  x="0.39" y="10.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="66"  x="1.61" y="10.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 4 -->
 
-        		<Aruco id="67"  x="1.89" y="9.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="68"  x="2.11" y="9.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="67"  x="1.89" y="10.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="68"  x="2.11" y="10.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 5 -->
 
-        		<Aruco id="69"  x="3.39" y="9.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="70"  x="3.61" y="9.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="69"  x="3.39" y="10.0"    z="1.3" roll="0" pitch="0" yaw="225"/>
+        		<Aruco id="70"  x="3.61" y="10.0"    z="1.3" roll="0" pitch="0" yaw="-45"/>
 
 			<!-- Landmark 6 -->
 	
