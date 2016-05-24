@@ -5,7 +5,7 @@
 
   <task name="Hover">
     <behavior name="recognizingArucoMarkers"/>
-    <action name="HOVER">
+    <action name="WAIT">
       <argument name="duration" value="6"/>
     </action>
   </task>

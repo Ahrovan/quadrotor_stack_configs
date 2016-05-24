@@ -11,7 +11,7 @@
 
   <task name="remember point">
     <action name="REMEMBER_POINT">
-      <argument name="point_name" value="HOME"/>
+      <argument name="coordinates" label="HOME"/>
     </action>
   </task>
 
@@ -20,7 +20,7 @@
 
     <task name="Move 1">
       <action name="GO_TO_POINT">
-        <argument name="point" value="(6.0, 4.0, 1.0)"/>
+        <argument name="coordinates" value="(6.0, 4.0, 1.0)"/>
       </action>
     </task>
 
@@ -30,7 +30,7 @@
 
     <task name="Move 2">
       <action name="GO_TO_POINT">
-        <argument name="point" value="(6.0, 6.0, 1.0)"/>
+        <argument name="coordinates" value="(6.0, 6.0, 1.0)"/>
       </action>
     </task>
 
@@ -55,7 +55,7 @@
       <condition parameter="ArucoVisualMarker" comparison="equal" value="0"/>
       <action name="STABILIZE"/> 
       <action name="GO_TO_POINT">
-        <argument name="point_name" value="HOME"/>
+        <argument name="coordinates" label="HOME"/>
       </action>
       <action name="STABILIZE"/>
       <ending step="NEXT_TASK"/>

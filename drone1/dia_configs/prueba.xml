@@ -1,8 +1,0 @@
-<mission name="prueba">
-  <task name="takeoff">
-    <action name="takeOff"/>
-  </task>
-  <task name="land">
-    <action name="land"/>
-  </task>
-</mission>
