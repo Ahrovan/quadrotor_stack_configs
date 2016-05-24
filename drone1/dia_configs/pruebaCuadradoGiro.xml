@@ -1,0 +1,185 @@
+<mission name="PruebaCuadradoGiro">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="moving">
+    <skill name="RECOGNIZE_ARUCO_MARKERS"/>
+
+    <task name="Go to Point 1">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(5.0, 4.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="360 Spin">
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="First rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="165"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="Second rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="285"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+      
+      <task name="third rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="45"/>
+        </action>
+      </task>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Go to Point 2">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(5.0, 5.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="360 Spin">
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="First rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="165"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="Second rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="285"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+      
+      <task name="third rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="45"/>
+        </action>
+      </task>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Go to Point 3">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(4.0, 5.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="360 Spin">
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="First rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="165"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="Second rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="285"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+      
+      <task name="third rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="45"/>
+        </action>
+      </task>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Go to Point 4">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(4.0, 4.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="360 Spin">
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="First rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="165"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+
+      <task name="Second rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="285"/>
+        </action>
+      </task>
+
+      <task name="Stabilize">
+        <action name="STABILIZE"/>
+      </task>
+      
+      <task name="third rotation">
+        <action name="ROTATE_YAW">
+          <argument name="orientation angle" value="45"/>
+        </action>
+      </task>
+    </task>  
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>

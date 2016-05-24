@@ -1,0 +1,58 @@
+<mission name="PruebaCuadrado">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="moving">
+    <behavior name="avoidingObstacles"/>
+
+    <task name="Move 1">
+      <action name="GO_TO_POINT">
+        <argument name="point" value="(5.0, 4.0, 1.0)"/>
+      </action>
+    </task>
+    <!--
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Move 2">
+      <action name="GO_TO_POINT">
+        <argument name="point" value="(5.0, 5.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Move 3">
+      <action name="GO_TO_POINT">
+        <argument name="point" value="(4.0, 5.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Move 4">
+      <action name="GO_TO_POINT">
+        <argument name="point" value="(4.0, 4.0, 1.0)"/>
+      </action>
+    </task>
+  -->
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>

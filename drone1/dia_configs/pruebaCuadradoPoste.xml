@@ -1,0 +1,57 @@
+<mission name="PruebaCuadradoPoste">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="moving">
+    <skill name="AVOID_OBSTACLES"/>
+
+    <task name="Move 1">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(6.0, 4.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Move 2">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(6.0, 6.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Move 3">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(4.0, 6.0, 1.0)"/>
+      </action>
+    </task>
+
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+
+    <task name="Move 4">
+      <action name="GO_TO_POINT">
+        <argument name="coordinates" value="(4.0, 4.0, 1.0)"/>
+      </action>
+    </task>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>

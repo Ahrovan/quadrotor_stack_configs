@@ -1,0 +1,59 @@
+<mission name="Prueba6">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+
+  <task name="Hover">
+    <action name="HOVER">
+      <arguments>
+        <duration secs="3.0"/>
+      </arguments>
+    </action>
+  </task>
+
+  <task name="Go to point (2.5, 0.5)">
+  <behavior name="avoidingObstacles"/>
+    <action name="GO_TO_POINT">
+      <arguments>
+        <point x="2.5" y="0.5" z="1.0"/>
+      </arguments>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="ROTATE 45º">
+    <action name="ROTATE_YAW">
+      <arguments>
+        <rotation yaw="45"/>
+      </arguments>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Go to point (7.5, 1.5)">
+  <behavior name="avoidingObstacles"/>
+    <action name="GO_TO_POINT">
+      <arguments>
+        <point x="7.5" y="1.5" z="1.0"/>
+      </arguments>
+    </action>
+  </task>
+
+  <task name="Hover">
+    <action name="HOVER">
+      <arguments>
+        <duration secs="3.0"/>
+      </arguments>
+    </action>
+  </task>
+
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>

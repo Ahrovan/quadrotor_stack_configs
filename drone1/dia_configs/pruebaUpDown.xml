@@ -1,0 +1,54 @@
+<mission name="PruebaXY">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="move 1">
+    <action name="MOVE">
+      <argument name="point" value="(-1.0, 0.0, 0.0)"/>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Up">
+    <action name="MOVE">
+      <argument name="point" value="(0.0, 0.0, 1.0)"/>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="move 2">
+    <action name="MOVE">
+      <argument name="point" value="(1.0, 0.0, 0.0)"/>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Down">
+    <action name="MOVE">
+      <argument name="point" value="(0.0, 0.0, -1.0)"/>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+
+</mission>

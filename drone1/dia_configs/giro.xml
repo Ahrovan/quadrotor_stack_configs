@@ -1,0 +1,31 @@
+<mission name="PruebaCuadrado">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+
+  <task name="wait">
+    <action name="WAIT">
+      <argument name="duration" value="3"/>
+    </action>
+  </task>
+
+  <task name="Go to Point 1">
+    <action name="GO_TO_POINT">
+      <argument name="point" value="(5.0, 4.0, 1.0)"/>
+    </action>
+  </task>
+
+  <task name="ROTATE 90º">
+    <action name="ROTATE_YAW">
+      <argument name="angle" value="90"/>
+    </action>
+  </task>
+
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>

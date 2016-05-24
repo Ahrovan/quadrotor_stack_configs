@@ -1,0 +1,55 @@
+<!--==================================================
+| FILE: prueba2.xml
+| BRIEF: Testing Move Position.
+| AUTHORS:
+|   David Palacios
+===================================================-->
+<mission name="Prueba">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+  <task name="Stabilize">
+    <action name="STABILIZE"/>
+  </task>
+  <task name="Hover 1">
+    <behavior name="recognizingArucoMarkers"/>
+    <action name="HOVER"/>
+    <arguments>
+      <duration secs="10"/>
+    </arguments>
+  </task>
+  <task name="Move to A">
+    <action name="GO_TO_POINT"/>
+    <arguments>
+      <point x="1" y="0.0" z="0.."/>
+    </arguments>
+  </task>
+  <task name="Hover 2">
+    <action name="HOVER"/>
+    <arguments>
+      <duration secs="2.0"/>
+    </arguments>
+  </task>
+  <task name="Move to B">
+    <action name="GO_TO_POINT"/>
+    <arguments>
+      <point x="-1" y="0.0" z="0.."/>
+    </arguments>
+  </task>
+  <task name="Hover 3">
+    <action name="HOVER"/>
+    <arguments>
+      <duration secs="2.0"/>
+    </arguments>
+  </task>
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+<event_handling>
+  <event name="EVENTO 1">
+    <condition parameter="ArucoVisualMarker" comparison="equal" value="0"/>
+    <action name="FLIP_FRONT"/>
+    <ending step="REPEAT_TASK"/>
+  </event>  
+</event_handling>
+</mission>

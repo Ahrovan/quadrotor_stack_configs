@@ -1,0 +1,90 @@
+<mission name="Prueba4">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+  <task name="Evitando Obstáculos">
+  <behavior name="avoidingObstacles"/>
+    <task name="Hover">
+      <action name="HOVER">
+        <arguments>
+          <duration secs="3.0"/>
+        </arguments>
+      </action>
+    </task>
+    <task name="Move to point (2.5, 0.5)">
+      <action name="MOVE">
+        <arguments>
+          <point x="-5.0" y="-1.0" z="0.0"/>
+        </arguments>
+      </action>
+    </task>
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+    <task name="Move to point (8.5, 4)">
+      <action name="MOVE">
+        <arguments>
+          <point x="6.0" y="3.5" z="0.0"/>
+        </arguments>
+      </action>
+    </task>
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+    <task name="Move to point (3, 7)">
+      <action name="MOVE">
+        <arguments>
+          <point x="-5.5" y="3.0" z="0.0"/>
+        </arguments>
+      </action>
+    </task>
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+    <!--task name="Up">
+      <action name="MOVE"/>
+      <arguments>
+        <point x="0.0" y="0.0" z="1.0"/>
+      </arguments>
+    </task>
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+    <task name="Down">
+      <action name="MOVE"/>
+      <arguments>
+        <point x="0.0" y="0.0" z="-0.25"/>
+      </arguments>
+    </task>
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task-->
+    <task name="Move to point (1, 0)">
+      <action name="MOVE">
+        <arguments>
+          <point x="-2.0" y="-7.0" z="0.0"/>
+        </arguments>
+      </action>
+    </task>
+    <task name="Stabilize">
+      <action name="STABILIZE"/>
+    </task>
+    <task name="Move to Origin">
+      <action name="MOVE">
+        <arguments>
+          <point x="6.5" y="1.5" z="0.0"/>
+        </arguments>
+      </action>
+    </task>
+    <task name="Hover">
+      <action name="HOVER">
+        <arguments>
+          <duration secs="2.0"/>
+        </arguments>
+      </action>
+    </task>
+  </task>
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>

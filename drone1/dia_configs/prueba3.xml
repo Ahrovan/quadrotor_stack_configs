@@ -1,0 +1,25 @@
+<mission name="Prueba3">
+  <task name="Take Off">
+    <action name="TAKE_OFF"/>
+  </task>
+  <task name="Acrobatics">
+    <task name="Hover">
+      <action name="HOVER"/>
+      <arguments>
+        <duration secs="10.0"/>
+      </arguments>
+    </task>
+    <task name="Flip Front">
+      <action name="FLIP_FRONT"/>
+    </task>
+    <task name="Hover">
+      <action name="HOVER"/>
+      <arguments>
+        <duration secs="2.0"/>
+      </arguments>
+    </task>
+  </task>
+  <task name="Land">
+    <action name="LAND"/>
+  </task>
+</mission>
