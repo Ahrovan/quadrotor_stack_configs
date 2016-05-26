@@ -8,7 +8,7 @@
   </task>
 
   <task name="moving">
-    <skill name="RECOGNIZE_ARUCO_MARKERS"/>
+    <!--skill name="RECOGNIZE_ARUCO_MARKERS"/-->
 
     <task name="Go to Point 1">
       <action name="GO_TO_POINT">
