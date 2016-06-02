@@ -27,7 +27,7 @@
                 <!-- dz_at_max =    dz_at_ratio  * dz_max -->
                 <!-- dz_ct_max = (1-dz_at_ratio) * dz_max -->
         </speed_control_loop>
-        <drone_pose_feedback_low_pass_filters>
+        <drone_pose_feedback_low_pass_filters> <!-- Not used any more -->
             <tr_v>    0.15 </tr_v>          <!-- seconds -->
             <tr_dyaw> 0.20 </tr_dyaw>       <!-- seconds -->
             <tr_dz>   0.30 </tr_dz>         <!-- seconds -->
