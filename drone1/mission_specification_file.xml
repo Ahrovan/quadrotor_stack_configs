@@ -83,7 +83,7 @@
 | EVENT: Return Home
 ===================================================-->
     <event name="Return home">
-      <condition parameter="ArucoVisualMarker" comparison="equal" value="0"/>
+      <condition parameter="RECOGNIZED_ARUCO_MARKERS" comparison="equal" value="0"/>
       <action name="STABILIZE"/>
       <action name="GO_TO_POINT">
          <argument name="coordinates" label="HOME"/>
@@ -97,7 +97,7 @@
 | EVENT: Low battery
 ===================================================-->
     <event name="Low battery">
-      <condition parameter="percentageBatteryCharge" comparison="less than" value="25"/>
+      <condition parameter="BATTERY_CHARGE_PERCENTAGE" comparison="less than" value="25"/>
       <action name="STABILIZE"/>
       <action name="LAND"/>   
       <termination mode="ABORT_MISSION"/>
