@@ -1,11 +1,11 @@
 <take_off_site> <!-- Frame_{drone_GMR_t=0} with respect to Frame_{GFF} -->
         <position> <!-- units: m -->
-                <x>  7.5 </x>
-                <y>  1.5 </y>
+                <x>  4.0 </x>
+                <y>  4.0 </y>
                 <z>  0.0 </z>
         </position>
         <attitude> <!-- units: deg, wYvPuR -->
-                <yaw> 	  90.00	</yaw>
+                <yaw> 	   0.00	</yaw>
                 <pitch>	   0.00	</pitch>
                 <roll>	   0.00	</roll>
         </attitude>
