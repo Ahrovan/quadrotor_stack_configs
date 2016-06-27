@@ -54,5 +54,10 @@
 <action name="LAND">
     <process name="droneOdometryStateEstimator"/>
 </action>
+<action name="FOLLOW_IMAGE">
+  <process name="open_tld_translator"/>
+  <process name="droneIBVSControllerROSModule"/>
+  <process name="trackerEye"/>
+</action>
 
 </action_model>
