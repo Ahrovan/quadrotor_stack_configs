@@ -1,6 +1,6 @@
 <action_model>
 <!--==================================================
-| Defines the processes necessary for each action and skill 
+| Defines the processes necessary for each action and skill
 ===================================================-->
 
 <!--==================================================
@@ -11,7 +11,13 @@
   <process name="trackerEye"/>
   <process name="ibvsController"/>
 </skill>
-<skill name="SELF_LOCALIZE_BY_ARUCO_MARKERS"/>
+<skill name="SELF_LOCALIZE_BY_ARUCO_MARKERS">
+  <process name="droneLocalizer" />
+  <process name="droneObstacleProcessor" />
+  <process name="droneObstacleDistanceCalculator" />
+  <process name="droneOdometryStateEstimator" />
+  <process name="droneArucoEyeROSModule" />
+</skill>
 <skill name="DETECT_OBSTACLES_BY_ARUCO_MARKERS"/>
 <skill name="AVOID_OBSTACLES">
   <process name="droneObstacleProcessor"/>
@@ -53,6 +59,11 @@
 </action>
 <action name="LAND">
     <process name="droneOdometryStateEstimator"/>
+</action>
+<action name="FOLLOW_IMAGE">
+  <process name="open_tld_translator"/>
+  <process name="droneIBVSControllerROSModule"/>
+  <process name="trackerEye"/>
 </action>
 
 </action_model>
