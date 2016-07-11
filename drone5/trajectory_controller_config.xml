@@ -108,14 +108,14 @@
                 <Kd>1.5534</Kd>   <!-- [-1,1]/(m/s^2)  -->
             </vxy>
             <yaw>
-                <DeltaKp>0.03 </DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>0.1 </DeltaKp>     <!-- 1/1 -->
                 <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp> 1.60</Kp>   <!-- [-1,1]/rad     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
                 <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
             </yaw>
             <altitude>
-                <DeltaKp>0.01</DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>0.1</DeltaKp>     <!-- 1/1 -->
                 <!-- z PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp>-1.33</Kp>   <!-- [-1,1]/m     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(m*s) -->
