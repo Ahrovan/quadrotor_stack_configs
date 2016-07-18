@@ -120,7 +120,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
-      Topic: /drone5/move_base/NavfnROS/plan
+      Topic: /drone3/move_base/NavfnROS/plan
       Value: true
     - Alpha: 1
       Class: rviz/Polygon
@@ -167,7 +167,7 @@ Visualization Manager:
     - Class: rviz/SetInitialPose
       Topic: /drone3/initialpose
     - Class: rviz/SetGoal
-      Topic: /drone5/move_base_simple/goal
+      Topic: /drone3/move_base_simple/goal
     - Class: rviz/PublishPoint
       Single click: true
       Topic: /drone3/clicked_point
