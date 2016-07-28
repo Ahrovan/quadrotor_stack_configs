@@ -2,11 +2,11 @@
     <description>Configuration file for the droneMidLevelAutopilotROSModule package (Pixhawk), Aerostack, by Vision4UAV.</description>
  
     <midlevel_autopilot> 
-	<ON_GROUND_ALTITUDE> 0.30 </ON_GROUND_ALTITUDE>				<!-- m -->
+	<ON_GROUND_ALTITUDE> 0.25 </ON_GROUND_ALTITUDE>				<!-- m -->
 
 	<TAKE_OFF> 
-	  <TAKEOFF_SPEED>                 0.1  </TAKEOFF_SPEED>			<!-- m/s -->
-	  <TAKEOFF_FINAL_ALTITUDE>        1.0  </TAKEOFF_FINAL_ALTITUDE>	<!-- m   -->
+	  <TAKEOFF_SPEED>                 0.4  </TAKEOFF_SPEED>			<!-- m/s -->
+	  <TAKEOFF_FINAL_ALTITUDE>        0.5 </TAKEOFF_FINAL_ALTITUDE>	<!-- m   -->
 	  <TAKINGOFF_ALT_SPEED_COS_GAMMA> 2.15 </TAKINGOFF_ALT_SPEED_COS_GAMMA>	<!-- ??? -->
 	  <MAX_TAKINGOFF_TIME_S>          5.0  </MAX_TAKINGOFF_TIME_S>		<!-- s   -->
 	</TAKE_OFF>
@@ -29,7 +29,7 @@
 	</MAX_ALTITUDE>
 
 	<CONTROLLER_SATURATIONS>
-	  <ML_AUTOPILOT_MAX_ALLOWED_YAW_SPEED>      30.0 </ML_AUTOPILOT_MAX_ALLOWED_YAW_SPEED>	    <!-- deg/s -->
+	  <ML_AUTOPILOT_MAX_ALLOWED_YAW_SPEED>      50.0 </ML_AUTOPILOT_MAX_ALLOWED_YAW_SPEED>	    <!-- deg/s -->
 	  <ML_AUTOPILOT_MAX_ALLOWED_ALTITUDE_SPEED>  0.5 </ML_AUTOPILOT_MAX_ALLOWED_ALTITUDE_SPEED> <!-- m/s   -->
 	</CONTROLLER_SATURATIONS>
 
@@ -48,16 +48,16 @@
 	// 12 Dec 2014, Pixhawk (Full) Weight: 1.7 Kg
 	-->
 	
-	<FEEDFORWARD_M>    1.0     </FEEDFORWARD_M>    <!-- kg  -->
+	<FEEDFORWARD_M>    1.70     </FEEDFORWARD_M>    <!-- kg  -->
 	<THRUSTER_GAIN>    0.33    </THRUSTER_GAIN>    <!-- 1p1/kg, pixhawk: 1/(29.71/9.81)-->
-	<GAIN_P>           0.05    </GAIN_P>           <!-- pixhawk: 0.1             , 1p1/(m/s)-->
-	<GAIN_I>           0.03    </GAIN_I>           <!-- pixhawk: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
+	<GAIN_P>           0.06    </GAIN_P>           <!-- pixhawk: 0.1             , 1p1/(m/s)-->
+	<GAIN_I>           0.04    </GAIN_I>           <!-- pixhawk: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
 	<GAIN_D>           0.00    </GAIN_D>           <!-- pixhawk: (GAIN_P * 0.00) , 1p1 * s / (m/s)-->
 
 	<ALT_SPEED_MEASURE_SATURATION_FACTOR> 3.0 </ALT_SPEED_MEASURE_SATURATION_FACTOR>
 
-	<COMMAND_UPPER_LIMIT>  0.04  </COMMAND_UPPER_LIMIT> <!-- Pixhawk: (Same as pelican) -->
-	<COMMAND_LOWER_LIMIT> -0.04 </COMMAND_LOWER_LIMIT>  <!-- Pixhawk:  (Same as pelican) -->
+	<COMMAND_UPPER_LIMIT>  0.10 </COMMAND_UPPER_LIMIT> <!-- Pixhawk: (Same as pelican) -->
+	<COMMAND_LOWER_LIMIT> -0.10 </COMMAND_LOWER_LIMIT>  <!-- Pixhawk:  (Same as pelican) -->
 	<SUBSAMPLING_DIVIDER>  6     </SUBSAMPLING_DIVIDER> <!-- Pixhawk: deprecated        -->
     </altitude_speed_controller>
  
@@ -70,9 +70,9 @@
     </hover_controller>
 
     <yaw_controller> 
-	<GAIN_P> 3.00 </GAIN_P>                 <!-- [deg/s / (deg)]  -->
+	<GAIN_P> 3.0 </GAIN_P>                 <!-- [deg/s / (deg)]  -->
 	<GAIN_I> 0.00 </GAIN_I>                 <!--  -->
-	<GAIN_D> 0.30 </GAIN_D>                 <!-- (0.1 * GAIN_P) -->
+	<GAIN_D> 0.3 </GAIN_D>                 <!-- (0.1 * GAIN_P) -->
     </yaw_controller> 
 
 </midlevel_autopilot_config>

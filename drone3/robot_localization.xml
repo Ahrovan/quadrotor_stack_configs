@@ -20,8 +20,8 @@
 
 <!--> optical flow data measured from the optical flow sensor <-->    
   <optical_flow>
-    <dx>0.066</dx>
-    <dy>0.066</dy> 
+    <dx>0.06</dx>
+    <dy>0.06</dy> 
   </optical_flow>    
 
 <!--> controller commands, commanded by the high level controller <-->    
