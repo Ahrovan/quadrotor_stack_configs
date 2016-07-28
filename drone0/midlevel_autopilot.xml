@@ -3,6 +3,7 @@
  
     <midlevel_autopilot> 
 	<ON_GROUND_ALTITUDE> 0.25 </ON_GROUND_ALTITUDE>				<!-- m -->
+  <MODULE_FREQUENCY>   30   </MODULE_FREQUENCY>         <!-- hz -->
 
 	<TAKE_OFF> 
 	  <TAKEOFF_SPEED>                 0.6  </TAKEOFF_SPEED>			<!-- m/s -->
