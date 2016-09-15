@@ -1,0 +1,39 @@
+<Perception_Manager_config>
+	<description>Configuration file for the Perception_Manager package.</description>
+
+        <!-- Objects that have to be manipulated (i.e. Recognized, Picked, Released, etc) -->
+        <ListOfCylindricalObjects>	
+		<Object>
+			<!-- Size of the ItemA -->
+			<radius>0.05</radius>
+			<height>0.1</height>
+			<color>Red</color>
+			<id>0</id>		
+		</Object>
+
+		<Object>
+			<!-- Size of the BucketA -->
+			<radius>0.125</radius>
+			<height>0.3</height>
+			<color>Red</color>
+			<id>1</id>		
+		</Object>
+
+		<Object>
+			<!-- Size of the ItemB -->
+			<radius>0.05</radius>
+			<height>0.1</height>
+			<color>Blue</color>
+			<id>2</id>		
+		</Object>
+
+		<Object>
+			<!-- Size of the BucketB -->
+			<radius>0.125</radius>
+			<height>0.3</height>
+			<color>Blue</color>
+			<id>3</id>		
+		</Object>
+        </ListOfCylindricalObjects>	
+</Perception_Manager_config>
+

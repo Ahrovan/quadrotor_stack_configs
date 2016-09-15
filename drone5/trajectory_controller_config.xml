@@ -1,7 +1,7 @@
 <trajectory_controller_config>
     <description>[PARROT ARDRONE 2.0] Configuration of the trajectory controller in the Aerial Swarm architecture,
                  by the CVG (CAR, CSIC-UPM).</description>
-    <module_frequency> 30.0 </module_frequency>     <!-- Hz -->
+    <module_frequency> 100.0 </module_frequency>     <!-- Hz -->
     <init_control_mode>speed</init_control_mode>    <!-- string, one of {'speed','position','trajectory'} -->
 
     <general_saturations>
@@ -18,7 +18,7 @@
             </low_pass_filters>
         </drone_commands>
         <speed_control_loop>
-            <vxy_max>       0.50    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
+            <vxy_max>       0.60    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
             <!-- vxy_max_comments: IMAV13 0.70; JINT13_130821 2.75; 2.00 before ASU -->
             <vxy_at_ratio>  0.75    </vxy_at_ratio>     <!-- [0,1] -->
                 <!-- vxy_at_max =    vxy_at_ratio  * vxy_max -->
@@ -71,7 +71,7 @@
         </trajectory_planning_params>
         <speed_plan_saturations>
             <accel_max>           0.50  </accel_max>            <!-- m/s^2 -->
-            <speed_tr>            1.70  </speed_tr>             <!-- seconds -->
+            <speed_tr>            1.00  </speed_tr>             <!-- seconds -->
             <delta_checkpoint>    5     </delta_checkpoint>     <!-- number of checkpoints -->
             <stall_turn_speed_max>0.25  </stall_turn_speed_max> <!-- m/s -->
         <!-- accel_max_comments: JINT13_130821 0.70; 0.75 (valores limite aceptables); 0.50 before ASU-->
@@ -108,7 +108,7 @@
                 <Kd>1.5534</Kd>   <!-- [-1,1]/(m/s^2)  -->
             </vxy>
             <yaw>
-                <DeltaKp>0.1 </DeltaKp>     <!-- 1/1 -->
+                <DeltaKp>1.0 </DeltaKp>     <!-- 1/1 -->
                 <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
                 <Kp> 1.60</Kp>   <!-- [-1,1]/rad     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
