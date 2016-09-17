@@ -10,7 +10,7 @@
   </explorationArea>
 
   <!-- This Flag is Generate Mission Manual or Automatic -->
-  <generate_automatic_mission>1</generate_automatic_mission>
+  <generate_automatic_mission>0</generate_automatic_mission>
 
 	<SWARM_configuration>
 		<UAV>
