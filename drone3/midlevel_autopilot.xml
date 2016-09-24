@@ -6,7 +6,7 @@
   <MODULE_FREQUENCY>   250  </MODULE_FREQUENCY>         <!-- hz -->
 
 	<TAKE_OFF> 
-	  <TAKEOFF_SPEED>                 0.4  </TAKEOFF_SPEED>			<!-- m/s -->
+	  <TAKEOFF_SPEED>                 0.1  </TAKEOFF_SPEED>			<!-- m/s -->
 	  <TAKEOFF_FINAL_ALTITUDE>        0.5 </TAKEOFF_FINAL_ALTITUDE>	<!-- m   -->
 	  <TAKINGOFF_ALT_SPEED_COS_GAMMA> 2.15 </TAKINGOFF_ALT_SPEED_COS_GAMMA>	<!-- ??? -->
 	  <MAX_TAKINGOFF_TIME_S>          5.0  </MAX_TAKINGOFF_TIME_S>		<!-- s   -->
@@ -15,12 +15,12 @@
 	<LANDING> 
 	  <LANDING_SPEED>                     0.40 </LANDING_SPEED>		        <!-- m/s -->
 	  <ALTITUDE_FOR_LANDING_WITH_TIME>    0.40 </ALTITUDE_FOR_LANDING_WITH_TIME>    <!-- m   -->
-	  <LANDING_WITH_TIME_MAX_SECONDS>     1.00 </LANDING_WITH_TIME_MAX_SECONDS>     <!-- s   -->
+	  <LANDING_WITH_TIME_MAX_SECONDS>     0.10 </LANDING_WITH_TIME_MAX_SECONDS>     <!-- s   -->
 	  <!-- 
 	  // 12 Dec 2015, Pixhawk (Full) Weight: 1.71 Kg
 	  //            
 	  -->
-	  <LANDING_WITH_TIME_FIXED_THRUST_KG> 0.32 </LANDING_WITH_TIME_FIXED_THRUST_KG> <!-- kg  -->
+	  <LANDING_WITH_TIME_FIXED_THRUST_KG> 0.12 </LANDING_WITH_TIME_FIXED_THRUST_KG> <!-- kg  -->
 	</LANDING>
 
 	<MAX_ALTITUDE>
@@ -49,7 +49,7 @@
 	// 12 Dec 2014, Pixhawk (Full) Weight: 1.7 Kg
 	-->
 	
-	<FEEDFORWARD_M>    1.70     </FEEDFORWARD_M>    <!-- kg  -->
+	<FEEDFORWARD_M>    1.8     </FEEDFORWARD_M>    <!-- kg  -->
 	<THRUSTER_GAIN>    0.33    </THRUSTER_GAIN>    <!-- 1p1/kg, pixhawk: 1/(29.71/9.81)-->
 	<GAIN_P>           0.06    </GAIN_P>           <!-- pixhawk: 0.1             , 1p1/(m/s)-->
 	<GAIN_I>           0.04    </GAIN_I>           <!-- pixhawk: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
@@ -57,8 +57,8 @@
 
 	<ALT_SPEED_MEASURE_SATURATION_FACTOR> 3.0 </ALT_SPEED_MEASURE_SATURATION_FACTOR>
 
-	<COMMAND_UPPER_LIMIT>  0.10 </COMMAND_UPPER_LIMIT> <!-- Pixhawk: (Same as pelican) -->
-	<COMMAND_LOWER_LIMIT> -0.10 </COMMAND_LOWER_LIMIT>  <!-- Pixhawk:  (Same as pelican) -->
+	<COMMAND_UPPER_LIMIT>  0.3 </COMMAND_UPPER_LIMIT> <!-- Pixhawk: (Same as pelican) -->
+	<COMMAND_LOWER_LIMIT> -0.3 </COMMAND_LOWER_LIMIT>  <!-- Pixhawk:  (Same as pelican) -->
 	<SUBSAMPLING_DIVIDER>  6     </SUBSAMPLING_DIVIDER> <!-- Pixhawk: deprecated        -->
     </altitude_speed_controller>
  
