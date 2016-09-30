@@ -2,7 +2,7 @@
     <description>[PARROT ARDRONE 2.0] Configuration of the trajectory controller in the Aerial Swarm architecture,
                  by the CVG (CAR, CSIC-UPM).</description>
     <module_frequency> 100.0 </module_frequency>     <!-- Hz -->
-    <init_control_mode>speed</init_control_mode>    <!-- string, one of {'speed','position','trajectory'} -->
+    <init_control_mode>position</init_control_mode>    <!-- string, one of {'speed','position','trajectory'} -->
 
     <general_saturations>
         <drone_commands>
