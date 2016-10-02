@@ -3,23 +3,13 @@
  
     <drone_VS_following_from_top> 
 	
-  	<Kp1_pitch>   0.1   </Kp1_pitch>
-	<Kd1_pitch>   0.05   </Kd1_pitch>
+  	<Kp_pitch>   0.1   </Kp_pitch>
+	<Ki_pitch>   0.0   </Ki_pitch>
+	<Kd_pitch>   0.05   </Kd_pitch>
 
-  	<Kp2_pitch>   0.2   </Kp2_pitch>
-	<Kd2_pitch>   0.1   </Kd2_pitch>
-
-  	<Kp3_pitch>   0.4   </Kp3_pitch>
-	<Kd3_pitch>   0.2   </Kd3_pitch>
-
-  	<Kp1_roll>   0.07   </Kp1_roll>
-	<Kd1_roll>   0.065   </Kd1_roll>
-
-  	<Kp2_roll>   0.14   </Kp2_roll>
-	<Kd2_roll>   0.13   </Kd2_roll>
-
-  	<Kp3_roll>   0.28   </Kp3_roll>
-	<Kd3_roll>   0.26   </Kd3_roll>
+  	<Kp_roll>   0.07   </Kp_roll>
+	<Ki_roll>   0.0   </Ki_roll>
+	<Kd_roll>   0.065   </Kd_roll>
 
 	<Kp_dZ>   0.07   </Kp_dZ>
 	<Kd_dZ>   0.15   </Kd_dZ>
@@ -27,6 +17,9 @@
   	<sat_value_pitch>   0.1   </sat_value_pitch>
 	<sat_value_roll>   0.15   </sat_value_roll>
 	<sat_value_dZ>   0.1   </sat_value_dZ>
+
+  	<windup_limit_pitch>   0.5   </windup_limit_pitch>
+	<windup_limit_roll>   0.5   </windup_limit_roll>
 
 	<reference_x>   320   </reference_x>
 	<reference_y>   240   </reference_y>
