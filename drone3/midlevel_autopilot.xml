@@ -13,7 +13,7 @@
 	</TAKE_OFF>
 
 	<LANDING> 
-	  <LANDING_SPEED>                     0.40 </LANDING_SPEED>		        <!-- m/s -->
+	  <LANDING_SPEED>                     1.0 </LANDING_SPEED>		        <!-- m/s -->
 	  <ALTITUDE_FOR_LANDING_WITH_TIME>    0.40 </ALTITUDE_FOR_LANDING_WITH_TIME>    <!-- m   -->
 	  <LANDING_WITH_TIME_MAX_SECONDS>     0.10 </LANDING_WITH_TIME_MAX_SECONDS>     <!-- s   -->
 	  <!-- 

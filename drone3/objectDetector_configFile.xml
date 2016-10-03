@@ -1,6 +1,15 @@
 <ShapeColor_ObjectDetector_config>
 	<description>Configuration file for the ShapeColor_ObjectDetector package.</description>
-	<PoseEstimator>
+
+  <VisualObjectRecognizer>
+    <!-- Options Available: 1 (Exploration), 2 (GoForGraspingRedObject), 3 (GoForGraspingBlueObject) -->
+    <!-- Options Available: 4 (GoForReleasingRedObject), 5 (GoForReleasingBlueObject) -->
+    <perception_manager_mission_state>1</perception_manager_mission_state>
+    <!-- Options Available: RED, BLUE, REDandBLUE -->
+    <recognize_color>REDandBLUE</recognize_color>
+  </VisualObjectRecognizer>
+
+ <PoseEstimator>
 		<CameraMatrix>
 			<at00>620.3645629882812</at00>
 			<at01>0.0</at01>
@@ -20,9 +29,9 @@
 			<at3>0.003329317318275571</at3>
 			<at4>0.0</at4>
 		</DistMatrix>
-        </PoseEstimator>
+</PoseEstimator>
 
-        <ShapeImageProcessor>	
+  <ShapeImageProcessor>	
 		<ItemParameters>
 			<!-- Size of the Item -->
 			<radius>0.05</radius>
@@ -36,16 +45,16 @@
 		</BucketParameters>
 
 		<DoorParameters>
-			<!-- Size of the Item -->
+			<!-- Size of the Door -->
 			<doorSizeX>1.2</doorSizeX>
 			<doorSizeY>2.0</doorSizeY>		
 		</DoorParameters>
 
 		<WindowParameters>
-			<!-- Size of the Bucket -->
+			<!-- Size of the Window -->
 			<windowSizeX>1.0</windowSizeX>
 			<windowSizeY>1.0</windowSizeY>		
 		</WindowParameters>
-        </ShapeImageProcessor>	
+  </ShapeImageProcessor>	
 </ShapeColor_ObjectDetector_config>
 

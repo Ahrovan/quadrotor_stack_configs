@@ -1,6 +1,10 @@
 <Perception_Manager_config>
 	<description>Configuration file for the Perception_Manager package.</description>
 
+  <front_camera_pitch_angle>0.0</front_camera_pitch_angle>
+
+  <max_detections_along_time>100</max_detections_along_time>
+  
   <!-- Objects that have to be manipulated (i.e. Recognized, Picked, Released, etc) -->
   <ListOfCylindricalObjects>	
 		<Object>
@@ -37,7 +41,7 @@
 			<id>2</id>
       <defaultState>
             <state>0</state> <!-- Recognized -->
-            <state>0</state> <!-- Picked -->
+            <state>1</state> <!-- Picked -->
             <state>0</state> <!-- Released -->
       </defaultState>			
 		</Object>
