@@ -32,10 +32,17 @@
 						<z>1.3</z>
 					</MoveToPoint>
 				</Task>
-				<Task>
+        <Task>
+					<MoveToPoint>
+						<x>2.5</x>
+						<y>-5.5</y>
+						<z>1.3</z>
+					</MoveToPoint>
+				</Task>
+        <Task>
 					<MoveToPoint>
 						<x>2.0</x>
-						<y>-7.0</y>
+						<y>-6.5</y>
 						<z>1.3</z>
 					</MoveToPoint>
 				</Task>
