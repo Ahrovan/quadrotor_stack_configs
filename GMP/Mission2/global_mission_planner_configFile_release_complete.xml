@@ -1,0 +1,194 @@
+<Global_Mission_Planner_config>
+	<description>Configuration file for the Global Mission Planner package.</description>
+
+  
+  <explorationArea>
+    <left_corner>
+       <!--<x>10.35</x>
+       <y>3.8</y>-->
+       <x>10.4</x>
+       <y>4.2</y>
+    </left_corner>
+    <width>13.0</width>
+    <height>12.9</height>
+    <num_centroids>4</num_centroids>
+    <num_sampling_points>100000</num_sampling_points>
+  </explorationArea>
+
+  <!-- This Flag is for Generating Mission in Manual or Automatic Mode -->
+  <generate_automatic_mission>0</generate_automatic_mission>
+
+	<SWARM_configuration>
+		<UAV>
+      <drone_id>3</drone_id>
+			<takeoff_point>
+				<x>0.0</x>
+				<y>0.0</y>
+				<z>0.8</z>
+			</takeoff_point> 
+			<Mission>
+				<Task>
+          <name>Takeoff</name>
+          <time>0</time>
+          <mpCommand>1</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>0.0</x>
+						<y>0.0</y>
+						<z>0.0</z>
+					</Point>
+				</Task>
+				<Task>
+          <name>Hover</name>
+          <time>1</time>
+          <mpCommand>2</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>0.0</x>
+						<y>0.0</y>
+						<z>0.0</z>
+					</Point>
+				</Task>
+				
+				<Task> <!-- Point 1 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>8.0</x>
+						<y>-5.46</y>
+						<z>1.3</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 2 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>11.2</x>
+						<y>-5.46</y>
+						<z>1.3</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 3 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>12.3</x>
+						<y>-5.1</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 4 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>12.3</x>
+						<y>0.7</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+					<Task> <!-- Point 5 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>12.3</x>
+						<y>-2.35</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+					<Task> <!-- Point 6 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>16.3</x>
+						<y>0.7</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 7 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>16.3</x>
+						<y>-2.35</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 8 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>20.8</x>
+						<y>0.7</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 9 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>20.8</x>
+						<y>-2.35</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+				<Task> <!-- Point 10 -->
+          <name>MoveToPoint</name>
+          <time>0</time>
+          <mpCommand>9</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point>
+						<x>12.3</x>
+						<y>0.7</y>
+						<z>0.6</z>
+					</Point>
+				</Task>
+				<Task>
+          <name>LandAutonomously</name>
+          <time>0</time>
+          <mpCommand>21</mpCommand>
+          <yaw>0</yaw>
+          <yawSelector>0</yawSelector>
+					<Point> <!--CHEQUEAR CON ALEJO -->
+						<x>0.0</x>
+						<y>0.0</y>
+						<z>0.8</z>
+					</Point>
+				</Task>
+			</Mission>
+		</UAV>
+	</SWARM_configuration>
+
+</Global_Mission_Planner_config>
+
+
+
