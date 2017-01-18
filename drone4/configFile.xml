@@ -18,11 +18,11 @@
 	<save>0</save> 
 
 	<config> 
-		<numNodes>5000</numNodes>
+		<numNodes>1000</numNodes>
 		<neigbourhood>5</neigbourhood>
 	
 		<subzone>
-			<numNodes>1500</numNodes>
+			<numNodes>500</numNodes>
 			<initPoint>2 3</initPoint> 
 			<size>5 5</size>
 		</subzone>
