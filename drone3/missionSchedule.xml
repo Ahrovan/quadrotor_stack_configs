@@ -24,7 +24,7 @@
 			<command>takeOff</command>
 			<modules>
 				<h>droneSpeechROSModule</h>
-        <j>droneSoundROSModule</j>
+        			<j>droneSoundROSModule</j>
 			</modules>
 		</task>
 	</submission>
@@ -36,10 +36,10 @@
 			
 		</config>
 
-    <task description="Hover 2 secs">
+   		 <task description="Hover 2 secs">
 			<config>
 				<id>10</id>
-				<time>2</time>
+				<time>3</time>
 			</config>
 			<command>hover</command>
 			<modules>
@@ -49,12 +49,12 @@
 				<d>droneObstacleProcessor</d>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
-        <i>droneObstacleDistanceCalculator</i>
-        <j>droneSoundROSModule</j>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
 			</modules>
 		</task>
 
-    <task description="Altura">
+    		<task description="Altura">
 			<config>
 				<id>11</id>
 			</config>
@@ -67,8 +67,8 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
-        <i>droneObstacleDistanceCalculator</i>
-        <j>droneSoundROSModule</j>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
 			</modules>
 			<point>
 				<z>1.3</z>
@@ -76,10 +76,10 @@
 			<yaw>90.0</yaw>
 		</task>
 
-  <task description="Sleep">
+  		<task description="Sleep">
 			<config>
 				<id>20</id>
-        <time>2.0</time>
+        			<time>2.0</time>
 			</config>
 			<command>sleep</command>
 			<modules>
@@ -90,13 +90,260 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
-        <i>droneObstacleDistanceCalculator</i>
-        <j>droneSoundROSModule</j>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+		</task>
+
+		<task description="Move to point 1">
+			<config>
+				<id>21</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>7.5</x>
+				<y>6.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>7.0</x>
+				<y>10.0</y>
+			</pointToLook>
+		</task>
+
+		<task description="Move to point 2">
+			<config>
+				<id>22</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>6.5</x>
+				<y>8.5</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>7.0</x>
+				<y>10.0</y>
+			</pointToLook>
+		</task>
+
+		<task description="Look to point 3">
+			<config>
+				<id>23</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>6.5</x>
+				<y>8.5</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>9.0</x>
+				<y>8.5</y>
+			</pointToLook>
+		</task>
+
+		<task description="Look to point 4">
+			<config>
+				<id>24</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>6.5</x>
+				<y>8.5</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>7.0</x>
+				<y>0.0</y>
+			</pointToLook>
+		</task>
+
+		<task description="Look to point 5">
+			<config>
+				<id>25</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>6.5</x>
+				<y>8.5</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>5.0</x>
+				<y>8.5</y>
+			</pointToLook>
+		</task>
+		
+		<task description="Look to point 5">
+			<config>
+				<id>26</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>6.5</x>
+				<y>8.5</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>7.5</x>
+				<y>5.0</y>
+			</pointToLook>
+		</task>
+		
+		<task description="Sleep">
+			<config>
+				<id>27</id>
+        			<time>20.0</time>
+			</config>
+			<command>sleep</command>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
 			</modules>
 		</task>
 
 		
-		<task description="Move to point final">
+
+		
+		<task description="Move to point 11">
+			<config>
+				<id>28</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>7.5</x>
+				<y>7.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>7.5</x>
+				<y>5.0</y>
+			</pointToLook>
+
+		</task>
+		
+		<task description="Move to point 11">
+			<config>
+				<id>29</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>7.5</x>
+				<y>3.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>7.5</x>
+				<y>0.0</y>
+			</pointToLook>
+
+		</task>
+		
+		<task description="Move to point 11">
 			<config>
 				<id>30</id>
 			</config>
@@ -110,27 +357,48 @@
 				<f>droneYawPlanner</f>
 				<g>droneLocalizer</g>
 				<h>droneSpeechROSModule</h>
-        <i>droneObstacleDistanceCalculator</i>
-        <j>droneSoundROSModule</j>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
 			</modules>
 			<point>
-				<x>7.0</x>
-				<y>11.0</y>
+				<x>7.5</x>
+				<y>3.0</y>
 				<z>1.3</z>
 			</point>
 			<pointToLook>
-				<x>5.5</x>
-				<y>6.0</y>
+				<x>7.5</x>
+				<y>5.0</y>
 			</pointToLook>
-<!--
+
+		</task>
+
+		<task description="Move to point 12">
+			<config>
+				<id>32</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>7.5</x>
+				<y>2.0</y>
+				<z>1.3</z>
+			</point>
 			<pointToLook>
-				<x>5.5</x>
-				<y>4.5</y>
+				<x>7.5</x>
+				<y>5.0</y>
 			</pointToLook>
--->
-<!--
-			<yaw>90</yaw>
--->
+
 		</task>
   </submission>
 		
