@@ -1,6 +1,6 @@
 <take_off_site> <!-- Frame_{drone_GMR_t=0} with respect to Frame_{GFF} -->
         <position> <!-- units: m -->
-                <x>  2.0 </x>
+                <x>  7.5 </x>
                 <y>  2.0 </y>
                 <z>  0.0 </z>
         </position>
