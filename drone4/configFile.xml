@@ -8,7 +8,7 @@
 <map>
 	<config>
 		<dimensions>9.0 11.0</dimensions>
-		<initPoint>0.0 -1.0</initPoint> <!-- punto minimo del mapa -->
+		<initPoint>0.0 0.0</initPoint> <!-- punto minimo del mapa -->
 	</config>
 </map>
 
@@ -18,30 +18,17 @@
 	<save>0</save> 
 
 	<config> 
-		<numNodes>5000</numNodes>
+		<numNodes>2000</numNodes>
 		<neigbourhood>5</neigbourhood>
 	
 		<subzone>
-			<numNodes>1500</numNodes>
+			<numNodes>500</numNodes>
 			<initPoint>6 4</initPoint> 
 			<size>2 2</size>
 		</subzone>
-	
-		
-	</config>
-	
-</prm>
 
-<prm>
-	<generate>1</generate>
-	<save>0</save> 
-
-	<config> 
-		<numNodes>5000</numNodes>
-		<neigbourhood>5</neigbourhood>
-	
 		<subzone>
-			<numNodes>1500</numNodes>
+			<numNodes>500</numNodes>
 			<initPoint>0 4</initPoint> 
 			<size>3 3</size>
 		</subzone>
