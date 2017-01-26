@@ -101,44 +101,24 @@
 
 			<!-- Landmark 1 -->
 
-        		<Aruco id="61"  x="0.39" y="4.5"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="62"  x="0.61" y="4.5"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="37"  x="0.82" y="4.95"    z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="38"  x="2.42" y="4.95"    z="1.3" roll="0" pitch="0" yaw="-90"/>
 
 			<!-- Landmark 2 -->
 
-        		<Aruco id="63"  x="2.39" y="4.5"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="64"  x="2.61" y="4.5"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="39"  x="6.81" y="4.95"    z="1.3" roll="0" pitch="0" yaw="-90"/>
+        		<Aruco id="40"  x="8.20" y="4.95"    z="1.3" roll="0" pitch="0" yaw="-90"/>
 
 			<!-- Landmark 3 -->
 
-        		<Aruco id="65"  x="6.39" y="4.5"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="66"  x="6.61" y="4.5"    z="1.3" roll="0" pitch="0" yaw="-45"/>
+        		<Aruco id="65"  x="0.82" y="5.05"    z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="66"  x="2.42" y="5.05"    z="1.3" roll="0" pitch="0" yaw="90"/>
 
 			<!-- Landmark 4 -->
 
-        		<Aruco id="67"  x="8.39" y="4.5"    z="1.3" roll="0" pitch="0" yaw="225"/>
-        		<Aruco id="68"  x="8.61" y="4.5"    z="1.3" roll="0" pitch="0" yaw="-45"/>
-
-			<!-- Landmark 5 -->
-
-        		<Aruco id="69"  x="8.39" y="5.5"    z="1.3" roll="0" pitch="0" yaw="45"/>
-        		<Aruco id="70"  x="8.61" y="5.5"    z="1.3" roll="0" pitch="0" yaw="135"/>
-
-			<!-- Landmark 6 -->
-	
-        		<Aruco id="71"  x="6.39" y="5.5"    z="1.3" roll="0" pitch="0" yaw="45"/>
-        		<Aruco id="72"  x="6.61" y="5.5"    z="1.3" roll="0" pitch="0" yaw="135"/>
-
-			<!-- Landmark 7 -->
-
-        		<Aruco id="73"  x="2.39" y="5.5"    z="1.3" roll="0" pitch="0" yaw="45"/>
-        		<Aruco id="74"  x="2.61" y="5.5"    z="1.3" roll="0" pitch="0" yaw="135"/>
-
-			<!-- Landmark 8 -->
-
-        		<Aruco id="75"  x="0.39" y="5.5"    z="1.3" roll="0" pitch="0" yaw="45"/>
-        		<Aruco id="76"  x="0.61" y="5.5"    z="1.3" roll="0" pitch="0" yaw="135"/>
-        		
+        		<Aruco id="67"  x="6.81" y="5.05"    z="1.3" roll="0" pitch="0" yaw="90"/>
+        		<Aruco id="68"  x="8.20" y="5.05"    z="1.3" roll="0" pitch="0" yaw="90"/>
+ 		
 
 	
         </Arucos>	
