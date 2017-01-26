@@ -21,62 +21,79 @@
     <!-- other robots: RESERVED: 0-9999 -->
 
 
-
-
-    <!-- borders (Virtual Obstacles): 10000-19999 -->
+    <!--bottom side-->
     <rectangle description="bottom side">
-			<id>10000</id>
-			<centerPoint>4.5 -1.5</centerPoint>
-			<size>10.0 0.3</size>
-			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>
-		
-		
-		<rectangle description="right side"> 
-			<id>10001</id>
-			<centerPoint>9.5 6.0</centerPoint>
-			<size>0.3 15.0</size>
-			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>
-		
-		<rectangle description="up side"> 
-			<id>10002</id>
-			<centerPoint>4.5 13.5</centerPoint>
-			<size>10.0 0.3</size>
-			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>
-		
-		<rectangle description="left side"> 
-			<id>10003</id>
-			<centerPoint>-0.5 6.0</centerPoint>
-			<size>0.3 15.0</size>
-			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>
+      <id>10000</id>
+      <centerPoint>0 5.5</centerPoint>
+      <size>0.2 11</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    <!--up side-->
+    <rectangle description="up side">
+      <id>10001</id>
+      <centerPoint>9 5.5</centerPoint>
+      <size>0.2 11</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    <!--left side-->
+    <rectangle description="left side">
+      <id>10002</id>
+      <centerPoint>4.5 0.0</centerPoint>
+      <size>9 0.2</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    <!--right side-->
+    <rectangle description="right side">
+      <id>10003</id>
+      <centerPoint>4.5 11</centerPoint>
+      <size>9 0.2</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    
 
 
-    <!-- virtual walls: 20000-29999 -->
+<!--wall-->
+    <rectangle description="wall">
+      <id>10004</id>
+      <centerPoint>0.5 5</centerPoint>
+      <size>1 0.2</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
 
-    		<rectangle description="left virtual wall"> 
-			<id>20000</id>
-<!--	<centerPoint>1.5 4.5</centerPoint>  -->
-      <centerPoint> 1.5 6.0</centerPoint>
-			<size>4.0 0.3</size>
-			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>
+    
 
-  		<rectangle description="right virtual wall"> 
-			<id>20001</id>
-<!--  <centerPoint>7.5 4.5</centerPoint> -->
-      <centerPoint> 7.5 6.0</centerPoint>
-			<size>4.0 0.3</size>
-			<yawAngle>0.0</yawAngle>
-      <virtual description="define a virtual object">1</virtual>
-		</rectangle>    
+    <!--wall-->
+    <rectangle description="wall">
+      <id>10005</id>
+      <centerPoint>4.5 5</centerPoint>
+      <size>5 0.2</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    <!--wall-->
+    <rectangle description="wall">
+      <id>10006</id>
+      <centerPoint>8.5 5</centerPoint>
+      <size>1 0.2</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+
+    <rectangle description="wall">
+      <id>10007</id>
+      <centerPoint>4.5 9.5</centerPoint>
+      <size>0.2 3</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+
+
+    
 
     <!-- virtual poles: 30000-39999 -->
     <!--
