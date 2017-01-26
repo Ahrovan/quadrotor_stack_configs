@@ -36,7 +36,7 @@
 			
 		</config>
 
-   		 <task description="Hover 2 secs">
+   	<task description="Hover 2 secs">
 			<config>
 				<id>10</id>
 				<time>3</time>
@@ -367,7 +367,7 @@
 			</point>
 			<pointToLook>
 				<x>1.5</x>
-				<y>2.0</y>
+				<y>0.0</y>
 			</pointToLook>
 
 		</task>
@@ -475,6 +475,164 @@
         <j>droneSoundROSModule</j>
 			</modules>
 		</task>	
+	</submission>
+	
+	<submission description="XXXXX FLIP XXXXX">
+		<config>
+			<id>06</id>
+			<arucoId>03</arucoId>
+		</config>
+
+		<task description="Sleep">
+			<config>
+				<id>28</id>
+        			<time>5.0</time>
+			</config>
+			<command>sleep</command>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+		</task>
+		
+		<task description="Look to point 10">
+			<config>
+				<id>29</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>1.5</x>
+				<y>7.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>1.5</x>
+				<y>0.0</y>
+			</pointToLook>
+		</task>
+
+		
+		<task description="Move to point 11">
+			<config>
+				<id>31</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>1.5</x>
+				<y>3.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>1.5</x>
+				<y>0.0</y>
+			</pointToLook>
+
+		</task>
+
+  <task description="Move to point 11">
+			<config>
+				<id>32</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>1.5</x>
+				<y>3.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>1.5</x>
+				<y>5.0</y>
+			</pointToLook>
+
+		</task>
+
+		<task description="Move to point 12">
+			<config>
+				<id>33</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>5.0</x>
+				<y>2.0</y>
+				<z>1.3</z>
+			</point>
+			<pointToLook>
+				<x>6.5</x>
+				<y>5.0</y>
+			</pointToLook>
+
+		</task>
+		
+		<task description="FINAL LAND">
+			<config>
+				<id>34</id>
+			</config>
+			<command>land</command>
+			<speech>Aterrizar</speech>
+			<modules>
+				<e>droneOdometryStateEstimator</e>
+				<h>droneSpeechROSModule</h>
+        <i>droneObstacleDistanceCalculator</i>
+        <j>droneSoundROSModule</j>
+			</modules>
+		</task>	
+		
+		
 	</submission>
 
 
