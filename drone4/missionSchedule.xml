@@ -78,8 +78,8 @@
 
   		<task description="Sleep">
 			<config>
-				<id>20</id>
-        			<time>2.0</time>
+				<id>19</id>
+        			<time>6.0</time>
 			</config>
 			<command>sleep</command>
 			<modules>
@@ -93,6 +93,31 @@
         			<i>droneObstacleDistanceCalculator</i>
         			<j>droneSoundROSModule</j>
 			</modules>
+		</task>
+		
+		<task description="Move to point 1">
+			<config>
+				<id>20</id>
+			</config>
+			<command>moveTrajObsAvoid</command>
+			<speech>Movimiento En trayectoria</speech>
+			<modules>
+				<a>droneTrajectoryPlanner</a>
+				<c>droneArucoEyeROSModule</c>
+				<e>droneOdometryStateEstimator</e>
+				<d>droneObstacleProcessor</d>
+				<f>droneYawPlanner</f>
+				<g>droneLocalizer</g>
+				<h>droneSpeechROSModule</h>
+        			<i>droneObstacleDistanceCalculator</i>
+        			<j>droneSoundROSModule</j>
+			</modules>
+			<point>
+				<x>7.5</x>
+				<y>4.0</y>
+				<z>1.3</z>
+			</point>
+			<yaw>90</yaw>
 		</task>
 
 		<task description="Move to point 1">
@@ -117,10 +142,7 @@
 				<y>6.0</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>7.0</x>
-				<y>10.0</y>
-			</pointToLook>
+			<yaw>90</yaw>
 		</task>
 
 		
@@ -149,10 +171,7 @@
 				<y>6.5</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>4.5</x>
-				<y>8.0</y>
-			</pointToLook>
+			<yaw>90</yaw>
 		</task>
 
 		<task description="Move to point 7">
@@ -177,10 +196,7 @@
 				<y>8.5</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>2.0</x>
-				<y>10.0</y>
-			</pointToLook>
+			<yaw>90</yaw>
 		</task>
 		
 		<task description="Sleep">
@@ -224,10 +240,7 @@
 				<y>8.5</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>9.0</x>
-				<y>8.5</y>
-			</pointToLook>
+			<yaw>180</yaw>
 		</task>
 		
 		<task description="Sleep">
@@ -271,10 +284,7 @@
 				<y>8.5</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>2.5</x>
-				<y>0.0</y>
-			</pointToLook>
+			<yaw>270</yaw>
 		</task>
 		
 		<task description="Sleep">
@@ -318,10 +328,7 @@
 				<y>8.5</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>0.0</x>
-				<y>8.5</y>
-			</pointToLook>
+			<yaw>0</yaw>
 		</task>
 		
 		<task description="Sleep">
@@ -365,15 +372,12 @@
 				<y>8.5</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>1.5</x>
-				<y>0.0</y>
-			</pointToLook>
+			<yaw>-90</yaw>
 		</task>
 
     <task description="Sleep">
 			<config>
-				<id>28</id>
+				<id>32</id>
         			<time>20.0</time>
 			</config>
 			<command>sleep</command>
@@ -392,7 +396,7 @@
 
     <task description="Look to point 10">
 			<config>
-				<id>29</id>
+				<id>33</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<speech>Movimiento En trayectoria</speech>
@@ -412,16 +416,13 @@
 				<y>7.0</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>1.5</x>
-				<y>0.0</y>
-			</pointToLook>
+			<yaw>-90</yaw>
 		</task>
 
 		
 		<task description="Move to point 11">
 			<config>
-				<id>31</id>
+				<id>34</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<speech>Movimiento En trayectoria</speech>
@@ -441,16 +442,13 @@
 				<y>3.0</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>1.5</x>
-				<y>0.0</y>
-			</pointToLook>
+			<yaw>-90</yaw>
 
 		</task>
 
   <task description="Move to point 11">
 			<config>
-				<id>32</id>
+				<id>35</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<speech>Movimiento En trayectoria</speech>
@@ -470,16 +468,13 @@
 				<y>3.0</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>1.5</x>
-				<y>5.0</y>
-			</pointToLook>
+			<yaw>90</yaw>
 
 		</task>
 
 		<task description="Move to point 12">
 			<config>
-				<id>33</id>
+				<id>36</id>
 			</config>
 			<command>moveTrajObsAvoid</command>
 			<speech>Movimiento En trayectoria</speech>
@@ -499,10 +494,7 @@
 				<y>2.0</y>
 				<z>1.3</z>
 			</point>
-			<pointToLook>
-				<x>6.5</x>
-				<y>5.0</y>
-			</pointToLook>
+			<yaw>90</yaw>
 
 		</task>
   </submission>
@@ -562,7 +554,7 @@
 		<task description="Sleep">
 			<config>
 				<id>28</id>
-        			<time>5.0</time>
+        			<time>3.0</time>
 			</config>
 			<command>sleep</command>
 			<modules>

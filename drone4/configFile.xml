@@ -22,9 +22,15 @@
 		<neigbourhood>5</neigbourhood>
 	
 		<subzone>
-			<numNodes>2000</numNodes>
+			<numNodes>500</numNodes>
+			<initPoint>6 4</initPoint> 
+			<size>2 2</size>
+		</subzone>
+		
+		<subzone>
+			<numNodes>500</numNodes>
 			<initPoint>0.5 4</initPoint> 
-			<size>8 2</size>
+			<size>2 2</size>
 		</subzone>
 		
 	</config>

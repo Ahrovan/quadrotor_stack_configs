@@ -247,6 +247,7 @@
 
 		
     <!-- Fixed Known Real landmarks: 60000-69999 -->
+        <!-- 
 		<pole description="">
     		<id>60000</id>
     		<radius>0.15 0.15</radius>
@@ -317,7 +318,7 @@
 				  <id aruco_id = "75"/>
 				  <id aruco_id = "76"/>
     		</aruco>
-		</pole>
+		</pole> -->
 
      
   </obstaclesInMap>
