@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 
 <robot>
-	<dimensions>0.5 0.5</dimensions> <!-- ARDrone 0.6 x 0.6 -->
+	<dimensions>0.7 0.7</dimensions> <!-- ARDrone 0.6 x 0.6 -->
 </robot>
 
 
 <map>
 	<config>
 		<dimensions>9.0 11.0</dimensions>
-		<initPoint>0.0 -1.0</initPoint> <!-- punto minimo del mapa -->
+		<initPoint>0.0 0.0</initPoint> <!-- punto minimo del mapa -->
 	</config>
 </map>
 
@@ -22,28 +22,9 @@
 		<neigbourhood>5</neigbourhood>
 	
 		<subzone>
-			<numNodes>1500</numNodes>
-			<initPoint>6 4</initPoint> 
-			<size>2 2</size>
-		</subzone>
-	
-		
-	</config>
-	
-</prm>
-
-<prm>
-	<generate>1</generate>
-	<save>0</save> 
-
-	<config> 
-		<numNodes>5000</numNodes>
-		<neigbourhood>5</neigbourhood>
-	
-		<subzone>
-			<numNodes>1500</numNodes>
-			<initPoint>0 4</initPoint> 
-			<size>3 3</size>
+			<numNodes>2000</numNodes>
+			<initPoint>0.5 4</initPoint> 
+			<size>8 2</size>
 		</subzone>
 	
 		

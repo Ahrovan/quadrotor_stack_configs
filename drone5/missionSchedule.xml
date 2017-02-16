@@ -201,6 +201,7 @@
 				<p>trackerEye</p>
 				<h>droneSpeechROSModule</h>
         <j>droneSoundROSModule</j>
+        <k>droneIBVSController</k>
 			</modules>
 			<command>hover</command>
 		</task>
@@ -221,6 +222,7 @@
 				<g>droneLocalizer</g>
         <i>droneObstacleDistanceCalculator</i>
         <j>droneSoundROSModule</j>
+				<k>droneIBVSController</k>
 			</modules>
 		</task>
 
