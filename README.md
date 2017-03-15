@@ -6,3 +6,8 @@
 | drone3 | Pixhawk            |          |
 | drone4 | Bebop              |          |
 | drone5 | Pixhawk simulation |          |
+| drone7 | Rotors simulation  |  Swarm   |
+| drone8 | Rotors simulation  |  Swarm   |
+| drone9 | Rotors simulation  |  Swarm   |
+| drone10 | Rotors simulation  |  Swarm   |
+
