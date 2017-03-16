@@ -1,107 +1,426 @@
-<mission name="Search in a square">
+<mission macro_task="WALL INSPECTOR">
   
-  <task name="Preparation">
-
-    <task name="Take Off">
-      <action name="TAKE_OFF"/>
-    </task>
-
-    <task name="Initial wait">
+<!--=================================
+| INITIAL BEHAVIOR                   |
+==================================-->
+  <macro_task name="WALL INSPECTOR">
+    <task name="Waiting">
       <action name="WAIT">
-        <argument name="duration" value="3"/>
+        <argument name="duration" value="20"/>
       </action>
     </task>
 
-    <task name="Setting up home point ">
+    <task name="Land">
+      <action name="LAND" />
+    </task>
+  </macro_task>
+
+  <macro_task name="Zig Zag">
+    <task name="Start">
+      <repeat times="20"/>
+      <skill name="RECOGNIZE_ARUCO_MARKERS" />
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <task name="Move Right">
+        <action name="MOVE">
+          <argument name="coordinates" value="(5,0,0)"/>
+        </action>
+      </task>
+
+      <task name="Move Left">
+        <action name="MOVE">
+          <argument name="coordinates" value="(-5,0,0)"/>
+        </action>
+      </task>
+    </task>
+  </macro_task>
+
+  <macro_task name="Up and Down">
+     <repeat times="20" />
+     <skill name="RECOGNIZE_ARUCO_MARKERS" />
+     <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+     <task name="Move Up">
+        <action name="MOVE">
+          <argument name="coordinates" value="(0,0,4)"/>
+        </action>
+      </task>
+
+      <task name="Move Down">
+        <action name="MOVE">
+          <argument name="coordinates" value="(0,0,-4)"/>
+        </action>
+      </task>
+  </macro_task>
+
+  <macro_task name ="Up">
+    <task name="Up">
+      <action name="MOVE">
+        <argument name="coordinates" value="(0,0,0.5)"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Right">
+    <task name="Right">
+      <action name="MOVE">
+        <argument name="coordinates" value="(0.5,0,0)"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Move Up">
+    <task name="Up">
+      <action name="MOVE">
+        <argument name="coordinates" value="(0,0,4)"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Move Down">
+    <task name="Down">
+      <action name="MOVE">
+        <argument name="coordinates" value="(0,0,-4)"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Move Right">
+    <task name="Right">
+      <action name="MOVE">
+        <argument name="coordinates" value="(4,0,0)"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Move Left">
+    <task name="Left">
+      <action name="MOVE">
+        <argument name="coordinates" value="(-4,0,0)"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Stop">
+    <task name="Stop">
+      <action name="STABILIZE" />
+    </task>
+
+    <task name="Waiting">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <action name="WAIT">
+        <argument name="duration" value="20" />
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Continue Mission"> 
+    <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+    <task name="Stabilize1">
+      <action name="STABILIZE" />
+    </task>
+
+    <task name="Stabilize2">
+      <action name="STABILIZE" />
+    </task>
+  </macro_task>
+
+
+  <macro_task name ="Takeoff">
+    <task name="Takeoff">
+      <action name="TAKE_OFF" />
+    </task>
+
+    <task name="Setting up HOME point ">
       <action name="MEMORIZE_POINT">
         <argument name="coordinates" label="HOME"/>
       </action>
     </task>
 
-  </task>
+    <task name="Waiting">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <action name="WAIT">
+        <argument name="duration" value="20" />
+      </action>
+    </task>
+  </macro_task>
 
+  <macro_task name ="Notify not implemented">
+    <task name="Notification">
+      <action name="NOTIFY_OPERATOR">
+        <argument name="message" value="This task has not been implemented yet"/>
+      </action>
+    </task>
+  </macro_task>
 
-  <task name="Searching">
-
-    <skill name="AVOID_OBSTACLES"/>
-    <skill name="RECOGNIZE_ARUCO_MARKERS"/>
-
-    <task name="Go to point A">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(6.0, 4.0, 1.0)"/>
+  <macro_task name ="Notify Call Painter">
+    <task name="Notification">
+      <action name="NOTIFY_OPERATOR">
+        <argument name="message" value="Calling Painter drone"/>
       </action>
     </task>
 
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
+    <task name="Waiting">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <action name="WAIT">
+        <argument name="duration" value="20" />
+      </action>
     </task>
+  </macro_task>
 
-    <task name="Go to point B">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(6.0, 6.0, 1.0)"/>
+  <macro_task name ="Notify Light On">
+    <task name="Notification">
+      <action name="NOTIFY_OPERATOR">
+        <argument name="message" value="Turning light ON"/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Notify Light Off">
+    <task name="Notification">
+      <action name="NOTIFY_OPERATOR">
+        <argument name="message" value="Turning light OFF"/>
+      </action>
+    </task>
+  </macro_task>
+
+   <macro_task name ="Notify Position">
+    <task name="Notification">
+      <action name="NOTIFY_OPERATOR">
+        <argument name="message" value=""/>
+      </action>
+    </task>
+  </macro_task>
+
+  <macro_task name ="Zoom In">
+    <task name="Zoom In">
+      <action name="MOVE">
+        <argument name="coordinates" value="(0,0.5,0)"/>
       </action>
     </task>
 
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
+    <task name="Waiting">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <action name="WAIT">
+        <argument name="duration" value="20" />
+      </action>
     </task>
+  </macro_task>
 
-    <task name="Go to point C">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(4.0, 6.0, 1.0)"/>
+  <macro_task name ="Zoom Out">
+    <task name="Zoom Out">
+      <action name="MOVE">
+        <argument name="coordinates" value="(0,-0.5,0)"/>
       </action>
     </task>
 
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
+    <task name="Waiting">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <action name="WAIT">
+        <argument name="duration" value="20" />
+      </action>
     </task>
+  </macro_task>
 
-    <task name="Go to point D">
+  <macro_task name="Go Home">
+    <task name="Go To Point">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
       <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(4.0, 4.0, 1.0)"/>
+        <argument name="coordinates" label="HOME" />
       </action>
     </task>
 
-  </task>
-
-
-  <task name="Ending">
-
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
+    <task name="Waiting">
+      <skill name="RECOGNIZE_OPERATOR_MESSAGES" />
+      <action name="WAIT">
+        <argument name="duration" value="20" />
+      </action>
     </task>
+  </macro_task>
 
+  <macro_task name="Land">
     <task name="Land">
-      <action name="LAND"/>
+      <action name="LAND" />
     </task>
+  </macro_task>
 
-  </task>
-
+<!--=================================
+| EVENTS                             |
+==================================-->
   <event_handling>
-
-<!--==================================================
-| EVENT: Return Home
-===================================================-->
-    <event name="Return home">
-      <condition parameter="ArucoVisualMarker" comparison="equal" value="0"/>
-      <action name="STABILIZE"/>
-      <action name="GO_TO_POINT">
-         <argument name="coordinates" label="HOME"/>
-      </action>
-      <action name="STABILIZE"/>
-      <action name="LAND"/>
-      <termination mode="ABORT_MISSION"/>
+    <event name="Aruco 1/2/3/4 found">
+      <condition parameter="RECOGNIZED_ARUCO_MARKERS"
+                 comparison="includes"
+                 value="1,2,3,4" />
+      <call macro_task="Up" />
+      <termination mode="NEXT_TASK" />
     </event>
 
-<!--==================================================
-| EVENT: Low battery
-===================================================-->
-    <event name="Low battery">
-      <condition parameter="percentageBatteryCharge" comparison="less than" value="25"/>
-      <action name="STABILIZE"/>
-      <action name="LAND"/>   
-      <termination mode="ABORT_MISSION"/>
+    <event name="Aruco 7/8/9/10 found">
+      <condition parameter="RECOGNIZED_ARUCO_MARKERS"
+                 comparison="includes"
+                 value="7,8,9,10" />
+      <call macro_task="Right" />
+      <termination mode="NEXT_TASK" />
     </event>
 
+    <event name="Aruco 5 found">
+      <condition parameter="RECOGNIZED_ARUCO_MARKERS"
+                 comparison="includes"
+                 value="5" />
+      <call macro_task="Land" />
+      <termination mode="END_MISSION" />
+    </event>
+
+    <event name="Asking for takeoff">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="to" />
+      <call macro_task="Takeoff" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Land">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="l" />
+      <call macro_task="Land" />
+      <termination mode="END_MISSION" />
+    </event>
+
+    <event name="Asking for Go Home">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="gh" />
+      <call macro_task="Go Home" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Call Painter">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="cp" />
+      <call macro_task="Notify Call Painter" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Zoom In">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="zi" />
+      <call macro_task="Zoom In" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Zoom Out">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="zo" />
+      <call macro_task="Zoom Out" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Continue Mission">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="cm" />
+      <call macro_task="Continue Mission" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Start Mission">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="sm" />
+      <call macro_task="Zig Zag" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Finish Mission">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="fm" />
+      <call macro_task="Land" />
+      <termination mode="END_MISSION" />
+    </event>
+
+    <event name="Asking for Move Up">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="mu" />
+      <call macro_task="Move Up" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Move Down">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="md" />
+      <call macro_task="Move Down" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Move Right">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="mr" />
+      <call macro_task="Move Right" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Move Left">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="ml" />
+      <call macro_task="Move Left" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Stop">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="s" />
+      <call macro_task="Stop" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Send current position">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="sp" />
+      <call macro_task="Notify Position" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Turn light On">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="ton" />
+      <call macro_task="Notify Light On" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Turn light Off">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="toff" />
+      <call macro_task="Notify Light Off" />
+      <termination mode="REPEAT_TASK" />
+    </event>
+
+    <event name="Asking for Strategy Change Zig Zag">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="zz" />
+      <call macro_task="Zig Zag" />
+      <termination mode="NEXT_TASK" />
+    </event>
+
+    <event name="Asking for Strategy Change Up Down">
+      <condition parameter="RECOGNIZED_OPERATOR_MESSAGES"
+                 comparison="includes"
+                 value="ud" />
+      <call macro_task="Up and Down" />
+      <termination mode="NEXT_TASK" />
+    </event>
   </event_handling>
+
 </mission>
