@@ -154,12 +154,12 @@
     </parameters>
   </sensor>
 
-	 <sensor>
+  <sensor>
     <type>absolute_pose</type> 
     <ros_topic>slam_out_pose</ros_topic> 
     <ros_topic_type>geometry_msgs::PoseStamped</ros_topic_type>
     <name>Hokuyo</name>
-    <world_ref_frame_id description="id=0 is reserved to world">0</world_ref_frame_id>
+    <world_ref_frame_id description="id=0 is reserved to world">1</world_ref_frame_id>
     <measurements description="info about the measurements given by this sensor">
       <use_subscribed_cov>0</use_subscribed_cov>
       <position>
@@ -193,7 +193,7 @@
     <ros_topic>altitudeFiltered</ros_topic> 
     <ros_topic_type>geometry_msgs::PoseStamped</ros_topic_type>
     <name>altitude</name>
-    <world_ref_frame_id description="id=0 is reserved to world">0</world_ref_frame_id>
+    <world_ref_frame_id description="id=0 is reserved to world">1</world_ref_frame_id>
     <measurements description="info about the measurements given by this sensor">
       <use_subscribed_cov>0</use_subscribed_cov>
       <position>
@@ -221,6 +221,26 @@
     <parameters description="info about the calibration parameters given by this sensor">
     </parameters>
   </sensor>
+
+
+  <!-- WORLD -->
+  <map_element>
+    <type>world_ref_frame</type>
+    <name>mocap_world</name>
+    <id>1</id>
+    <pose_in_world>
+      <position description="position wrt world in m">
+        <enabled description="enable state estimation">0</enabled>
+        <init_estimation>0 0 0</init_estimation>
+        <init_var>0.0 0.0 0.0</init_var>  
+      </position> 
+      <attitude description="attitude wrt world in quaternion">
+        <enabled description="enable state estimation">0</enabled>
+        <init_estimation>1 0 0 0</init_estimation>
+        <init_var>0.0 0.0 0.0</init_var>
+      </attitude>
+    </pose_in_world>
+  </map_element>
 
 
 </msf_localization>
