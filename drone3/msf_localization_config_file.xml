@@ -164,11 +164,11 @@
       <use_subscribed_cov>0</use_subscribed_cov>
       <position>
         <enabled>1</enabled>
-        <var>1e-12 1e-12 1e-12</var>     <!--variance in the z axis should be high(not estimated by hector slam) -->   
+        <var>1e-12 1e-12 1e16</var>     <!--variance in the z axis should be high(not estimated by hector slam) -->   
       </position> 
       <orientation>
         <enabled>1</enabled>
-        <var>1e-6 1e-6 1e-6</var> <!-- roll and pitch covariance shoudl be high-->
+        <var>1e16 1e16 1e16</var> <!-- roll and pitch covariance shoudl be high-->
       </orientation>
     </measurements>
     <pose_in_robot description="initial estimate of the pose of the sensor wrt robot">
@@ -198,11 +198,11 @@
       <use_subscribed_cov>0</use_subscribed_cov>
       <position>
         <enabled>1</enabled>
-        <var>1e-12 1e-12 1e-12</var>     <!--variance in the x and y axis should be high(not estimated by hector slam) -->   
+        <var>1e16 1e16 1e-12</var>     <!--variance in the x and y axis should be high(not estimated by hector slam) -->   
       </position> 
       <orientation>
         <enabled>1</enabled>
-        <var>1e+36 1e+36 1e+36</var>
+        <var>1e16 1e16 1e16</var>
       </orientation>
     </measurements>
     <pose_in_robot description="initial estimate of the pose of the sensor wrt robot">
