@@ -50,7 +50,7 @@
 	// 12 Dec 2014, Pixhawk (Full) Weight: 1.7 Kg
 	-->
 	
-	<FEEDFORWARD_M>    0.700     </FEEDFORWARD_M>    <!-- kg  -->
+	<FEEDFORWARD_M>    0.79     </FEEDFORWARD_M>    <!-- kg  -->
 	<THRUSTER_GAIN>    0.33    </THRUSTER_GAIN>    <!-- 1p1/kg, pixhawk: 1/(29.71/9.81)-->
 	<GAIN_P>           0.05    </GAIN_P>           <!-- pixhawk: 0.1             , 1p1/(m/s)-->1
 	<GAIN_I>           0.03    </GAIN_I>           <!-- pixhawk: (GAIN_P / 1.25) , 1p1/(s * m/s)-->
