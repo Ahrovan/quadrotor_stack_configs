@@ -26,8 +26,8 @@
     <!-- borders (Virtual Obstacles): 10000-19999 -->
     <rectangle description="bottom side">
 			<id>10000</id>
-			<centerPoint>4.5 -1.5</centerPoint>
-			<size>10.0 0.3</size>
+			<centerPoint>-1.5 2.0</centerPoint>
+			<size>0.3 4</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
@@ -35,31 +35,31 @@
 		
 		<rectangle description="right side"> 
 			<id>10001</id>
-			<centerPoint>9.5 6.0</centerPoint>
-			<size>0.3 15.0</size>
+			<centerPoint>2.5 -1.5</centerPoint>
+			<size>5.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
 		
 		<rectangle description="up side"> 
 			<id>10002</id>
-			<centerPoint>4.5 13.5</centerPoint>
-			<size>10.0 0.3</size>
+			<centerPoint>5.5 2.0</centerPoint>
+			<size>0.3 4</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
 		
 		<rectangle description="left side"> 
 			<id>10003</id>
-			<centerPoint>-0.5 6.0</centerPoint>
-			<size>0.3 15.0</size>
+			<centerPoint>2.5 4.5</centerPoint>
+			<size>5.0 0.3</size>
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
 
 
     <!-- virtual walls: 20000-29999 -->
-
+<!--
     <rectangle description="left"> 
 			<id>20000</id>
 			<centerPoint>1.5 7.0</centerPoint>
@@ -75,7 +75,7 @@
 			<yawAngle>0.0</yawAngle>
       <virtual description="define a virtual object">1</virtual>
 		</rectangle>
-
+-->
     <!-- virtual poles: 30000-39999 -->
     <!--
   	<pole description="">
