@@ -2,7 +2,7 @@
 	<camera>
 		<id description="they could be different cameras. Default is 0">0</id>
 		<position description="position of the camera in the drone wrt the cog in GMR">
-                        <x description="m">0.2</x>
+      <x description="m">0.11</x>
 			<y description="m">0.0</y>
 			<z description="m">0.035</z>
 			<yaw description="deg">-90</yaw>
@@ -14,7 +14,7 @@
 	<camera>
 		<id description="they could be different cameras. Default is 1">1</id>
 		<position description="position of the camera in the drone wrt the cog in GMR">
-                        <x description="m">-0.05</x>
+      <x description="m">-0.05</x>
 			<y description="m">0.0</y>
 			<z description="m">-0.05</z>
 			<yaw description="deg">-90</yaw> <!-- check -->

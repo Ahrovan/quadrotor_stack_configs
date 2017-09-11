@@ -1,0 +1,47 @@
+<enable_front_or_bottom_camera> 1.0 </enable_front_or_bottom_camera>  <!-- 0.0 means bottom camera enable, 1.0 means front camera enable  -->
+
+<front_camera>
+        <sensor_height_mm>  10.3382  </sensor_height_mm>  <!-- units: mm, height of the sensor image (CMOS)  -->
+	<focal_length_mm>   5.5     </focal_length_mm>      <!-- units: mm, absolute focal length -->
+
+	<Rotation_matrix_from_Camera_to_Robot>
+
+	<!-- Rotation Matrix able to transform a velocity in camera frame into a velocity in robot coordinate frame
+	     V_R_W_R = R_C_R * V_C_W_C (Velocity of the robot frame with respect to the world frame expressed in Robot
+	     coordinate frame = Rotation matrix from camera frame to robot frame times Velocity of the camera frame with
+             respect to the world frame expressed in camera coordinates -->
+
+		<R_00>  0.0  </R_00> <R_01>  0.0 </R_01> <R_02> 1.0 </R_02> <!-- Vx_body = Vz_camera_front -->
+		<R_10> -1.0  </R_10> <R_11>  0.0 </R_11> <R_12> 0.0 </R_12> <!-- Vy_body = -Vx_camera_front -->
+ 		<R_20>  0.0  </R_20> <R_21> -1.0 </R_21> <R_22> 0.0 </R_22> <!-- Vz_body = -Vy_camera_front -->
+
+	</Rotation_matrix_from_Camera_to_Robot>
+
+	<distance_object_desired_mm>   600   </distance_object_desired_mm>  <!-- units: mm, desired distance from the object in mm -->
+	<object_height_mm> 255 </object_height_mm>  <!-- units: mm, real object height (Edge Size) -->
+	<desired_id_aruco> 2 </desired_id_aruco>  <!-- id number of the desired aruco to do image based visual servo  simulation = 12-->
+
+</front_camera>
+
+<bottom_camera>
+        <sensor_height_mm>  10.3382  </sensor_height_mm>  <!-- units: mm, height of the sensor image (CMOS)  -->
+	<focal_length_mm>   5.5     </focal_length_mm>      <!-- units: mm, absolute focal length -->
+
+	<Rotation_matrix_from_Camera_to_Robot>
+
+	<!-- Rotation Matrix able to transform a velocity in camera frame into a velocity in robot coordinate frame
+	     V_R_W_R = R_C_R * V_C_W_C (Velocity of the robot frame with respect to the world frame expressed in Robot
+	     coordinate frame = Rotation matrix from camera frame to robot frame times Velocity of the camera frame with
+             respect to the world frame expressed in camera coordinates -->
+
+		<R_00>  0.0  </R_00> <R_01> -1.0 </R_01> <R_02>  0.0 </R_02> <!-- Vx_body = -Vy_camera_bottom -->
+		<R_10> -1.0  </R_10> <R_11>  0.0 </R_11> <R_12>  0.0 </R_12> <!-- Vy_body = -Vx_camera_bottom -->
+ 		<R_20>  0.0  </R_20> <R_21>  0.0 </R_21> <R_22> -1.0 </R_22> <!-- Vz_body = -Vz_camera_bottom -->
+
+	</Rotation_matrix_from_Camera_to_Robot>
+
+	<distance_object_desired_mm>   1000   </distance_object_desired_mm>  <!-- units: mm, desired distance from the object in mm -->
+	<object_height_mm> 255 </object_height_mm>  <!-- units: mm, real object height (Edge Size) -->
+	<desired_id_aruco> 5 </desired_id_aruco>  <!-- id number of the desired aruco to do image based visual servo  simulation = 9-->
+
+</bottom_camera>

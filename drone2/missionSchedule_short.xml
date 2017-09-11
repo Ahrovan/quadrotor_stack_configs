@@ -38,10 +38,10 @@
 		<config>
 			<id>02</id>
 		</config>
-		<task description="Hover 3 secs">
+		<task description="Hover 5 secs">
 			<config>
 				<id>01</id>
-				<time>3</time>
+				<time>5</time>
 			</config>
 			<modules>
         <a>droneArucoEyeROSModule</a>
@@ -55,34 +55,16 @@
 			</modules>
 			<command>hover</command>
 		</task>
+
 	</submission>
 
 	<submission description="Image Based Visual Servoing">
 		<config>
 			<id>03</id>
 		</config>
-
-    <task description="Hover 2 secs">
-			<config>
-				<id>01</id>
-				<time>2</time>
-			</config>
-			<modules>
-        <a>droneArucoEyeROSModule</a>
-        <g>droneLocalizer</g>
-        <d>droneObstacleProcessor</d>
-				<c>droneOdometryStateEstimator</c>
-				<e>open_tld_translator</e>				
-				<p>trackerEye</p>
-				<h>droneSpeechROSModule</h>
-        <j>droneSoundROSModule</j>
-			</modules>
-			<command>hover</command>
-		</task>
-
 		<task description="Start IBVS Control">
 			<config>
-				<id>02</id>
+				<id>01</id>
 			</config>
 			<command>moveVSObsAvoid</command>
 			<modules>
@@ -183,7 +165,7 @@
 			<config>
 				<id>02</id>
 			</config>
-			<command>moveFlipRight</command>
+			<command>moveFlipLeft</command>
 			<modules>
 				<e>open_tld_translator</e>
 				<f>trackerEye</f>
