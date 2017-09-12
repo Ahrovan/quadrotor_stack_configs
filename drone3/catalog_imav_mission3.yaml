@@ -1,0 +1,42 @@
+default_behavior_values:
+  timeout: 15
+  category: goal_based
+
+behavior_descriptors:
+  - behavior: TAKE_OFF
+    timeout: 20
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: LAND
+    timeout: 20	
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: LAND_ON_STATIC_PLATFORM
+    capabilities: [VISUAL_SERVOING_MANUEL]
+
+  - behavior: MOVE_TO_VISUAL_MARKER
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: PAY_ATTENTION_TO_VISUAL_MARKERS
+    category: recurrent
+    capabilities: [VISUAL_MARKERS_RECOGNITION]
+
+behavior_lists:
+  - list: motion_behaviors
+    behaviors:
+      - TAKE_OFF
+      - LAND
+      - LAND_ON_STATIC_PLATFORM
+      - MOVE_TO_VISUAL_MARKER
+
+capability_descriptors:
+  - capability: VISUAL_SERVOING_MANUEL
+    process_sequence:
+      - perception_IBVS_Node
+      - state_estimator_IBVS_Node
+      - controller_IBVS_2_Node  
+
+  - capability: VISUAL_MARKERS_RECOGNITION
+    process_sequence:
+      - droneArucoEyeROSModule
+

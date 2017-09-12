@@ -1,19 +1,18 @@
 <!-- Only one of these 3 can be enable (1), if some error occurs default enable_CornersStateEstimator = 1  -->
 <enable_CornersStateEstimator> 0.0 </enable_CornersStateEstimator> <!-- enable = 1, disable = 1 -->
-<enable_CornersStateEstimatorPlusTrackerLucasKanade> 0.0 </enable_CornersStateEstimatorPlusTrackerLucasKanade> <!-- enable = 1, disable = 1 -->
 <enable_NOCornersStateEstimator> 1.0 </enable_NOCornersStateEstimator> <!-- enable = 1, disable = 1 -->
 
 <!-- Kalman Filter Process and Measurement Covariance Matrix, Useless only if enable_NOCornersStateEstimator = 1 -->
 <CornersPlusCenterEstimator>  <!-- Corners pix estimator in the image -->
-	<Q>
+	<Q> 
 		<Q_00> 0.1 </Q_00> <Q_01> 0.0 </Q_01> <Q_02> 0.0 </Q_02> <Q_03> 0.0 </Q_03>   <!-- row_pix  -->
 		<Q_10> 0.0 </Q_10> <Q_11> 0.1 </Q_11> <Q_12> 0.0 </Q_12> <Q_13> 0.0 </Q_13>   <!-- col_pix  -->
- 		<Q_20> 0.0 </Q_20> <Q_21> 0.0 </Q_21> <Q_22> 0.5 </Q_22> <Q_23> 0.0 </Q_23>   <!-- Velocity row_pix -->
+ 		<Q_20> 0.0 </Q_20> <Q_21> 0.0 </Q_21> <Q_22> 0.5 </Q_22> <Q_23> 0.0 </Q_23>   <!-- Velocity row_pix --> 
 		<Q_30> 0.0 </Q_30> <Q_31> 0.0 </Q_31> <Q_32> 0.0 </Q_32> <Q_33> 0.5 </Q_33>   <!-- Velocity col_pix -->
 	</Q>  <!-- States Covariance matrix  -->
 
 	<R>
-		<R_00> 3.0 </R_00> <R_01> 0.0 </R_01>
-		<R_10> 0.0 </R_10> <R_11> 3.0 </R_11>
+		<R_00> 3.0 </R_00> <R_01> 0.0 </R_01>	
+		<R_10> 0.0 </R_10> <R_11> 3.0 </R_11>	
 	</R> <!-- Measurements Covariance matrix  -->
 </CornersPlusCenterEstimator>
