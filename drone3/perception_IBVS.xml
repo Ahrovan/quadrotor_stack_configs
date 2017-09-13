@@ -1,5 +1,10 @@
 <enable_front_or_bottom_camera> 1.0 </enable_front_or_bottom_camera>  <!-- 0.0 means bottom camera enable, 1.0 means front camera enable  -->
 
+<ideal_center> 
+	<row> 151 </row>  <!--  height/2 + (height/2)/3 row     (total bebop image row=480) -->
+	<col> 570 </col>  <!--  width/2  - (size.width/2)/(2.7) (total bebop image col=856 -->	 
+</ideal_center> 
+
 <front_camera>
         <sensor_height_mm>  10.3382  </sensor_height_mm>  <!-- units: mm, height of the sensor image (CMOS)  -->
 	<focal_length_mm>   5.5     </focal_length_mm>      <!-- units: mm, absolute focal length -->
@@ -40,8 +45,8 @@
 
 	</Rotation_matrix_from_Camera_to_Robot>
 
-	<distance_object_desired_mm>   700   </distance_object_desired_mm>  <!-- units: mm, desired distance from the object in mm -->
-	<object_height_mm> 150 </object_height_mm>  <!-- units: mm, real object height (Edge Size) -->
-	<desired_id_aruco> 25 </desired_id_aruco>  <!-- id number of the desired aruco to do image based visual servo  simulation = 9-->
+	<distance_object_desired_mm>   700   </distance_object_desired_mm>  <!-- units: mm, desired distance from the object in mm 700 -->
+	<object_height_mm> 175 </object_height_mm>  <!-- units: mm, real object height (Edge Size) 150-->
+	<desired_id_aruco> 7 </desired_id_aruco>  <!-- id number of the desired aruco to do image based visual servo  simulation = 9 25-->
 
 </bottom_camera>
