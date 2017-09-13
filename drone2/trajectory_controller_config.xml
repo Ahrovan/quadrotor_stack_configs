@@ -18,7 +18,7 @@
             </low_pass_filters>
         </drone_commands>
         <speed_control_loop>
-            <vxy_max>       0.2    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
+            <vxy_max>       0.3    </vxy_max>          <!--  m/s  -->   <!-- STACKV_09 1.75 old values: IMAV13 0.70-->
             <!-- vxy_max_comments: IMAV13 0.70; JINT13_130821 2.75; 2.00 before ASU -->
             <vxy_at_ratio>  0.75    </vxy_at_ratio>     <!-- [0,1] -->
                 <!-- vxy_at_max =    vxy_at_ratio  * vxy_max -->

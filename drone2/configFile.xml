@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <robot>
-  <dimensions>0.4 0.4</dimensions>
+  <dimensions>0.5 0.5</dimensions>
 </robot>
 <map>
   <config>
-    <dimensions>20 20</dimensions>
-    <initPoint>-2 -2</initPoint>
+    <dimensions>12 9.5</dimensions>
+    <initPoint>-1 -4.5</initPoint>
   </config>
 </map>
 <prm>
@@ -14,5 +14,10 @@
   <config>
     <numNodes>3000</numNodes>
     <neigbourhood>5</neigbourhood>
+    <subzone>
+      <numNodes>1500</numNodes>
+      <initPoint>1.0 -2.0</initPoint>
+      <size>3.0 2.0</size>
+    </subzone>
   </config>
 </prm>

@@ -2,58 +2,58 @@
 
 <!--
 	<arucoMarker>
-		<id>0</id> 
+		<id>0</id>
 		<size>0.123</size>
 	</arucoMarker>
-	
+
 	<arucoMarker>
-		<id>2</id> 
+		<id>2</id>
 		<size>0.08</size>
 	</arucoMarker>
-	
+
 	-->
-	
+
 	<!--
 	<arucoMarker>
-		<id>1</id> 
+		<id>1</id>
 		<size>0.173</size>
 	</arucoMarker>
-	
+
 	<arucoMarker>
-		<id>3</id> 
+		<id>3</id>
 		<size>0.173</size>
 	</arucoMarker>
-	
+
 	<arucoMarker>
-		<id>4</id> 
+		<id>4</id>
 		<size>0.173</size>
 	</arucoMarker>
-	
+
 	<arucoMarker>
-		<id>6</id> 
+		<id>6</id>
 		<size>0.173</size>
 	</arucoMarker>
 	-->
-	
+
 	<arucoMarker>
 		<id>0</id>
 		<size>0.253</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>1</id>
-		<size>0.253</size>
+		<size>0.175</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>2</id>
-		<size>0.253</size>
+		<size>0.175</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>3</id>
-		<size>0.253</size>
+		<size>0.175</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>4</id>
-		<size>0.253</size>
+		<size>0.175</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>5</id>
@@ -89,11 +89,11 @@
 	</arucoMarker>
 	<arucoMarker>
 		<id>13</id>
-		<size>0.253</size>
+		<size>0.175</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>14</id>
-		<size>0.253</size>
+		<size>0.175</size>
 	</arucoMarker>
 	<arucoMarker>
 		<id>15</id>
