@@ -1,0 +1,86 @@
+default_behavior_values:
+  timeout: 15
+  category: goal_based
+
+behavior_descriptors:
+  - behavior: TAKE_OFF
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: LAND
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: GO_TO_POINT
+    timeout: 30
+    incompatible_lists: [motion_behaviors]
+    capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
+
+  - behavior: ROTATE
+    incompatible_lists: [motion_behaviors]
+    capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
+
+  - behavior: SELF_LOCALIZE_BY_ODOMETRY
+    category: recurrent
+    incompatible_lists: [self_localization_behaviors]
+    capabilities:
+      - DYNAMIC_SELF_LOCALIZATION_MODE
+
+  - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
+    category: recurrent
+    incompatible_lists: [self_localizaion_behaviors]
+    capabilities:
+      - SELF_LOCALIZATION_BY_VISUAL_MARKERS
+      - OBSTACLE_DETECTION_BY_VISUAL_MARKERS
+      - VISUAL_MARKERS_RECOGNITION
+      - DYNAMIC_SELF_LOCALIZATION_MODE
+
+  - behavior: RECOGNIZE_QR
+
+behavior_lists:
+  - list: motion_behaviors
+    behaviors:
+      - TAKE_OFF
+      - LAND
+      - FLIP
+      - KEEP_HOVERING
+      - FOLLOW_OBJECT_IMAGE
+      - LAND_ON_STATIC_PLATFORM
+      - KEEP_MOVING
+      - GO_TO_POINT
+      - ROTATE
+
+  - list: self_localization_behaviors
+    behaviors:
+      - SELF_LOCALIZE_BY_ODOMETRY
+      - SELF_LOCALIZE_BY_VISUAL_MARKERS
+      - SELF_LOCALIZE_BY_LIDAR
+
+
+capability_descriptors:
+  - capability: SETPOINT_BASED_FLIGHT_CONTROL
+    process_sequence: [droneTrajectoryController]
+    incompatible_capabilities: [VISUAL_SERVOING]
+
+  - capability: PATH_PLANNING
+    process_sequence: [droneTrajectoryPlanner, droneYawPlanner]
+
+  - capability: VISUAL_SERVOING
+    process_sequence: [trackerEye, open_tld_translator, droneIBVSController]
+    incompatible_capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
+
+  - capability: DYNAMIC_SELF_LOCALIZATION_MODE
+    process_sequence: [self_localization_selector_process]
+
+  - capability: SELF_LOCALIZATION_BY_ODOMETRY
+    process_sequence: [droneOdometryStateEstimator]
+
+  - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
+    process_sequence: [droneLocalizer]
+
+  - capability: OBSTACLE_DETECTION_BY_VISUAL_MARKERS
+    process_sequence:
+      - droneObstacleDistanceCalculator
+      - droneObstacleProcessor
+
+  - capability: VISUAL_MARKERS_RECOGNITION
+    process_sequence:
+      - droneArucoEyeROSModule
