@@ -10,7 +10,7 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
 
   - behavior: GO_TO_POINT
-    timeout: 30
+    timeout: 120
     incompatible_lists: [motion_behaviors]
     capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
 
@@ -22,6 +22,7 @@ behavior_descriptors:
     category: recurrent
     incompatible_lists: [self_localization_behaviors]
     capabilities:
+      - SELF_LOCALIZATION_BY_VISUAL_MARKERS
       - DYNAMIC_SELF_LOCALIZATION_MODE
 
   - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
@@ -34,6 +35,9 @@ behavior_descriptors:
       - DYNAMIC_SELF_LOCALIZATION_MODE
 
   - behavior: RECOGNIZE_QR
+    timeout: 5
+    capabilities:
+      - QR_RECOGNITION
 
 behavior_lists:
   - list: motion_behaviors
@@ -71,7 +75,7 @@ capability_descriptors:
     process_sequence: [self_localization_selector_process]
 
   - capability: SELF_LOCALIZATION_BY_ODOMETRY
-    process_sequence: [droneOdometryStateEstimator]
+    process_sequence: [droneRobotLocalizationROSModuleNode]
 
   - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
     process_sequence: [droneLocalizer]
@@ -84,3 +88,7 @@ capability_descriptors:
   - capability: VISUAL_MARKERS_RECOGNITION
     process_sequence:
       - droneArucoEyeROSModule
+
+  - capability: QR_RECOGNITION
+    process_sequence:
+      - qr_recognizer
