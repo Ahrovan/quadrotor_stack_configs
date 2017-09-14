@@ -8,7 +8,7 @@
         <drone_commands>
             <pitch_max> 0.35  </pitch_max>              <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
             <roll_max>  0.35  </roll_max>               <!-- [0,1] -->  <!-- old values: STACKV_09 0.70 IMAV13 0.30 -->
-            <dyaw_max>  0.35   </dyaw_max>               <!-- [0,1] -->
+            <dyaw_max>  0.45   </dyaw_max>               <!-- [0,1] -->
             <dz_max>    1.00  </dz_max>                 <!-- [0,1] -->
             <!-- dyaw_max_comments: IMAV13 0.75; JINT13_130821 0.25; 0.50 before ASU -->
             <low_pass_filters>
@@ -109,7 +109,7 @@
             <yaw>
                 <DeltaKp>0.30</DeltaKp>     <!-- 1/1 -->
                 <!-- yaw PID gains: Kp, Ki = Kp/Ti, Kd = Kp*Td  -->
-                <Kp> 4.60</Kp>   <!-- [-1,1]/rad     -->
+                <Kp> 1.60</Kp>   <!-- [-1,1]/rad     -->
                 <Ki> 0.00</Ki>   <!-- [-1,1]/(rad*s) -->
                 <Kd> 0.67</Kd>   <!-- [-1,1]/(rad/s) -->
             </yaw>

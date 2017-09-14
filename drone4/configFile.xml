@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot>
-  <dimensions>0.6 0.6</dimensions>
+  <dimensions>0.65 0.65</dimensions>
 </robot>
 <map>
   <config>
@@ -18,6 +18,11 @@
       <numNodes>1200</numNodes>
       <initPoint>1.0 -2.0</initPoint>
       <size>2.5 2.0</size>
+    </subzone>
+    <subzone>
+      <numNodes>1200</numNodes>
+      <initPoint>6.0 -1.0</initPoint>
+      <size>2.0 3.0</size>
     </subzone>
   </config>
 </prm>
