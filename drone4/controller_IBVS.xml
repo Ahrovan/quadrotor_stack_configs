@@ -1,0 +1,17 @@
+<bottom_camera>
+	<lambda>  <!-- Velocity generator scale gain -->
+		<lambda_11> 0.5 </lambda_11>  <!-- 0.2 opti_track 0.6 Bottom Camera: Vy_camera = -Vx_body-->
+		<lambda_00> 0.5 </lambda_00>  <!-- 0.3 opti_track 0.3 Bottom Camera: Vx_camera = -Vy_body-->
+		<lambda_22> 0.2 </lambda_22>  <!-- 0.3 opti_track 0.4 Bottom Camera: Vz_camera = -Vz_body  pixhawk 0.2-->
+	</lambda>
+</bottom_camera>
+
+<front_camera>
+	<lambda>  <!-- Velocity generator scale gain -->
+		<lambda_00> 0.65 </lambda_00>  <!-- 0.7(test) 0.35 opti_track 0.9 Front Camera: Vx_camera = -Vy_body -->
+		<lambda_11> 0.45 </lambda_11>  <!-- 0.5(test) 0.35 opti_track 0.6 Front Camera: Vy_camera = -Vz_body -->
+		<lambda_22> 0.6 </lambda_22>  <!--  0.4(test) 0.3 opti_track 0.7 Front Camera: Vz_camera = Vx_body  -->
+	</lambda>
+</front_camera>
+
+<safety_counter_threshold> 60 </safety_counter_threshold>
