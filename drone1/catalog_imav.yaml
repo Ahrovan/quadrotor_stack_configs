@@ -22,16 +22,17 @@ behavior_descriptors:
     category: recurrent
     incompatible_lists: [self_localization_behaviors]
     capabilities:
-      - SELF_LOCALIZATION_BY_VISUAL_MARKERS
+      #- SELF_LOCALIZATION_BY_ODOMETRY
       - DYNAMIC_SELF_LOCALIZATION_MODE
 
   - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
     category: recurrent
     incompatible_lists: [self_localizaion_behaviors]
     capabilities:
-      - SELF_LOCALIZATION_BY_VISUAL_MARKERS
-      - OBSTACLE_DETECTION_BY_VISUAL_MARKERS
-      - VISUAL_MARKERS_RECOGNITION
+      # - SELF_LOCALIZATION_BY_ODOMETRY
+      # - SELF_LOCALIZATION_BY_VISUAL_MARKERS
+      #- OBSTACLE_DETECTION_BY_VISUAL_MARKERS
+      #- VISUAL_MARKERS_RECOGNITION
       - DYNAMIC_SELF_LOCALIZATION_MODE
 
   - behavior: RECOGNIZE_QR

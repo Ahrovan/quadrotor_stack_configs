@@ -4,8 +4,8 @@
 </robot>
 <map>
   <config>
-    <dimensions>16 9.5</dimensions>
-    <initPoint>-1 -4.5</initPoint>
+    <dimensions>18 9.5</dimensions>
+    <initPoint>-3 -4.5</initPoint>
   </config>
 </map>
 <prm>
@@ -18,6 +18,11 @@
       <numNodes>1500</numNodes>
       <initPoint>1.0 0.0</initPoint>
       <size>3.0 2.0</size>
+    </subzone>
+    <subzone>
+      <numNodes>1500</numNodes>
+      <initPoint>8.2 -1.7</initPoint>
+      <size>4.3 3.0</size>
     </subzone>
   </config>
 </prm>

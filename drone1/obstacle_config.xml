@@ -13,23 +13,23 @@
     <!--bottom side-->
     <rectangle description="bottom side">
       <id>10000</id>
-      <centerPoint>7 -4.527</centerPoint>
-      <size>16 0.3</size>
+      <centerPoint>6 -4.53</centerPoint>
+      <size>18 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--up side-->
     <rectangle description="up side">
       <id>10001</id>
-      <centerPoint>7.022 4.984</centerPoint>
-      <size>16 0.3</size>
+      <centerPoint>6.02 4.98</centerPoint>
+      <size>18 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--left side-->
     <rectangle description="left side">
       <id>10002</id>
-      <centerPoint>-1 0.25</centerPoint>
+      <centerPoint>-3 0.23</centerPoint>
       <size>0.3 9.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -109,7 +109,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10080</id>
-      <centerPoint>9.37 0</centerPoint>
+      <centerPoint>9.333 0.06221</centerPoint>
       <size>0.5 0.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -117,7 +117,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10081</id>
-      <centerPoint>9.37 -1.45</centerPoint>
+      <centerPoint>9.33 -1.46</centerPoint>
       <size>0.5 0.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -125,7 +125,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10082</id>
-      <centerPoint>11.17 1</centerPoint>
+      <centerPoint>11.35 1.541</centerPoint>
       <size>0.5 0.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -133,7 +133,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10083</id>
-      <centerPoint>11.17 -0.53</centerPoint>
+      <centerPoint>11.38 -0.03169</centerPoint>
       <size>0.5 0.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -149,7 +149,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10085</id>
-      <centerPoint>9.42 2.41</centerPoint>
+      <centerPoint>9.404 2.668</centerPoint>
       <size>0.2 4.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -157,15 +157,15 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10090</id>
-      <centerPoint>11.11 -2.56</centerPoint>
-      <size>0.2 3.1</size>
+      <centerPoint>11.42 -2.309</centerPoint>
+      <size>0.2 3.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--wall-->
     <rectangle description="wall">
       <id>10091</id>
-      <centerPoint>11.13 3.04</centerPoint>
+      <centerPoint>11.4 3.442</centerPoint>
       <size>0.2 3.2</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -259,6 +259,24 @@
       <aruco>
         <id aruco_id="62" />
         <id aruco_id="63" />
+      </aruco>
+    </pole>
+    <!--Landmark-->
+    <pole description="Landmark">
+      <id>60041</id>
+      <radius>0.2 0.2</radius>
+      <aruco>
+        <id aruco_id="55" />
+        <id aruco_id="59" />
+      </aruco>
+    </pole>
+    <!--Landmark-->
+    <pole description="Landmark">
+      <id>60042</id>
+      <radius>0.2 0.2</radius>
+      <aruco>
+        <id aruco_id="53" />
+        <id aruco_id="56" />
       </aruco>
     </pole>
   </obstaclesInMap>
