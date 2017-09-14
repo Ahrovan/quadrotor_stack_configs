@@ -24,10 +24,10 @@
     </VisualMarkerList>
     <Arucos description="List of visual markers considered as landmarks (previously known pose)">
       <!-- Pole 40000-->
-      <Aruco id="5" x="4.97" y="2.13" z="1.3" roll="0" pitch="0" yaw="0" />
-      <Aruco id="6" x="4.77" y="2.33" z="1.3" roll="0" pitch="0" yaw="90" />
+      <Aruco id="50" x="4.97" y="2.13" z="1.3" roll="0" pitch="0" yaw="0" />
+      <Aruco id="60" x="4.77" y="2.33" z="1.3" roll="0" pitch="0" yaw="90" />
       <Aruco id="7" x="4.57" y="2.13" z="1.3" roll="0" pitch="0" yaw="180" />
-      <Aruco id="8" x="4.77" y="1.93" z="1.3" roll="0" pitch="0" yaw="-90" />
+      <Aruco id="80" x="4.77" y="1.93" z="1.3" roll="0" pitch="0" yaw="-90" />
       <!-- Pole 40001-->
       <Aruco id="30" x="4.97" y="0.3" z="1.3" roll="0" pitch="0" yaw="0" />
       <Aruco id="29" x="4.77" y="0.5" z="1.3" roll="0" pitch="0" yaw="90" />
@@ -54,6 +54,12 @@
       <!-- Landmark 60001-->
       <Aruco id="4" x="1.85" y="-1.91" z="1.35" roll="0" pitch="0" yaw="180" />
       <Aruco id="3" x="1.85" y="0.09" z="1.35" roll="0" pitch="0" yaw="180" />
+      <!-- Landmark 60020-->
+      <Aruco id="64" x="9.1" y="0" z="1.3" roll="0" pitch="0" yaw="180" />
+      <Aruco id="8" x="9.1" y="-1.5" z="1.3" roll="0" pitch="0" yaw="180" />
+      <!-- Landmark 60040-->
+      <Aruco id="62" x="10.1" y="1" z="1.3" roll="0" pitch="0" yaw="180" />
+      <Aruco id="63" x="10.1" y="-0.5" z="1.3" roll="0" pitch="0" yaw="180" />
     </Arucos>
   </params>
 </main>

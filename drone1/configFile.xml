@@ -4,7 +4,7 @@
 </robot>
 <map>
   <config>
-    <dimensions>12 9.5</dimensions>
+    <dimensions>16 9.5</dimensions>
     <initPoint>-1 -4.5</initPoint>
   </config>
 </map>
@@ -12,7 +12,7 @@
   <generate>1</generate>
   <save>0</save>
   <config>
-    <numNodes>5000</numNodes>
+    <numNodes>4000</numNodes>
     <neigbourhood>5</neigbourhood>
     <subzone>
       <numNodes>1500</numNodes>
