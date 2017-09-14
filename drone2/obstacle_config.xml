@@ -77,7 +77,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10041</id>
-      <centerPoint>1.995 0.5742</centerPoint>
+      <centerPoint>2.017 0.6175</centerPoint>
       <size>0.5 0.8</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -111,10 +111,10 @@
       <id>40000</id>
       <radius>0.2 0.2</radius>
       <aruco>
-        <id aruco_id="5" />
-        <id aruco_id="6" />
+        <id aruco_id="50" />
+        <id aruco_id="60" />
         <id aruco_id="7" />
-        <id aruco_id="8" />
+        <id aruco_id="80" />
       </aruco>
     </pole>
     <!--Pole-->

@@ -25,16 +25,18 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
 
   - behavior: SELF_LOCALIZE_BY_ODOMETRY
-    capabilities: [DYNAMIC_SELF_LOCALIZATION_MODE]
+    capabilities: [DYNAMIC_SELF_LOCALIZATION_MODE, SELF_LOCALIZATION_BY_ODOMETRY]
     incompatible_lists: [localization_behaviors]
 
   - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
+    category: recurrent
+    incompatible_lists: [localization_behaviors]
     capabilities:
       - SELF_LOCALIZATION_BY_VISUAL_MARKERS
+      - SELF_LOCALIZATION_BY_ODOMETRY
       - OBSTACLE_DETECTION_BY_VISUAL_MARKERS
       - VISUAL_MARKERS_RECOGNITION
       - DYNAMIC_SELF_LOCALIZATION_MODE
-    incompatible_lists: [localization_behaviors]
 
 behavior_lists:
   - list: motion_behaviors
@@ -62,8 +64,7 @@ capability_descriptors:
     process_sequence: [self_localization_selector_process]
 
   - capability: SELF_LOCALIZATION_BY_ODOMETRY
-    process_sequence: [droneOdometryStateEstimator]
-    required_capabilities: [DYNAMIC_SELF_LOCALIZATION_MODE]
+    process_sequence: [droneRobotLocalizationROSModuleNode]
 
   - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
     process_sequence: [droneLocalizer]
@@ -81,7 +82,7 @@ capability_descriptors:
     process_sequence:
       - perception_IBVS_Node
       - state_estimator_IBVS_Node
-      - controller_IBVS_2_Node
+      - controller_IBVS_Node
 
   - capability: SPEED_CONTROLLER_MANUEL
     process_sequence:
