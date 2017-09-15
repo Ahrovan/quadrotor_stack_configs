@@ -231,7 +231,7 @@
       <radius>0.2 0.2</radius>
       <aruco>
         <id aruco_id="2" />
-        <id aruco_id="1" />
+        <id aruco_id="5" />
       </aruco>
     </pole>
     <!--Landmark-->

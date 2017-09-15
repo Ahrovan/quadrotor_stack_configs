@@ -8,8 +8,8 @@ def runMission():
     result = api.executeBehavior('TAKE_OFF')
     print("TAKE_OFF ended with status %s" % result)
 
-    #goThroughWindow()
-    #goThroughPoles()
+    goThroughWindow()
+    goThroughPoles()
     goThroughVegetation()
     lookForQR()
 
