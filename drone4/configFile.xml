@@ -4,8 +4,8 @@
 </robot>
 <map>
   <config>
-    <dimensions>15 11.5</dimensions>
-    <initPoint>-1 -6.5</initPoint>
+    <dimensions>18 11.5</dimensions>
+    <initPoint>-3 -6.5</initPoint>
   </config>
 </map>
 <prm>
