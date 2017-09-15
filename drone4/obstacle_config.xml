@@ -13,16 +13,16 @@
     <!--bottom side-->
     <rectangle description="bottom side">
       <id>10000</id>
-      <centerPoint>5 -4.5</centerPoint>
-      <size>12 0.3</size>
+      <centerPoint>6.5 -6.5</centerPoint>
+      <size>15 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--up side-->
     <rectangle description="up side">
       <id>10001</id>
-      <centerPoint>5 5</centerPoint>
-      <size>12 0.3</size>
+      <centerPoint>6.5 5</centerPoint>
+      <size>15 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
@@ -37,7 +37,7 @@
     <!--right side-->
     <rectangle description="right side">
       <id>10003</id>
-      <centerPoint>11 0.25</centerPoint>
+      <centerPoint>14 0.25</centerPoint>
       <size>0.3 9.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -103,6 +103,22 @@
       <id>10060</id>
       <centerPoint>5.67 3.67</centerPoint>
       <size>0.5 1.8</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    <!--wall-->
+    <rectangle description="wall">
+      <id>10100</id>
+      <centerPoint>5.56 -5.17</centerPoint>
+      <size>0.5 2.5</size>
+      <yawAngle>0</yawAngle>
+      <virtual description="">1</virtual>
+    </rectangle>
+    <!--wall-->
+    <rectangle description="wall">
+      <id>10101</id>
+      <centerPoint>1.88 -5.29</centerPoint>
+      <size>0.5 1.9</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
