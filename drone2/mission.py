@@ -22,6 +22,7 @@ def runMission():
     # api.executeBehavior('GO_TO_POINT', coordinates=[3.75, 0.6, 1.3])
     # api.executeBehavior('GO_TO_POINT', coordinates=[0, 0.6, 1.3])
     # api.executeBehavior('GO_TO_POINT', coordinates=[10.5, -3.5, 1.3])
+    api.executeBehavior('GO_TO_POINT', coordinates=[3.4, -1.3, 1.3])
     api.executeBehavior('GO_TO_POINT', coordinates=[0, -1.3, 1.3])
     api.executeBehavior('GO_TO_POINT', coordinates=[0, 0, 2])
     # api.executeBehavior('ROTATE', angle=90)
