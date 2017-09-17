@@ -1,0 +1,52 @@
+default_behavior_values:
+  timeout: 15
+  category: goal_based
+
+behavior_descriptors:
+  - behavior: TAKE_OFF
+    incompatible_lists: [motion_behaviors]
+
+  - behavior: MOVE_PITCH
+    timeout: 10
+    incompatible_lists: [motion_behaviors]
+
+behavior_lists:
+  - list: motion_behaviors
+    behaviors:
+      - TAKE_OFF
+      - MOVE_PITCH
+
+
+# capability_descriptors:
+#   - capability: SETPOINT_BASED_FLIGHT_CONTROL
+#     process_sequence: [droneTrajectoryController]
+#     incompatible_capabilities: [VISUAL_SERVOING]
+
+#   - capability: PATH_PLANNING
+#     process_sequence: [droneTrajectoryPlanner, droneYawPlanner]
+
+#   - capability: VISUAL_SERVOING
+#     process_sequence: [trackerEye, open_tld_translator, droneIBVSController]
+#     incompatible_capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
+
+#   - capability: DYNAMIC_SELF_LOCALIZATION_MODE
+#     process_sequence: [self_localization_selector_process]
+
+#   - capability: SELF_LOCALIZATION_BY_ODOMETRY
+#     process_sequence: [droneRobotLocalizationROSModuleNode]
+
+#   - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
+#     process_sequence: [droneLocalizer]
+
+#   - capability: OBSTACLE_DETECTION_BY_VISUAL_MARKERS
+#     process_sequence:
+#       - droneObstacleDistanceCalculator
+#       - droneObstacleProcessor
+
+#   - capability: VISUAL_MARKERS_RECOGNITION
+#     process_sequence:
+#       - droneArucoEyeROSModule
+
+#   - capability: QR_RECOGNITION
+#     process_sequence:
+#       - qr_recognizer

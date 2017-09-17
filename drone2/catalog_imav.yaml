@@ -27,17 +27,12 @@ behavior_descriptors:
   - behavior: SELF_LOCALIZE_BY_ODOMETRY
     incompatible_lists: [localization_behaviors]
     capabilities:
-      #- SELF_LOCALIZATION_BY_ODOMETRY
       - DYNAMIC_SELF_LOCALIZATION_MODE
 
   - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
     category: recurrent
     incompatible_lists: [localization_behaviors]
     capabilities:
-      # - SELF_LOCALIZATION_BY_ODOMETRY
-      # - SELF_LOCALIZATION_BY_VISUAL_MARKERS
-      #- OBSTACLE_DETECTION_BY_VISUAL_MARKERS
-      # - VISUAL_MARKERS_RECOGNITION
       - DYNAMIC_SELF_LOCALIZATION_MODE
 
 behavior_lists:
@@ -64,21 +59,6 @@ capability_descriptors:
 
   - capability: DYNAMIC_SELF_LOCALIZATION_MODE
     process_sequence: [self_localization_selector_process]
-
-  - capability: SELF_LOCALIZATION_BY_ODOMETRY
-    process_sequence: [droneRobotLocalizationROSModuleNode]
-
-  - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
-    process_sequence: [droneLocalizer]
-
-  - capability: OBSTACLE_DETECTION_BY_VISUAL_MARKERS
-    process_sequence:
-      - droneObstacleDistanceCalculator
-      - droneObstacleProcessor
-
-  - capability: VISUAL_MARKERS_RECOGNITION
-    process_sequence:
-      - droneArucoEyeROSModule
 
   - capability: VISUAL_SERVOING_MANUEL
     process_sequence:

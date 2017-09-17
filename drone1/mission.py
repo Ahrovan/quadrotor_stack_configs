@@ -14,7 +14,7 @@ def runMission():
     print("TAKE_OFF ended with status %s" % result)
 
     # Pose: [0, 0, 0.47, 0]
-    # goThroughWindow()
+    goThroughWindow()
 
     # Pose: [3.5, 0.3, 0, 0]
     goThroughPoles()
