@@ -42,6 +42,6 @@
 
 	<distance_object_desired_mm>   500   </distance_object_desired_mm>  <!-- units: mm, desired distance from the object in mm -->
 	<object_height_mm> 175 </object_height_mm>  <!-- units: mm, real object height (Edge Size) -->
-	<desired_id_aruco> 7 </desired_id_aruco>  <!-- id number of the desired aruco to do image based visual servo  simulation = 9-->
+	<desired_id_aruco> 16 </desired_id_aruco>  <!-- id number of the desired aruco to do image based visual servo  simulation = 9-->
 
 </bottom_camera>
