@@ -4,7 +4,7 @@ import time
 LAND_POINT=[0, 0, 0]
 
 def runMission():
-     api.activateBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
+    api.activateBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
     # api.activateBehavior('SELF_LOCALIZE_BY_ODOMETRY')
 
     # time.sleep(120)
@@ -24,7 +24,7 @@ def runMission():
     dropObject()
 
     goAway()
-    
+
 
     api.inhibitBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
     # api.inhibitBehavior('SELF_LOCALIZE_BY_ODOMETRY')
@@ -87,4 +87,3 @@ def dropObject():
 def goAway():
     api.executeBehavior('TAKE_OFF')
     api.executeBehavior('GO_TO_POINT', coordinates=[8, -4.2, 1.3])
-
