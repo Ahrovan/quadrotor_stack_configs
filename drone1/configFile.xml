@@ -4,25 +4,30 @@
 </robot>
 <map>
   <config>
-    <dimensions>22 16</dimensions>
-    <initPoint>-2 -2</initPoint>
+    <dimensions>17 14</dimensions>
+    <initPoint>-2 0</initPoint>
   </config>
 </map>
 <prm>
   <generate>1</generate>
   <save>0</save>
   <config>
-    <numNodes>6000</numNodes>
+    <numNodes>3000</numNodes>
     <neigbourhood>5</neigbourhood>
     <subzone>
-      <numNodes>1500</numNodes>
+      <numNodes>500</numNodes>
       <initPoint>1 3</initPoint>
       <size>2.5 2.2</size>
     </subzone>
     <subzone>
-      <numNodes>1500</numNodes>
+      <numNodes>500</numNodes>
       <initPoint>6.95 2</initPoint>
       <size>4 4</size>
+    </subzone>
+    <subzone>
+      <numNodes>500</numNodes>
+      <initPoint>11 10</initPoint>
+      <size>3 4</size>
     </subzone>
   </config>
 </prm>

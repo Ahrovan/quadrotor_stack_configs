@@ -1,29 +1,23 @@
 import executive_engine_api as api
 import time
 
-QR_LOCATION = [13.1, 1]
+QR_LOCATION = [12.79, 3.22]
 
 def runMission():
     api.activateBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
     # api.activateBehavior('SELF_LOCALIZE_BY_ODOMETRY')
 
-    # time.sleep(120)
-
     print("Taking off..")
     result = api.executeBehavior('TAKE_OFF')
     print("TAKE_OFF ended with status %s" % result)
 
-    # Pose: [0, 0, 0.47, 0]
     goThroughWindow()
 
-    # Pose: [3.5, 0.3, 0, 0]
     goThroughPoles()
 
-    # # Pose: [7.7, -0.5, 0]
-    # goThroughVegetation()
-    #
-    # # Pose: [12.2, 0, 0, 180]
-    # lookForQR()
+    goThroughVegetation()
+
+    lookForQR()
 
     api.inhibitBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
     # api.inhibitBehavior('SELF_LOCALIZE_BY_ODOMETRY')
@@ -46,46 +40,64 @@ def goThroughWindow():
     # print("GO_TO_POINT ended with status %s" % result)
 
 def goThroughPoles():
-    point_b = [6.4, 7, 1.4]
+    # print("Rotating...")
+    # result = api.executeBehavior('ROTATE', angle=180)
+    # print("ROTATE ended with status %s" % result)
+
+    point_b = [6.8, 6.36, 1.4]
     print("Going to %s ..." % point_b)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_b)
     print("GO_TO_POINT ended with status %s" % result)
+    #
+    # point_c = [8.12, 9, 1.4]
+    # print("Going to %s ..." % point_c)
+    # result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
+    # print("GO_TO_POINT ended with status %s" % result)
+    #
+    # point_c = [8.12, 10.2, 1.4]
+    # print("Going to %s ..." % point_c)
+    # result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
+    # print("GO_TO_POINT ended with status %s" % result)
 
-    point_c = [8.01, 9.6, 1.4]
+    point_c = [8.5, 6, 1.4]
+    print("Going to %s ..." % point_c)
+    result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
+    print("GO_TO_POINT ended with status %s" % result)
+
+    point_c = [9.5, 8, 1.4]
+    print("Going to %s ..." % point_c)
+    result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
+    print("GO_TO_POINT ended with status %s" % result)
+
+    point_c = [10.91, 9.97, 0.5]
     print("Going to %s ..." % point_c)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
     print("GO_TO_POINT ended with status %s" % result)
 
 def goThroughVegetation():
-    # print("Rotating...")
-    # result = api.executeBehavior('ROTATE', angle=45)
-    # print("ROTATE ended with status %s" % result)
-    # time.sleep(1)
-    # print("Rotating...")
-    # result = api.executeBehavior('ROTATE', angle=90)
-    # print("ROTATE ended with status %s" % result)
-    # time.sleep(1)
-    # print("Rotating...")
-    # result = api.executeBehavior('ROTATE', angle=135)
-    # print("ROTATE ended with status %s" % result)
-    # time.sleep(1)
-    # print("Rotating...")
-    # result = api.executeBehavior('ROTATE', angle=180)
-    # print("ROTATE ended with status %s" % result)
-
-    # point_d = [10.5, 0.5, 1.25]
-    # print("Going to %s ..." % point_d)
-    # result = api.executeBehavior('GO_TO_POINT', coordinates=point_d)
-    # print("GO_TO_POINT ended with status %s" % result)
-
-    point_e = [12.5, 4.8, 1.25]
+    point_e = [12, 9.48, 0.5]
     print("Going to %s ..." % point_e)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_e)
     print("GO_TO_POINT ended with status %s" % result)
 
-    # print("Rotating...")
-    # result = api.executeBehavior('ROTATE', angle=180)
-    # print("ROTATE ended with status %s" % result)
+    point_e = [13.19, 7.1, 0.5]
+    print("Going to %s ..." % point_e)
+    result = api.executeBehavior('GO_TO_POINT', coordinates=point_e)
+    print("GO_TO_POINT ended with status %s" % result)
+
+    point_e = [14, 7.1, 0.5]
+    print("Going to %s ..." % point_e)
+    result = api.executeBehavior('GO_TO_POINT', coordinates=point_e)
+    print("GO_TO_POINT ended with status %s" % result)
+
+    print("Rotating...")
+    result = api.executeBehavior('ROTATE', angle=180)
+    print("ROTATE ended with status %s" % result)
+
+    point_f = [13.3, 4.3, 0.5]
+    print("Going to %s ..." % point_f)
+    result = api.executeBehavior('GO_TO_POINT', coordinates=point_f)
+    print("GO_TO_POINT ended with status %s" % result)
 
 
 def lookForQR():

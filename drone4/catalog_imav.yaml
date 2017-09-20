@@ -21,7 +21,7 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
 
   - behavior: LAND_ON_STATIC_PLATFORM
-    capabilities: [VISUAL_SERVOING_MANUEL, SPEED_CONTROLLER_MANUEL]
+    capabilities: [VISUAL_SERVOING_MANUEL]
     incompatible_lists: [motion_behaviors]
 
   - behavior: SELF_LOCALIZE_BY_ODOMETRY
@@ -82,8 +82,4 @@ capability_descriptors:
     process_sequence:
       - perception_IBVS_Node
       - state_estimator_IBVS_Node
-      - controller_IBVS_Node
-
-  - capability: SPEED_CONTROLLER_MANUEL
-    process_sequence:
-      - speed_controller_Node
+      - controller_IBVS_2_Node

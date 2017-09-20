@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <main FormatVersion="1">
   <params>
-    <x_0> 0.92 </x_0>
-    <y_0> 3.92 </y_0>
+    <x_0> 10.91 </x_0>
+    <y_0> 9.97 </y_0>
     <z_0> 0 </z_0>
     <roll_0>0.0</roll_0>
     <pitch_0>0.0</pitch_0>
@@ -22,6 +22,10 @@
     <VisualMarkerList description="List of visual markers that are going to be added to the visual markers SLAM">
       <VisualMarkersRange fromId="0" toId="100" />
     </VisualMarkerList>
-    <Arucos description="List of visual markers considered as landmarks (previously known pose)" />
+    <Arucos description="List of visual markers considered as landmarks (previously known pose)">
+      <!-- Landmark 60001-->
+      <Aruco id="41" x="13.09" y="9.48" z="0.28" roll="0" pitch="0" yaw="180" />
+      <Aruco id="42" x="12.45" y="7.39" z="0.28" roll="0" pitch="0" yaw="0" />
+    </Arucos>
   </params>
 </main>
