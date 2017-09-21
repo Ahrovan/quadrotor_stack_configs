@@ -85,7 +85,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10013</id>
-      <centerPoint>6.65 4.62</centerPoint>
+      <centerPoint>6.55 5.2</centerPoint>
       <size>0.3 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -93,7 +93,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10014</id>
-      <centerPoint>6.48 8.37</centerPoint>
+      <centerPoint>6.6 8.26</centerPoint>
       <size>0.3 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -101,7 +101,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10015</id>
-      <centerPoint>8.43 7.36</centerPoint>
+      <centerPoint>8.66 7.55</centerPoint>
       <size>0.3 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
@@ -125,7 +125,7 @@
     <!--wall-->
     <rectangle description="wall">
       <id>12000</id>
-      <centerPoint>12.38 7.49</centerPoint>
+      <centerPoint>12.38 7.29</centerPoint>
       <size>0.2 3.3</size>
       <yawAngle>20</yawAngle>
       <virtual description="">1</virtual>
@@ -141,40 +141,40 @@
     <!--wall-->
     <rectangle description="wall">
       <id>10100</id>
-      <centerPoint>9.02 4.99</centerPoint>
+      <centerPoint>7.77 6.1</centerPoint>
       <size>0.3 0.3</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--wall-->
     <rectangle description="wall">
-      <id>10101</id>
-      <centerPoint>9.5 9.24</centerPoint>
-      <size>0.3 0.3</size>
+      <id>10700</id>
+      <centerPoint>6.62 2.52</centerPoint>
+      <size>0.4 4.7</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--wall-->
     <rectangle description="wall">
-      <id>10102</id>
-      <centerPoint>8.8 11.5</centerPoint>
-      <size>0.3 0.3</size>
+      <id>10701</id>
+      <centerPoint>4.61 8.35</centerPoint>
+      <size>3.2 0.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--wall-->
     <rectangle description="wall">
-      <id>10040</id>
-      <centerPoint>4.55 8.2</centerPoint>
-      <size>2.7 0.5</size>
+      <id>10702</id>
+      <centerPoint>7.91 7.48</centerPoint>
+      <size>0.5 2</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>
     <!--wall-->
     <rectangle description="wall">
-      <id>10041</id>
-      <centerPoint>6.26 11.45</centerPoint>
-      <size>4.3 0.5</size>
+      <id>10703</id>
+      <centerPoint>7.19 8.23</centerPoint>
+      <size>0.5 0.5</size>
       <yawAngle>0</yawAngle>
       <virtual description="">1</virtual>
     </rectangle>

@@ -42,12 +42,12 @@ def goThroughWindow():
     print("GO_TO_POINT ended with status %s" % result)
 
 def goThroughPoles():
-    point_b = [6.8, 6.36, 1.4]
+    point_b = [6.18, 6.39, 1.4]
     print("Going to %s ..." % point_b)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_b)
     print("GO_TO_POINT ended with status %s" % result)
 
-    point_c = [9.7, 6.36, 1.4]
+    point_c = [8.21, 4.74, 1.4]
     print("Going to %s ..." % point_c)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
     print("GO_TO_POINT ended with status %s" % result)

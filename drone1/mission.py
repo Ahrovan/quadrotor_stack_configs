@@ -1,11 +1,10 @@
 import executive_engine_api as api
 import time
 
-QR_LOCATION = [12.79, 3.22]
+QR_LOCATION = [11.79, 4.3]
 
 def runMission():
     api.activateBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
-    # api.activateBehavior('SELF_LOCALIZE_BY_ODOMETRY')
 
     print("Taking off..")
     result = api.executeBehavior('TAKE_OFF')
@@ -20,7 +19,6 @@ def runMission():
     lookForQR()
 
     api.inhibitBehavior('SELF_LOCALIZE_BY_VISUAL_MARKER')
-    # api.inhibitBehavior('SELF_LOCALIZE_BY_ODOMETRY')
     api.executeBehavior('LAND')
 
 def goThroughWindow():
@@ -34,42 +32,23 @@ def goThroughWindow():
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_a_2)
     print("GO_TO_POINT ended with status %s" % result)
 
-    # point_b = [3.5, 4.75, 1.2]
-    # print("Going to %s ..." % point_b)
-    # result = api.executeBehavior('GO_TO_POINT', coordinates=point_b)
-    # print("GO_TO_POINT ended with status %s" % result)
-
 def goThroughPoles():
-    # print("Rotating...")
-    # result = api.executeBehavior('ROTATE', angle=180)
-    # print("ROTATE ended with status %s" % result)
-
-    point_b = [6.8, 6.36, 1.4]
+    point_b = [6.18, 6.39, 1.4]
     print("Going to %s ..." % point_b)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_b)
     print("GO_TO_POINT ended with status %s" % result)
-    #
-    # point_c = [8.12, 9, 1.4]
-    # print("Going to %s ..." % point_c)
-    # result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
-    # print("GO_TO_POINT ended with status %s" % result)
-    #
-    # point_c = [8.12, 10.2, 1.4]
-    # print("Going to %s ..." % point_c)
-    # result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
-    # print("GO_TO_POINT ended with status %s" % result)
 
-    point_c = [8.5, 6, 1.4]
+    point_c = [8.21, 4.74, 1.4]
     print("Going to %s ..." % point_c)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
     print("GO_TO_POINT ended with status %s" % result)
 
-    point_c = [9.5, 8, 1.4]
+    point_c = [9.85, 7.8, 1.4]
     print("Going to %s ..." % point_c)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
     print("GO_TO_POINT ended with status %s" % result)
 
-    point_c = [10.91, 9.97, 0.5]
+    point_c = [10.91, 10.47, 0.5]
     print("Going to %s ..." % point_c)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_c)
     print("GO_TO_POINT ended with status %s" % result)
@@ -80,7 +59,7 @@ def goThroughVegetation():
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_e)
     print("GO_TO_POINT ended with status %s" % result)
 
-    point_e = [13.19, 7.1, 0.5]
+    point_e = [13.19, 7.6, 0.5]
     print("Going to %s ..." % point_e)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_e)
     print("GO_TO_POINT ended with status %s" % result)
@@ -94,7 +73,7 @@ def goThroughVegetation():
     result = api.executeBehavior('ROTATE', angle=180)
     print("ROTATE ended with status %s" % result)
 
-    point_f = [13.3, 4.3, 0.5]
+    point_f = [QR_LOCATION[0]+1, QR_LOCATION[1]+1, 0.5]
     print("Going to %s ..." % point_f)
     result = api.executeBehavior('GO_TO_POINT', coordinates=point_f)
     print("GO_TO_POINT ended with status %s" % result)
