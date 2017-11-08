@@ -1,107 +1,98 @@
-<mission name="Search in a square">
-  
-  <task name="Preparation">
+<!--==================================================
+| FILE: mission_specification_file.xml
+| BRIEF: A mission specification example.
+| DETAILS:
+|   Mission in which an object is found, picked up and
+|   retrieved.
+| AUTHORS:
+|    Guillermo De Fermin
+===================================================-->
+<mission root_task="Search for object">
 
-    <task name="Take Off">
-      <action name="TAKE_OFF"/>
+  <task_tree>
+    <task name="Search for object">
+      <task name="Initial phase">
+        <recurrent_behavior name="SELF_LOCALIZE_BY_ODOMETRY" />
+        <task name="Take off">
+          <behavior name="TAKE_OFF"/>
+        </task>
+        <task name="Memorize current point">
+          <consult belief="position(self, (?HOME_X, ?HOME_Y, ?HOME_Z))" />
+        </task>
+      </task>
+
+      <task name="Start search">
+        <recurrent_behavior name="SELF_LOCALIZE_BY_VISUAL_MARKERS" />
+        <task name="Moving to point A">
+          <behavior name="GO_TO_POINT">
+            <argument name="relative_coordinates" value="[1, 0, 0]"/>
+          </behavior>
+        </task>
+        <task name="Moving to point B">
+          <behavior name="GO_TO_POINT">
+            <argument name="relative_coordinates" value="[0, 1, 0]"/>
+          </behavior>
+        </task>
+        <task name="Moving to point C">
+          <behavior name="GO_TO_POINT">
+            <argument name="relative_coordinates" value="[-1, 0, 0]"/>
+          </behavior>
+        </task>
+        <task name="Moving to point D">
+          <behavior name="GO_TO_POINT">
+            <argument name="relative_coordinates" value="[0, -1, 0]"/>
+          </behavior>
+        </task>
+      </task>
+
     </task>
+  </task_tree>
 
-    <task name="Initial wait">
-      <action name="WAIT">
-        <argument name="duration" value="3"/>
-      </action>
+  <task_tree>
+    <task name="Retrieve object">
+      <recurrent_behavior name="SELF_LOCALIZE_BY_VISUAL_MARKERS" />
+      <task name="Memorize object location">
+        <consult belief="position(object_1, (?OBJ_X, ?OBJ_Y, ?))" />
+      </task>
+      <task name="Hover above object">
+        <behavior name="GO_TO_POINT">
+          <argument name="coordinates" value="[+OBJ_X, +OBJ_Y, 1.2]" />
+        </behavior>
+      </task>
+      <task name="Pick object up">
+        <add belief="picked_up(object_1)" />
+      </task>
+      <task name="Go to starting point">
+        <behavior name="GO_TO_POINT">
+          <argument name="coordinates" value="[+HOME_X, +HOME_Y, +HOME_Z]" />
+        </behavior>
+      </task>
+      <task name="Drop oject">
+        <remove belief="picked_up(object_1)" />
+      </task>
+      <task name="Final land">
+        <behavior name="LAND" />
+      </task>
     </task>
+  </task_tree>
 
-    <task name="Setting up home point ">
-      <action name="MEMORIZE_POINT">
-        <argument name="coordinates" label="HOME"/>
-      </action>
+  <task_tree>
+    <task name="Emergency land">
+      <behavior name="LAND" />
     </task>
-
-  </task>
-
-
-  <task name="Searching">
-
-    <skill name="AVOID_OBSTACLES"/>
-    <skill name="RECOGNIZE_ARUCO_MARKERS"/>
-
-    <task name="Go to point A">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(6.0, 4.0, 1.0)"/>
-      </action>
-    </task>
-
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
-    </task>
-
-    <task name="Go to point B">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(6.0, 6.0, 1.0)"/>
-      </action>
-    </task>
-
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
-    </task>
-
-    <task name="Go to point C">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(4.0, 6.0, 1.0)"/>
-      </action>
-    </task>
-
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
-    </task>
-
-    <task name="Go to point D">
-      <action name="GO_TO_POINT">
-        <argument name="coordinates" value="(4.0, 4.0, 1.0)"/>
-      </action>
-    </task>
-
-  </task>
-
-
-  <task name="Ending">
-
-    <task name="Stabilize">
-      <action name="STABILIZE"/>
-    </task>
-
-    <task name="Land">
-      <action name="LAND"/>
-    </task>
-
-  </task>
+  </task_tree>
 
   <event_handling>
-
-<!--==================================================
-| EVENT: Return Home
-===================================================-->
-    <event name="Return home">
-      <condition parameter="RECOGNIZED_ARUCO_MARKERS" comparison="equal" value="0"/>
-      <action name="STABILIZE"/>
-      <action name="GO_TO_POINT">
-         <argument name="coordinates" label="HOME"/>
-      </action>
-      <action name="STABILIZE"/>
-      <action name="LAND"/>
-      <termination mode="ABORT_MISSION"/>
+    <event name="Object found">
+      <condition belief="visible(object_1)"/>
+      <call root_task="Retrieve object" />
+      <termination mode="END_MISSION" />
     </event>
 
-<!--==================================================
-| EVENT: Low battery
-===================================================-->
     <event name="Low battery">
-      <condition parameter="BATTERY_CHARGE_PERCENTAGE" comparison="less than" value="25"/>
-      <action name="STABILIZE"/>
-      <action name="LAND"/>   
+      <condition belief="battery_level(self, LOW)"/>
+      <call root_task="Emergency land"/>
       <termination mode="ABORT_MISSION"/>
     </event>
-
   </event_handling>
 </mission>
