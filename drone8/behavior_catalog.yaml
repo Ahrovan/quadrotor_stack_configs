@@ -10,7 +10,7 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
 
   - behavior: GO_TO_POINT
-    timeout: 30
+    timeout: 120
     incompatible_lists: [motion_behaviors]
     capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
     arguments:
@@ -64,16 +64,17 @@ behavior_descriptors:
     capabilities:
       - SELF_LOCALIZATION_BY_ODOMETRY
       - DYNAMIC_SELF_LOCALIZATION_MODE
+      - MAP_OBSTACLES
 
   - behavior: SELF_LOCALIZE_BY_VISUAL_MARKER
     category: recurrent
     incompatible_lists: [self_localizaion_behaviors]
     capabilities:
       - SELF_LOCALIZATION_BY_ODOMETRY
-      - SELF_LOCALIZATION_BY_VISUAL_MARKERS
       - OBSTACLE_DETECTION_BY_VISUAL_MARKERS
       - VISUAL_MARKERS_RECOGNITION
       - DYNAMIC_SELF_LOCALIZATION_MODE
+      - MAP_OBSTACLES
 
 behavior_lists:
   - list: motion_behaviors
@@ -124,19 +125,15 @@ capability_descriptors:
     process_sequence: [droneOdometryStateEstimator]
     required_capabilities: [DYNAMIC_SELF_LOCALIZATION_MODE]
 
-  - capability: SELF_LOCALIZATION_BY_VISUAL_MARKERS
-    process_sequence: [droneLocalizer]
-    required_capabilities:
-      - SELF_LOCALIZATION_BY_ODOMETRY
-      - VISUAL_MARKERS_RECOGNITION
-      - DYNAMIC_SELF_LOCALIZATION_MODE
-
   - capability: OBSTACLE_DETECTION_BY_VISUAL_MARKERS
-    process_sequence:
-      - droneObstacleDistanceCalculator
-      - droneObstacleProcessor
+    process_sequence: [droneObstacleDistanceCalculator]
     required_capabilities: [SELF_LOCALIZATION_BY_VISUAL_MARKERS]
 
   - capability: VISUAL_MARKERS_RECOGNITION
     process_sequence:
       - droneArucoEyeROSModule
+
+  - capability: MAP_OBSTACLES
+    process_sequence:
+      - droneLocalizer
+      - droneObstacleProcessor
