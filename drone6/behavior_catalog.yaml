@@ -14,10 +14,10 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
     capabilities: [SETPOINT_BASED_FLIGHT_CONTROL, PATH_PLANNING]
     arguments:
-      - argument: POSITION
+      - argument: coordinates
         allowed_values: [-100,100]
         dimensions: 3
-      - argument: RELATIVE_COORDINATES
+      - argument: relative_coordinates
         allowed_values: [-100,100]
         dimensions: 3
 
@@ -25,7 +25,7 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
     capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
     arguments:
-      - argument: ANGLE
+      - argument: angle
         allowed_values: [-360,360]
 
   - behavior: KEEP_MOVING
@@ -33,9 +33,9 @@ behavior_descriptors:
     incompatible_lists: [motion_behaviors]
     capabilities: [SETPOINT_BASED_FLIGHT_CONTROL]
     arguments:
-      - argument: SPEED
+      - argument: speed
         allowed_values: [0,30]
-      - argument: DIRECTION
+      - argument: direction
         allowed_values: [BACKWARD, FORWARD, UP, DOWN, LEFT, RIGHT]
 
   - behavior: FOLLOW_OBJECT_IMAGE
@@ -49,9 +49,9 @@ behavior_descriptors:
 
   - behavior: WAIT
     arguments:
-      - argument: DURATION
+      - argument: duration
         allowed_values: [1,1000]
-      - argument: UNTIL_OBSERVED_VISUAL_MARKER
+      - argument: until_observed_visual_marker
         allowed_values: [0,1023]
 
   - behavior: KEEP_HOVERING
