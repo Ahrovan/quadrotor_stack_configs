@@ -12,7 +12,7 @@ def runMission():
     print "Take off finished with status: %s" % result
 
     print "Move to a higher position"
-    result = api.executeBehavior('GO_TO_POINT', relative_coordinates=[0, 0, 0.5])
+    result = api.activateBehavior('GO_TO_POINT', relative_coordinates=[0, 0, 0.5])
     print "Go to point finished with status: %s" % result
 
     print "Memorizing current point..."
