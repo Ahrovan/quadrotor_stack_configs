@@ -43,6 +43,9 @@
             <argument name="relative_coordinates" value="[0, -1, 0]"/>
           </behavior>
         </task>
+        <task name="Landing">
+          <behavior name="LAND" />
+        </task>
       </task>
 
     </task>
